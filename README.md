@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # car_spotter
 
 A new Flutter project.
@@ -15,3 +16,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# CarSpotter
+App for Car Spotting, local-first on your phone
+>>>>>>> ef9d0093c25eabf1ff5c37e7a31e5777bbabace5
