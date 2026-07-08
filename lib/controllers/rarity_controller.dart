@@ -19,10 +19,10 @@ class RarityController {
         (priceScore * 0.25) +
         (perfScore * 0.10);
 
-    if (finalScore <= 35) return RarityTier.common;
-    if (finalScore <= 55) return RarityTier.uncommon;
-    if (finalScore <= 75) return RarityTier.rare;
-    if (finalScore <= 90) return RarityTier.epic;
+    if (finalScore <= 30) return RarityTier.common;
+    if (finalScore <= 50) return RarityTier.uncommon;
+    if (finalScore <= 70) return RarityTier.rare;
+    if (finalScore <= 89) return RarityTier.epic;
     return RarityTier.legendary;
   }
 

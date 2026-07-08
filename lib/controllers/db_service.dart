@@ -37,12 +37,6 @@ class DbService {
   }
 
   // ==========================================
-  // INIEZIONE DATI DAL FILE JSON LOCALE
-  // ==========================================
-  // ==========================================
-  // INIEZIONE DATI E CALCOLO ALGORITMICO
-  // ==========================================
-  // ==========================================
   // INIEZIONE DATI E CALCOLO ALGORITMICO PRO
   // ==========================================
   static Future<void> _seedInitialData() async {
@@ -59,7 +53,6 @@ class DbService {
 
       await isar.writeTxn(() async {
         for (var brandName in data.keys) {
-          // Estrapoliamo i dati del brand
           final brandInfo = data[brandName] as Map<String, dynamic>;
           final brandScore = brandInfo["brandScore"] as int;
           final brandHeritage = brandInfo["brandHeritage"] as int;
@@ -71,7 +64,6 @@ class DbService {
           for (var item in modelsData) {
             final m = item as Map<String, dynamic>;
 
-            // 🧠 1. IL CERVELLO IN AZIONE: Calcolo della Rarità
             final rarityTier = RarityController.calculateRarity(
               brandScore: brandScore,
               productionRun: m["productionRun"] as int,
@@ -79,7 +71,6 @@ class DbService {
               horsepower: m["horsepower"] as int,
             );
 
-            // 🧠 2. IL CERVELLO IN AZIONE: Calcolo Icona (con età dinamica)
             final isIcon = RarityController.checkIfIcon(
               salesVolume: m["salesVolume"] as int,
               brandHeritage: brandHeritage,
@@ -88,7 +79,6 @@ class DbService {
               launchYear: m["launchYear"] as int,
             );
 
-            // 3. Assegniamo un punteggio base fittizio basato sul Tier calcolato
             int baseScore;
             switch (rarityTier) {
               case RarityTier.legendary:
@@ -108,7 +98,6 @@ class DbService {
                 break;
             }
 
-            // 4. Creiamo il Modello
             final carModel = CarModel()
               ..name = m["name"] as String
               ..isIcon = isIcon
@@ -119,7 +108,6 @@ class DbService {
               ..productionRun = m["productionRun"] as int
               ..launchYear = m["launchYear"] as int;
 
-            // 5. LO SALVIAMO NEL DATABASE (Ecco le righe che mancavano!)
             carModel.brand.value = brand;
             await isar.carModels.put(carModel);
             await carModel.brand.save();
@@ -239,49 +227,40 @@ class DbService {
       if (spot.imagePath.isNotEmpty) {
         final imgFile = File(spot.imagePath);
         if (await imgFile.exists()) {
-          await imgFile.delete(); // Libera la memoria dalle foto degli spot
+          await imgFile.delete();
         }
       }
     }
 
-    // Svuota SOLO la tabella userSpots. Catalogo e Marche restano intatti!
     await isar.writeTxn(() async {
       await isar.userSpots.clear();
     });
   }
 
   // ==========================================
-  // AGGIORNAMENTO INCREMENTALE DEL CATALOGO
-  // ==========================================
-  // ==========================================
-  // AGGIORNAMENTO INCREMENTALE DEL CATALOGO
-  // ==========================================
-  // ==========================================
-  // AGGIORNAMENTO OTA DA GITHUB
+  // AGGIORNAMENTO OTA DA GITHUB (Con ricalcolo auto esistenti)
   // ==========================================
   static Future<int> syncCatalogWithJson() async {
     debugPrint("🔄 Avvio sincronizzazione catalogo da GITHUB...");
 
     try {
-      // ⚠️ SOSTITUISCI QUESTO URL CON IL TUO LINK "RAW" DI GITHUB
       const String githubRawUrl =
           'https://raw.githubusercontent.com/AndreaGarufi/CarSpotter/main/assets/data/cars_database.json';
 
-      // Facciamo la richiesta a internet
       final response = await http.get(Uri.parse(githubRawUrl));
 
       if (response.statusCode != 200) {
         debugPrint(
           "❌ Errore di rete: Impossibile raggiungere GitHub (Codice ${response.statusCode})",
         );
-        return -1; // -1 fa scattare l'errore rosso nello SnackBar
+        return -1;
       }
 
-      // Decodifichiamo forzando UTF-8 per evitare che accenti e caratteri speciali si rompano
       final String jsonString = utf8.decode(response.bodyBytes);
       final data = await json.decode(jsonString) as Map<String, dynamic>;
 
       int addedCars = 0;
+      int updatedCars = 0;
 
       await isar.writeTxn(() async {
         for (var brandName in data.keys) {
@@ -289,7 +268,6 @@ class DbService {
           final brandScore = brandInfo["brandScore"] as int;
           final brandHeritage = brandInfo["brandHeritage"] as int;
 
-          // Cerca se la marca esiste già, altrimenti la crea
           var brand = await isar.brands
               .filter()
               .nameEqualTo(brandName)
@@ -304,48 +282,48 @@ class DbService {
             final m = item as Map<String, dynamic>;
             final carName = m["name"] as String;
 
-            // CONTROLLO CRITICO: Questa auto esiste già nel database locale?
             final existingCar = await isar.carModels
                 .filter()
                 .nameEqualTo(carName)
                 .findFirst();
 
-            // Se NON esiste, la aggiungiamo!
+            // 🔥 CALCOLI ESEGUITI SEMPRE (sia per auto nuove che vecchie)
+            final rarityTier = RarityController.calculateRarity(
+              brandScore: brandScore,
+              productionRun: m["productionRun"] as int,
+              priceEuro: (m["priceEuro"] as num).toDouble(),
+              horsepower: m["horsepower"] as int,
+            );
+
+            final isIcon = RarityController.checkIfIcon(
+              salesVolume: m["salesVolume"] as int,
+              brandHeritage: brandHeritage,
+              popCultureScore: m["popCultureScore"] as int,
+              technicalInnovation: m["technicalInnovation"] as int,
+              launchYear: m["launchYear"] as int,
+            );
+
+            int baseScore;
+            switch (rarityTier) {
+              case RarityTier.legendary:
+                baseScore = 95;
+                break;
+              case RarityTier.epic:
+                baseScore = 85;
+                break;
+              case RarityTier.rare:
+                baseScore = 70;
+                break;
+              case RarityTier.uncommon:
+                baseScore = 50;
+                break;
+              case RarityTier.common:
+                baseScore = 30;
+                break;
+            }
+
             if (existingCar == null) {
-              final rarityTier = RarityController.calculateRarity(
-                brandScore: brandScore,
-                productionRun: m["productionRun"] as int,
-                priceEuro: (m["priceEuro"] as num).toDouble(),
-                horsepower: m["horsepower"] as int,
-              );
-
-              final isIcon = RarityController.checkIfIcon(
-                salesVolume: m["salesVolume"] as int,
-                brandHeritage: brandHeritage,
-                popCultureScore: m["popCultureScore"] as int,
-                technicalInnovation: m["technicalInnovation"] as int,
-                launchYear: m["launchYear"] as int,
-              );
-
-              int baseScore;
-              switch (rarityTier) {
-                case RarityTier.legendary:
-                  baseScore = 95;
-                  break;
-                case RarityTier.epic:
-                  baseScore = 85;
-                  break;
-                case RarityTier.rare:
-                  baseScore = 70;
-                  break;
-                case RarityTier.uncommon:
-                  baseScore = 50;
-                  break;
-                case RarityTier.common:
-                  baseScore = 30;
-                  break;
-              }
-
+              // 🟢 AUTO NUOVA
               final newCarModel = CarModel()
                 ..name = carName
                 ..isIcon = isIcon
@@ -361,12 +339,25 @@ class DbService {
               await newCarModel.brand.save();
 
               addedCars++;
+            } else {
+              // 🟡 AUTO ESISTENTE: Aggiorniamo i dati modificati su GitHub
+              existingCar
+                ..isIcon = isIcon
+                ..baseRarityScore = baseScore
+                ..rarityTier = rarityTier
+                ..iconScore = isIcon ? 90 : 50
+                ..engineHp = m["horsepower"] as int
+                ..productionRun = m["productionRun"] as int
+                ..launchYear = m["launchYear"] as int;
+
+              await isar.carModels.put(existingCar);
+              updatedCars++;
             }
           }
         }
       });
       debugPrint(
-        "✅ Sincronizzazione GitHub completata: aggiunte $addedCars nuove auto.",
+        "✅ Sincronizzazione GitHub completata: aggiunte $addedCars nuove auto, aggiornate $updatedCars esistenti.",
       );
       return addedCars;
     } catch (e) {
