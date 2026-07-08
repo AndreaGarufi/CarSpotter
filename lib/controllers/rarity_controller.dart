@@ -14,9 +14,9 @@ class RarityController {
     double perfScore = (min(horsepower, 1000) / 1000 * 100);
 
     double finalScore =
-        (brandScore * 0.40) +
-        (prodScore * 0.25) +
-        (priceScore * 0.25) +
+        (brandScore * 0.50) +
+        (prodScore * 0.20) +
+        (priceScore * 0.20) +
         (perfScore * 0.10);
 
     if (finalScore <= 30) return RarityTier.common;
