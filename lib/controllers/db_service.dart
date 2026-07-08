@@ -265,7 +265,7 @@ class DbService {
     try {
       // ⚠️ SOSTITUISCI QUESTO URL CON IL TUO LINK "RAW" DI GITHUB
       const String githubRawUrl =
-          'https://github.com/AndreaGarufi/CarSpotter/blob/main/assets/data/cars_database.json';
+          'https://raw.githubusercontent.com/AndreaGarufi/CarSpotter/main/assets/data/cars_database.json';
 
       // Facciamo la richiesta a internet
       final response = await http.get(Uri.parse(githubRawUrl));
