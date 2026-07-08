@@ -1036,6 +1036,16 @@
         "launchYear": 2000
       },
       {
+        "name": "Porsche Taycan",
+        "productionRun": 150000,
+        "priceEuro": 86000.0,
+        "horsepower": 326,
+        "salesVolume": 150000,
+        "popCultureScore": 65,
+        "technicalInnovation": 90,
+        "launchYear": 2019
+      },
+      {
         "name": "Porsche 968",
         "productionRun": 500000,
         "priceEuro": 25000.0,
