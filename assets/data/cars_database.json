@@ -8965,7 +8965,7 @@
   },
   "Chrysler": {
     "brandScore": 60,
-    "brandHeritage": 85,
+    "brandHeritage": 80,
     "models": [
       {
         "name": "Chrysler TC by Maserati",
@@ -8991,7 +8991,7 @@
   },
   "Peugeot": {
     "brandScore": 65,
-    "brandHeritage": 85,
+    "brandHeritage": 80,
     "models": [
       {
         "name": "Peugeot 205 GTI",
@@ -9077,7 +9077,7 @@
   },
   "Citroen": {
     "brandScore": 60,
-    "brandHeritage": 90,
+    "brandHeritage": 80,
     "models": [
       {
         "name": "Citroën 2CV",
@@ -9152,7 +9152,7 @@
     ]
   },
   "Tesla": {
-    "brandScore": 85,
+    "brandScore": 75,
     "brandHeritage": 40,
     "models": [
       {
@@ -9209,7 +9209,7 @@
   },
   "Jeep": {
     "brandScore": 70,
-    "brandHeritage": 90,
+    "brandHeritage": 80,
     "models": [
       {
         "name": "Jeep Avenger",
