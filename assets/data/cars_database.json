@@ -6761,13 +6761,43 @@
       },
       {
         "name": "Audi TT",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 662762,
+        "priceEuro": 44000.0,
+        "horsepower": 230,
+        "salesVolume": 662762,
         "popCultureScore": 80,
         "technicalInnovation": 60,
         "launchYear": 2000
+      },
+      {
+        "name": "Audi TT Roadster (8N)",
+        "productionRun": 662762,
+        "priceEuro": 46000.0,
+        "horsepower": 230,
+        "salesVolume": 662762,
+        "popCultureScore": 60,
+        "technicalInnovation": 60,
+        "launchYear": 1999
+      },
+      {
+        "name": "Audi TT Roadster (8J)",
+        "productionRun": 662762,
+        "priceEuro": 46000.0,
+        "horsepower": 230,
+        "salesVolume": 662762,
+        "popCultureScore": 60,
+        "technicalInnovation": 60,
+        "launchYear": 2006
+      },
+      {
+        "name": "Audi TT Roadster (8S)",
+        "productionRun": 662762,
+        "priceEuro": 46000.0,
+        "horsepower": 230,
+        "salesVolume": 662762,
+        "popCultureScore": 60,
+        "technicalInnovation": 60,
+        "launchYear": 2014
       },
       {
         "name": "Audi A3",
