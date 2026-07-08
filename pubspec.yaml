@@ -1,0 +1,56 @@
+name: car_spotter
+description: "A new Flutter project for Car Spotting."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Icone stile iOS
+  cupertino_icons: ^1.0.8
+
+  # Database locale
+  isar_community: ^3.3.2
+  isar_community_flutter_libs: ^3.3.2
+
+  # Gestione filesystem
+  path_provider: ^2.1.6
+
+  # GPS / geolocalizzazione
+  geolocator: ^14.0.3
+  shared_preferences: ^2.5.5
+  image_picker: ^1.2.3
+  flutter_map: ^8.3.1
+  latlong2: ^0.10.1
+  archive: ^4.0.9
+  share_plus: ^13.2.0
+  path: ^1.9.1
+  http: ^1.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+  isar_community_generator: ^3.3.2
+  build_runner: ^2.10.5
+  flutter_launcher_icons: ^0.14.4
+
+# Unica sezione flutter alla fine del file:
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/data/
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/images/carSpotterIcon.png"
+  adaptive_icon_background: "#1E293B" # Un colore di sfondo nel caso in cui la foto non riempia i bordi arrotondati
