@@ -1,7 +1,7 @@
 {
   "Ferrari": {
-    "brandScore": 95,
-    "brandHeritage": 98,
+    "brandScore": 99,
+    "brandHeritage": 99,
     "models": [
       {
         "name": "Ferrari Enzo",
@@ -34,14 +34,14 @@
         "launchYear": 2000
       },
       {
-        "name": "Ferrari 360",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "name": "Ferrari 360 modena",
+        "productionRun": 8800,
+        "priceEuro": 118785.0,
+        "horsepower": 425,
+        "salesVolume": 8800,
         "popCultureScore": 80,
-        "technicalInnovation": 60,
-        "launchYear": 2000
+        "technicalInnovation": 70,
+        "launchYear": 1999
       },
       {
         "name": "Ferrari Testarossa",
@@ -145,13 +145,13 @@
       },
       {
         "name": "Ferrari 812 Superfast",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 999,
+        "priceEuro": 291642.0,
+        "horsepower": 800,
+        "salesVolume": 999,
         "popCultureScore": 80,
         "technicalInnovation": 95,
-        "launchYear": 2000
+        "launchYear": 2017
       },
       {
         "name": "Ferrari 348",
@@ -284,14 +284,14 @@
         "launchYear": 2000
       },
       {
-        "name": "Ferrari F8",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "name": "Ferrari F8 Tributo",
+        "productionRun": 3000,
+        "priceEuro": 295000.0,
+        "horsepower": 720,
+        "salesVolume": 3000,
         "popCultureScore": 80,
-        "technicalInnovation": 60,
-        "launchYear": 2000
+        "technicalInnovation": 70,
+        "launchYear": 2019
       },
       {
         "name": "Ferrari 550",
@@ -505,10 +505,10 @@
       },
       {
         "name": "Ferrari Roma",
-        "productionRun": 15000,
-        "priceEuro": 200000.0,
+        "productionRun": 2100,
+        "priceEuro": 219000.0,
         "horsepower": 620,
-        "salesVolume": 15000,
+        "salesVolume": 2100,
         "popCultureScore": 60,
         "technicalInnovation": 70,
         "launchYear": 2020
@@ -541,13 +541,13 @@
       },
       {
         "name": "Lamborghini Huracán",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
+        "productionRun": 25000,
+        "priceEuro": 230000.0,
+        "horsepower": 640,
+        "salesVolume": 25000,
+        "popCultureScore": 85,
         "technicalInnovation": 70,
-        "launchYear": 2000
+        "launchYear": 2014
       },
       {
         "name": "Lamborghini Diablo",
