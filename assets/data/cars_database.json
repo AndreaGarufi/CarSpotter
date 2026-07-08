@@ -502,6 +502,16 @@
         "popCultureScore": 20,
         "technicalInnovation": 80,
         "launchYear": 2000
+      },
+      {
+        "name": "Ferrari Roma",
+        "productionRun": 15000,
+        "priceEuro": 200000.0,
+        "horsepower": 620,
+        "salesVolume": 15000,
+        "popCultureScore": 60,
+        "technicalInnovation": 70,
+        "launchYear": 2020
       }
     ]
   },
@@ -1474,6 +1484,26 @@
         "popCultureScore": 20,
         "technicalInnovation": 40,
         "launchYear": 2000
+      },
+      {
+        "name": "Porsche Panamera",
+        "productionRun": 370000,
+        "priceEuro": 93000.0,
+        "horsepower": 400,
+        "salesVolume": 370000,
+        "popCultureScore": 55,
+        "technicalInnovation": 65,
+        "launchYear": 2009
+      },
+      {
+        "name": "Porsche 911 GT3 RS (992)",
+        "productionRun": 8000,
+        "priceEuro": 245000.0,
+        "horsepower": 525,
+        "salesVolume": 8000,
+        "popCultureScore": 80,
+        "technicalInnovation": 90,
+        "launchYear": 2022
       }
     ]
   },
@@ -1660,6 +1690,16 @@
         "popCultureScore": 20,
         "technicalInnovation": 30,
         "launchYear": 2000
+      },
+      {
+        "name": "Fiat 124 Spider",
+        "productionRun": 40000,
+        "priceEuro": 23000.0,
+        "horsepower": 140,
+        "salesVolume": 40000,
+        "popCultureScore": 55,
+        "technicalInnovation": 45,
+        "launchYear": 2016
       }
     ]
   },
@@ -6416,6 +6456,26 @@
         "popCultureScore": 60,
         "technicalInnovation": 80,
         "launchYear": 2000
+      },
+      {
+        "name": "BMW Serie 4 (G22)",
+        "productionRun": 200000,
+        "priceEuro": 47000.0,
+        "horsepower": 184,
+        "salesVolume": 200000,
+        "popCultureScore": 45,
+        "technicalInnovation": 60,
+        "launchYear": 2020
+      },
+      {
+        "name": "BMW M4 Coupe (G82)",
+        "productionRun": 40000,
+        "priceEuro": 93000.0,
+        "horsepower": 510,
+        "salesVolume": 40000,
+        "popCultureScore": 70,
+        "technicalInnovation": 75,
+        "launchYear": 2021
       }
     ]
   },
@@ -6712,6 +6772,36 @@
         "popCultureScore": 60,
         "technicalInnovation": 80,
         "launchYear": 2000
+      },
+      {
+        "name": "Mercedes-Benz Classe C Cabriolet (A205)",
+        "productionRun": 100000,
+        "priceEuro": 47000.0,
+        "horsepower": 184,
+        "salesVolume": 100000,
+        "popCultureScore": 35,
+        "technicalInnovation": 50,
+        "launchYear": 2016
+      },
+      {
+        "name": "Mercedes-Benz GLC Coupé",
+        "productionRun": 300000,
+        "priceEuro": 58000.0,
+        "horsepower": 245,
+        "salesVolume": 300000,
+        "popCultureScore": 40,
+        "technicalInnovation": 55,
+        "launchYear": 2016
+      },
+      {
+        "name": "Mercedes-Benz SLK (R171)",
+        "productionRun": 200000,
+        "priceEuro": 33000.0,
+        "horsepower": 163,
+        "salesVolume": 200000,
+        "popCultureScore": 50,
+        "technicalInnovation": 55,
+        "launchYear": 2004
       }
     ]
   },
@@ -8070,6 +8160,16 @@
         "popCultureScore": 20,
         "technicalInnovation": 80,
         "launchYear": 2000
+      },
+      {
+        "name": "Ford Mustang Mach-E",
+        "productionRun": 400000,
+        "priceEuro": 45000.0,
+        "horsepower": 265,
+        "salesVolume": 400000,
+        "popCultureScore": 60,
+        "technicalInnovation": 80,
+        "launchYear": 2020
       }
     ]
   },
@@ -8246,6 +8346,16 @@
         "popCultureScore": 85,
         "technicalInnovation": 60,
         "launchYear": 2015
+      },
+      {
+        "name": "Chevrolet Corvette C8",
+        "productionRun": 150000,
+        "priceEuro": 68000.0,
+        "horsepower": 495,
+        "salesVolume": 150000,
+        "popCultureScore": 75,
+        "technicalInnovation": 85,
+        "launchYear": 2020
       }
     ]
   },
@@ -8472,6 +8582,16 @@
         "popCultureScore": 20,
         "technicalInnovation": 30,
         "launchYear": 2000
+      },
+      {
+        "name": "Dodge Challenger",
+        "productionRun": 550000,
+        "priceEuro": 35000.0,
+        "horsepower": 375,
+        "salesVolume": 550000,
+        "popCultureScore": 85,
+        "technicalInnovation": 40,
+        "launchYear": 2008
       }
     ]
   },
@@ -9074,6 +9194,94 @@
         "popCultureScore": 75,
         "technicalInnovation": 90,
         "launchYear": 2009
+      }
+    ]
+  },
+  "Jeep": {
+    "brandScore": 70,
+    "brandHeritage": 90,
+    "models": [
+      {
+        "name": "Jeep Avenger",
+        "productionRun": 200000,
+        "priceEuro": 35000.0,
+        "horsepower": 156,
+        "salesVolume": 200000,
+        "popCultureScore": 40,
+        "technicalInnovation": 65,
+        "launchYear": 2023
+      }
+    ]
+  },
+  "Cupra": {
+    "brandScore": 55,
+    "brandHeritage": 25,
+    "models": [
+      {
+        "name": "Cupra Leon",
+        "productionRun": 150000,
+        "priceEuro": 35000.0,
+        "horsepower": 150,
+        "salesVolume": 150000,
+        "popCultureScore": 45,
+        "technicalInnovation": 55,
+        "launchYear": 2020
+      }
+    ]
+  },
+  "Mini": {
+    "brandScore": 75,
+    "brandHeritage": 80,
+    "models": [
+      {
+        "name": "Mini Cooper (R56)",
+        "productionRun": 1500000,
+        "priceEuro": 17000.0,
+        "horsepower": 118,
+        "salesVolume": 1500000,
+        "popCultureScore": 75,
+        "technicalInnovation": 50,
+        "launchYear": 2006
+      },
+      {
+        "name": "Mini Cooper S (R56)",
+        "productionRun": 500000,
+        "priceEuro": 21000.0,
+        "horsepower": 175,
+        "salesVolume": 500000,
+        "popCultureScore": 70,
+        "technicalInnovation": 55,
+        "launchYear": 2006
+      },
+      {
+        "name": "Mini Countryman (R60)",
+        "productionRun": 700000,
+        "priceEuro": 22000.0,
+        "horsepower": 122,
+        "salesVolume": 700000,
+        "popCultureScore": 40,
+        "technicalInnovation": 45,
+        "launchYear": 2010
+      },
+      {
+        "name": "Mini Clubman (R55)",
+        "productionRun": 150000,
+        "priceEuro": 19000.0,
+        "horsepower": 118,
+        "salesVolume": 150000,
+        "popCultureScore": 35,
+        "technicalInnovation": 40,
+        "launchYear": 2007
+      },
+      {
+        "name": "Mini Electric (Cooper SE)",
+        "productionRun": 100000,
+        "priceEuro": 32000.0,
+        "horsepower": 184,
+        "salesVolume": 100000,
+        "popCultureScore": 45,
+        "technicalInnovation": 70,
+        "launchYear": 2020
       }
     ]
   }
