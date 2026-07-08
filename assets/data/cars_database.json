@@ -1492,6 +1492,16 @@
         "launchYear": 2000
       },
       {
+        "name": "Fiat Punto",
+        "productionRun": 9400000,
+        "priceEuro": 15000.0,
+        "horsepower": 69,
+        "salesVolume": 9400000,
+        "popCultureScore": 40,
+        "technicalInnovation": 20,
+        "launchYear": 1993
+      },
+      {
         "name": "Fiat 126",
         "productionRun": 500000,
         "priceEuro": 25000.0,
