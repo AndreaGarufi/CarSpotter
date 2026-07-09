@@ -7619,9 +7619,19 @@
         "priceEuro": 35000.0,
         "horsepower": 375,
         "salesVolume": 89200,
-        "popCultureScore": 100,
+        "popCultureScore": 80,
         "technicalInnovation": 40,
         "launchYear": 1969
+      },
+      {
+        "name": "Dodge Nitro",
+        "productionRun": 275510,
+        "priceEuro": 39000.0,
+        "horsepower": 260,
+        "salesVolume": 275510,
+        "popCultureScore": 40,
+        "technicalInnovation": 40,
+        "launchYear": 2006
       },
       {
         "name": "Dodge Challenger (1970)",
@@ -7629,7 +7639,7 @@
         "priceEuro": 30000.0,
         "horsepower": 275,
         "salesVolume": 76935,
-        "popCultureScore": 95,
+        "popCultureScore": 80,
         "technicalInnovation": 40,
         "launchYear": 1970
       },
@@ -7639,7 +7649,7 @@
         "priceEuro": 120000.0,
         "horsepower": 400,
         "salesVolume": 30000,
-        "popCultureScore": 95,
+        "popCultureScore": 85,
         "technicalInnovation": 80,
         "launchYear": 1991
       },
@@ -7659,7 +7669,7 @@
         "priceEuro": 40000.0,
         "horsepower": 375,
         "salesVolume": 800000,
-        "popCultureScore": 90,
+        "popCultureScore": 85,
         "technicalInnovation": 60,
         "launchYear": 2008
       },
