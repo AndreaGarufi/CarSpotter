@@ -6660,6 +6660,16 @@
         "launchYear": 1998
       },
       {
+        "name": "Audi TT Roadster",
+        "productionRun": 662762,
+        "priceEuro": 44000.0,
+        "horsepower": 230,
+        "salesVolume": 662762,
+        "popCultureScore": 80,
+        "technicalInnovation": 60,
+        "launchYear": 1998
+      },
+      {
         "name": "Audi A3",
         "productionRun": 5000000,
         "priceEuro": 25000.0,
