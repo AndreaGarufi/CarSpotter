@@ -374,6 +374,61 @@ class _GarageScreenState extends State<GarageScreen> {
                                 );
                                 if (isUpdated == true) _loadGarage();
                               },
+                              onLongPress: () {
+                                showDialog(
+                                  context: context,
+                                  builder: (ctx) => AlertDialog(
+                                    title: const Text("Elimina Spot"),
+                                    content: Text(
+                                      "Vuoi davvero eliminare questa ${model?.name ?? 'auto'}? L'azione è irreversibile e la foto verrà cancellata dal dispositivo.",
+                                    ),
+                                    actions: [
+                                      TextButton(
+                                        onPressed: () => Navigator.pop(ctx),
+                                        child: const Text(
+                                          "Annulla",
+                                          style: TextStyle(color: Colors.grey),
+                                        ),
+                                      ),
+                                      TextButton(
+                                        onPressed: () async {
+                                          // 🎯 1. Catturiamo il Messenger PRIMA dell'await e del pop!
+                                          final messenger =
+                                              ScaffoldMessenger.of(context);
+
+                                          Navigator.pop(ctx);
+                                          setState(() => _isLoading = true);
+
+                                          // ⏳ 2. Operazioni asincrone
+                                          await DbService.deleteSpot(spot);
+                                          await _loadGarage();
+
+                                          // 🚀 3. Usiamo il messenger salvato in precedenza
+                                          if (mounted) {
+                                            messenger.showSnackBar(
+                                              const SnackBar(
+                                                content: Text(
+                                                  "Spot eliminato con successo!",
+                                                ),
+                                                backgroundColor: Color(
+                                                  0xFF10B981,
+                                                ),
+                                              ),
+                                            );
+                                          }
+                                        },
+                                        child: const Text(
+                                          "Elimina",
+                                          style: TextStyle(
+                                            color: Colors.red,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                );
+                              },
                               child: Container(
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20),

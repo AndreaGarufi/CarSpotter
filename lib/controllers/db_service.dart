@@ -452,4 +452,24 @@ class DbService {
       return -1;
     }
   }
+
+  // ==========================================
+  // ELIMINAZIONE SINGOLO SPOT
+  // ==========================================
+  static Future<void> deleteSpot(UserSpot spot) async {
+    // 1. Elimina l'immagine dalla memoria del dispositivo
+    if (spot.imagePath.isNotEmpty) {
+      final imgFile = File(spot.imagePath);
+      if (await imgFile.exists()) {
+        await imgFile.delete();
+        debugPrint("🗑️ File immagine eliminato: ${spot.imagePath}");
+      }
+    }
+
+    // 2. Elimina il record dal database Isar
+    await isar.writeTxn(() async {
+      await isar.userSpots.delete(spot.id);
+    });
+    debugPrint("✅ Spot rimosso dal database.");
+  }
 }
