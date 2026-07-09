@@ -6631,10 +6631,10 @@
       },
       {
         "name": "Audi R8 (Type 42)",
-        "productionRun": 28600,
-        "priceEuro": 110000.0,
-        "horsepower": 420,
-        "salesVolume": 28600,
+        "productionRun": 24000,
+        "priceEuro": 151000.0,
+        "horsepower": 430,
+        "salesVolume": 24000,
         "popCultureScore": 80,
         "technicalInnovation": 95,
         "launchYear": 2006
@@ -6642,7 +6642,7 @@
       {
         "name": "Audi R8 (Type 4S)",
         "productionRun": 15000,
-        "priceEuro": 150000.0,
+        "priceEuro": 180000.0,
         "horsepower": 540,
         "salesVolume": 15000,
         "popCultureScore": 80,
