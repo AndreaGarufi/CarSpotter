@@ -34,7 +34,7 @@
         "launchYear": 2015
       },
       {
-        "name": "Ferrari 360 modena",
+        "name": "Ferrari 360",
         "productionRun": 8800,
         "priceEuro": 118785,
         "horsepower": 425,
@@ -280,7 +280,7 @@
         "horsepower": 720,
         "salesVolume": 3000,
         "popCultureScore": 80,
-        "technicalInnovation": 70,
+        "technicalInnovation": 75,
         "launchYear": 2019
       },
       {
