@@ -7800,6 +7800,56 @@
   "brandHeritage": 95,
   "models": [
     {
+      "name": "Aston Martin DB4",
+      "productionRun": 1210,
+      "priceEuro": 1500000.0,
+      "horsepower": 240,
+      "salesVolume": 1210,
+      "popCultureScore": 75,
+      "technicalInnovation": 60,
+      "launchYear": 1958
+    },
+    {
+      "name": "Aston Martin DB5",
+      "productionRun": 1059,
+      "priceEuro": 5000000.0,
+      "horsepower": 282,
+      "salesVolume": 1059,
+      "popCultureScore": 100,
+      "technicalInnovation": 50,
+      "launchYear": 1963
+    },
+    {
+      "name": "Aston Martin DBS (2007)",
+      "productionRun": 3400,
+      "priceEuro": 220000.0,
+      "horsepower": 517,
+      "salesVolume": 3400,
+      "popCultureScore": 90,
+      "technicalInnovation": 60,
+      "launchYear": 2007
+    },
+    {
+      "name": "Aston Martin One-77",
+      "productionRun": 77,
+      "priceEuro": 1800000.0,
+      "horsepower": 750,
+      "salesVolume": 77,
+      "popCultureScore": 85,
+      "technicalInnovation": 85,
+      "launchYear": 2009
+    },
+    {
+      "name": "Aston Martin V12 Vantage",
+      "productionRun": 1500,
+      "priceEuro": 180000.0,
+      "horsepower": 510,
+      "salesVolume": 1500,
+      "popCultureScore": 75,
+      "technicalInnovation": 70,
+      "launchYear": 2009
+    },
+    {
       "name": "Aston Martin Vanquish II",
       "productionRun": 2700,
       "priceEuro": 230000.0,
@@ -7828,6 +7878,36 @@
       "popCultureScore": 60,
       "technicalInnovation": 60,
       "launchYear": 2005
+    },
+    {
+      "name": "Aston Martin DB11",
+      "productionRun": 10000,
+      "priceEuro": 205000.0,
+      "horsepower": 608,
+      "salesVolume": 10000,
+      "popCultureScore": 70,
+      "technicalInnovation": 75,
+      "launchYear": 2016
+    },
+    {
+      "name": "Aston Martin DB12",
+      "productionRun": 5000,
+      "priceEuro": 250000.0,
+      "horsepower": 680,
+      "salesVolume": 5000,
+      "popCultureScore": 65,
+      "technicalInnovation": 80,
+      "launchYear": 2023
+    },
+    {
+      "name": "Aston Martin Valkyrie",
+      "productionRun": 150,
+      "priceEuro": 3000000.0,
+      "horsepower": 1155,
+      "salesVolume": 150,
+      "popCultureScore": 90,
+      "technicalInnovation": 100,
+      "launchYear": 2021
     }
   ]
 },
@@ -8003,344 +8083,586 @@
     }
   ]
 },
-  "Koenigsegg": {
-    "brandScore": 95,
-    "brandHeritage": 85,
-    "models": [
-      {
-        "name": "Koenigsegg Agera",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 95,
-        "launchYear": 2000
-      },
-      {
-        "name": "Koenigsegg CC",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 95,
-        "launchYear": 2000
-      }
-    ]
-  },
-  "Lotus": {
-    "brandScore": 85,
-    "brandHeritage": 90,
-    "models": [
-      {
-        "name": "Lotus Esprit GT1",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 60,
-        "launchYear": 2000
-      },
-      {
-        "name": "Lotus Elise GT1",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 20,
-        "technicalInnovation": 80,
-        "launchYear": 2000
-      }
-    ]
-  },
-  "Gordon Murray Automotive": {
-    "brandScore": 90,
-    "brandHeritage": 65,
-    "models": [
-      {
-        "name": "Gordon Murray Automotive T.50",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 20,
-        "technicalInnovation": 80,
-        "launchYear": 2000
-      },
-      {
-        "name": "T.25",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 20,
-        "technicalInnovation": 80,
-        "launchYear": 2000
-      }
-    ]
-  },
-  "ATS": {
-    "brandScore": 55,
-    "brandHeritage": 60,
-    "models": [
-      {
-        "name": "ATS 2500 GT",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 20,
-        "technicalInnovation": 40,
-        "launchYear": 2000
-      },
-      {
-        "name": "ATS GT",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 20,
-        "technicalInnovation": 40,
-        "launchYear": 2000
-      }
-    ]
-  },
-"Mercury": {
-  "brandScore": 55,
-  "brandHeritage": 75,
+"Koenigsegg": {
+  "brandScore": 95,
+  "brandHeritage": 85,
   "models": [
     {
-      "name": "Mercury Capri",
-      "productionRun": 400000,
-      "priceEuro": 2200.0,
-      "horsepower": 105,
-      "salesVolume": 400000,
-      "popCultureScore": 20,
-      "technicalInnovation": 30,
-      "launchYear": 1970
+      "name": "Koenigsegg CC8S",
+      "productionRun": 6,
+      "priceEuro": 350000.0,
+      "horsepower": 655,
+      "salesVolume": 6,
+      "popCultureScore": 60,
+      "technicalInnovation": 80,
+      "launchYear": 2002
     },
     {
-      "name": "Mercury Marquis",
-      "productionRun": 400000,
-      "priceEuro": 3080.0,
-      "horsepower": 330,
-      "salesVolume": 400000,
-      "popCultureScore": 40,
-      "technicalInnovation": 20,
-      "launchYear": 1967
+      "name": "Koenigsegg CCR",
+      "productionRun": 14,
+      "priceEuro": 500000.0,
+      "horsepower": 806,
+      "salesVolume": 14,
+      "popCultureScore": 65,
+      "technicalInnovation": 85,
+      "launchYear": 2004
     },
     {
-      "name": "Mercury Cyclone",
-      "productionRun": 7454,
-      "priceEuro": 2600.0,
-      "horsepower": 210,
-      "salesVolume": 7454,
+      "name": "Koenigsegg CCX",
+      "productionRun": 29,
+      "priceEuro": 600000.0,
+      "horsepower": 806,
+      "salesVolume": 29,
+      "popCultureScore": 70,
+      "technicalInnovation": 85,
+      "launchYear": 2006
+    },
+    {
+      "name": "Koenigsegg CCXR",
+      "productionRun": 49,
+      "priceEuro": 1200000.0,
+      "horsepower": 1018,
+      "salesVolume": 49,
+      "popCultureScore": 75,
+      "technicalInnovation": 90,
+      "launchYear": 2007
+    },
+    {
+      "name": "Koenigsegg Agera",
+      "productionRun": 25,
+      "priceEuro": 1500000.0,
+      "horsepower": 960,
+      "salesVolume": 25,
       "popCultureScore": 80,
-      "technicalInnovation": 60,
-      "launchYear": 1964
+      "technicalInnovation": 90,
+      "launchYear": 2010
     },
     {
-      "name": "Mercury Tracer",
-      "productionRun": 700000,
-      "priceEuro": 8000.0,
-      "horsepower": 90,
-      "salesVolume": 700000,
-      "popCultureScore": 5,
-      "technicalInnovation": 20,
-      "launchYear": 1987
+      "name": "Koenigsegg Agera RS",
+      "productionRun": 25,
+      "priceEuro": 2200000.0,
+      "horsepower": 1160,
+      "salesVolume": 25,
+      "popCultureScore": 90,
+      "technicalInnovation": 95,
+      "launchYear": 2015
+    },
+    {
+      "name": "Koenigsegg One:1",
+      "productionRun": 7,
+      "priceEuro": 2500000.0,
+      "horsepower": 1360,
+      "salesVolume": 7,
+      "popCultureScore": 95,
+      "technicalInnovation": 100,
+      "launchYear": 2014
+    },
+    {
+      "name": "Koenigsegg Regera",
+      "productionRun": 80,
+      "priceEuro": 1900000.0,
+      "horsepower": 1500,
+      "salesVolume": 80,
+      "popCultureScore": 85,
+      "technicalInnovation": 100,
+      "launchYear": 2016
+    },
+    {
+      "name": "Koenigsegg Jesko",
+      "productionRun": 125,
+      "priceEuro": 3000000.0,
+      "horsepower": 1600,
+      "salesVolume": 125,
+      "popCultureScore": 90,
+      "technicalInnovation": 100,
+      "launchYear": 2019
+    },
+    {
+      "name": "Koenigsegg Gemera",
+      "productionRun": 300,
+      "priceEuro": 1700000.0,
+      "horsepower": 1700,
+      "salesVolume": 300,
+      "popCultureScore": 85,
+      "technicalInnovation": 100,
+      "launchYear": 2020
     }
   ]
 },
-  "Chrysler": {
-    "brandScore": 60,
-    "brandHeritage": 80,
-    "models": [
-      {
-        "name": "Chrysler TC by Maserati",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 20,
-        "technicalInnovation": 30,
-        "launchYear": 2000
-      },
-      {
-        "name": "Chrysler pacífica",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 60,
-        "technicalInnovation": 30,
-        "launchYear": 2000
-      }
-    ]
-  },
-  "Peugeot": {
-    "brandScore": 65,
-    "brandHeritage": 80,
-    "models": [
-      {
-        "name": "Peugeot 205 GTI",
-        "productionRun": 332942,
-        "priceEuro": 12000.0,
-        "horsepower": 130,
-        "salesVolume": 332942,
-        "popCultureScore": 88,
-        "technicalInnovation": 60,
-        "launchYear": 1984
-      },
-      {
-        "name": "Peugeot 206",
-        "productionRun": 8332416,
-        "priceEuro": 11000.0,
-        "horsepower": 75,
-        "salesVolume": 8332416,
-        "popCultureScore": 75,
-        "technicalInnovation": 50,
-        "launchYear": 1998
-      },
-      {
-        "name": "Peugeot 106",
-        "productionRun": 2798246,
-        "priceEuro": 9000.0,
-        "horsepower": 60,
-        "salesVolume": 2798246,
-        "popCultureScore": 65,
-        "technicalInnovation": 35,
-        "launchYear": 1991
-      },
-      {
-        "name": "Peugeot 207",
-        "productionRun": 2573523,
-        "priceEuro": 12500.0,
-        "horsepower": 90,
-        "salesVolume": 2573523,
-        "popCultureScore": 45,
-        "technicalInnovation": 40,
-        "launchYear": 2006
-      },
-      {
-        "name": "Peugeot 208",
-        "productionRun": 2158177,
-        "priceEuro": 15000.0,
-        "horsepower": 100,
-        "salesVolume": 2158177,
-        "popCultureScore": 50,
-        "technicalInnovation": 50,
-        "launchYear": 2012
-      },
-      {
-        "name": "Peugeot 307",
-        "productionRun": 3780000,
-        "priceEuro": 14000.0,
-        "horsepower": 109,
-        "salesVolume": 3780000,
-        "popCultureScore": 40,
-        "technicalInnovation": 45,
-        "launchYear": 2001
-      },
-      {
-        "name": "Peugeot 308",
-        "productionRun": 1500000,
-        "priceEuro": 18000.0,
-        "horsepower": 110,
-        "salesVolume": 1500000,
-        "popCultureScore": 40,
-        "technicalInnovation": 50,
-        "launchYear": 2007
-      },
-      {
-        "name": "Peugeot 3008",
-        "productionRun": 1000000,
-        "priceEuro": 30000.0,
-        "horsepower": 130,
-        "salesVolume": 1000000,
-        "popCultureScore": 40,
-        "technicalInnovation": 65,
-        "launchYear": 2016
-      }
-    ]
+"Lotus": {
+  "brandScore": 85,
+  "brandHeritage": 90,
+  "models": [
+    {
+      "name": "Lotus Elan",
+      "productionRun": 10300,
+      "priceEuro": 80000.0,
+      "horsepower": 126,
+      "salesVolume": 10300,
+      "popCultureScore": 70,
+      "technicalInnovation": 75,
+      "launchYear": 1962
+    },
+    {
+      "name": "Lotus Esprit",
+      "productionRun": 10675,
+      "priceEuro": 120000.0,
+      "horsepower": 350,
+      "salesVolume": 10675,
+      "popCultureScore": 95,
+      "technicalInnovation": 80,
+      "launchYear": 1976
+    },
+    {
+      "name": "Lotus Elise",
+      "productionRun": 35000,
+      "priceEuro": 55000.0,
+      "horsepower": 190,
+      "salesVolume": 35000,
+      "popCultureScore": 85,
+      "technicalInnovation": 85,
+      "launchYear": 1996
+    },
+    {
+      "name": "Lotus Exige",
+      "productionRun": 10000,
+      "priceEuro": 70000.0,
+      "horsepower": 350,
+      "salesVolume": 10000,
+      "popCultureScore": 75,
+      "technicalInnovation": 85,
+      "launchYear": 2000
+    },
+    {
+      "name": "Lotus Evora",
+      "productionRun": 6500,
+      "priceEuro": 90000.0,
+      "horsepower": 400,
+      "salesVolume": 6500,
+      "popCultureScore": 70,
+      "technicalInnovation": 80,
+      "launchYear": 2009
+    },
+    {
+      "name": "Lotus 3-Eleven",
+      "productionRun": 311,
+      "priceEuro": 130000.0,
+      "horsepower": 460,
+      "salesVolume": 311,
+      "popCultureScore": 65,
+      "technicalInnovation": 85,
+      "launchYear": 2016
+    },
+    {
+      "name": "Lotus Evija",
+      "productionRun": 130,
+      "priceEuro": 2000000.0,
+      "horsepower": 2000,
+      "salesVolume": 130,
+      "popCultureScore": 80,
+      "technicalInnovation": 100,
+      "launchYear": 2020
+    },
+    {
+      "name": "Lotus Emira",
+      "productionRun": 5000,
+      "priceEuro": 85000.0,
+      "horsepower": 400,
+      "salesVolume": 5000,
+      "popCultureScore": 75,
+      "technicalInnovation": 80,
+      "launchYear": 2021
+    }
+  ]
 },
-  "Citroen": {
-    "brandScore": 60,
-    "brandHeritage": 80,
-    "models": [
-      {
-        "name": "Citroën 2CV",
-        "productionRun": 5114940,
-        "priceEuro": 3000.0,
-        "horsepower": 12,
-        "salesVolume": 5114940,
-        "popCultureScore": 95,
-        "technicalInnovation": 75,
-        "launchYear": 1948
-      },
-      {
-        "name": "Citroën DS",
-        "productionRun": 1455746,
-        "priceEuro": 15000.0,
-        "horsepower": 75,
-        "salesVolume": 1455746,
-        "popCultureScore": 90,
-        "technicalInnovation": 98,
-        "launchYear": 1955
-      },
-      {
-        "name": "Citroën C3",
-        "productionRun": 4500000,
-        "priceEuro": 12000.0,
-        "horsepower": 75,
-        "salesVolume": 4500000,
-        "popCultureScore": 55,
-        "technicalInnovation": 40,
-        "launchYear": 2002
-      },
-      {
-        "name": "Citroën C4",
-        "productionRun": 2500000,
-        "priceEuro": 16000.0,
-        "horsepower": 109,
-        "salesVolume": 2500000,
-        "popCultureScore": 45,
-        "technicalInnovation": 55,
-        "launchYear": 2004
-      },
-      {
-        "name": "Citroën Xsara Picasso",
-        "productionRun": 1736727,
-        "priceEuro": 17000.0,
-        "horsepower": 90,
-        "salesVolume": 1736727,
-        "popCultureScore": 50,
-        "technicalInnovation": 60,
-        "launchYear": 1999
-      },
-      {
-        "name": "Citroën Berlingo",
-        "productionRun": 3500000,
-        "priceEuro": 13000.0,
-        "horsepower": 75,
-        "salesVolume": 3500000,
-        "popCultureScore": 70,
-        "technicalInnovation": 50,
-        "launchYear": 1996
-      },
-      {
-        "name": "Citroën Ami",
-        "productionRun": 50000,
-        "priceEuro": 7000.0,
-        "horsepower": 8,
-        "salesVolume": 50000,
-        "popCultureScore": 60,
-        "technicalInnovation": 75,
-        "launchYear": 2020
-      }
-    ]
-  },
+"Chrysler": {
+  "brandScore": 60,
+  "brandHeritage": 80,
+  "models": [
+    {
+      "name": "Chrysler Airflow",
+      "productionRun": 29000,
+      "priceEuro": 60000.0,
+      "horsepower": 122,
+      "salesVolume": 29000,
+      "popCultureScore": 70,
+      "technicalInnovation": 95,
+      "launchYear": 1934
+    },
+    {
+      "name": "Chrysler 300 (1955)",
+      "productionRun": 1725,
+      "priceEuro": 120000.0,
+      "horsepower": 300,
+      "salesVolume": 1725,
+      "popCultureScore": 80,
+      "technicalInnovation": 80,
+      "launchYear": 1955
+    },
+    {
+      "name": "Chrysler New Yorker",
+      "productionRun": 100000,
+      "priceEuro": 50000.0,
+      "horsepower": 250,
+      "salesVolume": 100000,
+      "popCultureScore": 65,
+      "technicalInnovation": 70,
+      "launchYear": 1940
+    },
+    {
+      "name": "Chrysler Imperial",
+      "productionRun": 16000,
+      "priceEuro": 70000.0,
+      "horsepower": 280,
+      "salesVolume": 16000,
+      "popCultureScore": 70,
+      "technicalInnovation": 75,
+      "launchYear": 1955
+    },
+    {
+      "name": "Chrysler TC by Maserati",
+      "productionRun": 7300,
+      "priceEuro": 40000.0,
+      "horsepower": 200,
+      "salesVolume": 7300,
+      "popCultureScore": 50,
+      "technicalInnovation": 40,
+      "launchYear": 1989
+    },
+    {
+      "name": "Chrysler PT Cruiser",
+      "productionRun": 1350000,
+      "priceEuro": 20000.0,
+      "horsepower": 150,
+      "salesVolume": 1350000,
+      "popCultureScore": 85,
+      "technicalInnovation": 50,
+      "launchYear": 2000
+    },
+    {
+      "name": "Chrysler 300C",
+      "productionRun": 1000000,
+      "priceEuro": 45000.0,
+      "horsepower": 340,
+      "salesVolume": 1000000,
+      "popCultureScore": 90,
+      "technicalInnovation": 60,
+      "launchYear": 2005
+    },
+    {
+      "name": "Chrysler Pacifica",
+      "productionRun": 500000,
+      "priceEuro": 40000.0,
+      "horsepower": 260,
+      "salesVolume": 500000,
+      "popCultureScore": 70,
+      "technicalInnovation": 70,
+      "launchYear": 2016
+    }
+  ]
+},
+"Peugeot": {
+  "brandScore": 65,
+  "brandHeritage": 80,
+  "models": [
+    {
+      "name": "Peugeot 404",
+      "productionRun": 2880000,
+      "priceEuro": 35000.0,
+      "horsepower": 85,
+      "salesVolume": 2880000,
+      "popCultureScore": 70,
+      "technicalInnovation": 70,
+      "launchYear": 1960
+    },
+    {
+      "name": "Peugeot 504 Coupé",
+      "productionRun": 30000,
+      "priceEuro": 70000.0,
+      "horsepower": 136,
+      "salesVolume": 30000,
+      "popCultureScore": 75,
+      "technicalInnovation": 75,
+      "launchYear": 1969
+    },
+    {
+      "name": "Peugeot 205 GTI",
+      "productionRun": 332942,
+      "priceEuro": 45000.0,
+      "horsepower": 130,
+      "salesVolume": 332942,
+      "popCultureScore": 95,
+      "technicalInnovation": 70,
+      "launchYear": 1984
+    },
+    {
+      "name": "Peugeot 405 Mi16",
+      "productionRun": 200000,
+      "priceEuro": 20000.0,
+      "horsepower": 160,
+      "salesVolume": 200000,
+      "popCultureScore": 70,
+      "technicalInnovation": 75,
+      "launchYear": 1987
+    },
+    {
+      "name": "Peugeot 106",
+      "productionRun": 2798246,
+      "priceEuro": 9000.0,
+      "horsepower": 60,
+      "salesVolume": 2798246,
+      "popCultureScore": 65,
+      "technicalInnovation": 45,
+      "launchYear": 1991
+    },
+    {
+      "name": "Peugeot 306 S16 GTI-6",
+      "productionRun": 100000,
+      "priceEuro": 25000.0,
+      "horsepower": 167,
+      "salesVolume": 100000,
+      "popCultureScore": 80,
+      "technicalInnovation": 70,
+      "launchYear": 1996
+    },
+    {
+      "name": "Peugeot 206",
+      "productionRun": 8332416,
+      "priceEuro": 11000.0,
+      "horsepower": 75,
+      "salesVolume": 8332416,
+      "popCultureScore": 80,
+      "technicalInnovation": 55,
+      "launchYear": 1998
+    },
+    {
+      "name": "Peugeot 307",
+      "productionRun": 3780000,
+      "priceEuro": 14000.0,
+      "horsepower": 109,
+      "salesVolume": 3780000,
+      "popCultureScore": 45,
+      "technicalInnovation": 50,
+      "launchYear": 2001
+    },
+    {
+      "name": "Peugeot 207",
+      "productionRun": 2573523,
+      "priceEuro": 12500.0,
+      "horsepower": 90,
+      "salesVolume": 2573523,
+      "popCultureScore": 45,
+      "technicalInnovation": 50,
+      "launchYear": 2006
+    },
+    {
+      "name": "Peugeot 308",
+      "productionRun": 3000000,
+      "priceEuro": 18000.0,
+      "horsepower": 110,
+      "salesVolume": 3000000,
+      "popCultureScore": 50,
+      "technicalInnovation": 65,
+      "launchYear": 2007
+    },
+    {
+      "name": "Peugeot RCZ",
+      "productionRun": 68000,
+      "priceEuro": 35000.0,
+      "horsepower": 270,
+      "salesVolume": 68000,
+      "popCultureScore": 75,
+      "technicalInnovation": 75,
+      "launchYear": 2010
+    },
+    {
+      "name": "Peugeot 208 GTI",
+      "productionRun": 30000,
+      "priceEuro": 28000.0,
+      "horsepower": 208,
+      "salesVolume": 30000,
+      "popCultureScore": 75,
+      "technicalInnovation": 70,
+      "launchYear": 2013
+    },
+    {
+      "name": "Peugeot 208",
+      "productionRun": 3000000,
+      "priceEuro": 15000.0,
+      "horsepower": 100,
+      "salesVolume": 3000000,
+      "popCultureScore": 55,
+      "technicalInnovation": 60,
+      "launchYear": 2012
+    },
+    {
+      "name": "Peugeot 3008",
+      "productionRun": 1500000,
+      "priceEuro": 30000.0,
+      "horsepower": 130,
+      "salesVolume": 1500000,
+      "popCultureScore": 50,
+      "technicalInnovation": 70,
+      "launchYear": 2016
+    }
+  ]
+},
+"Citroen": {
+  "brandScore": 60,
+  "brandHeritage": 80,
+  "models": [
+    {
+      "name": "Citroën SM",
+      "productionRun": 12920,
+      "priceEuro": 120000.0,
+      "horsepower": 170,
+      "salesVolume": 12920,
+      "popCultureScore": 60,
+      "technicalInnovation": 75,
+      "launchYear": 1970
+    },
+    {
+      "name": "Citroën CX",
+      "productionRun": 1140000,
+      "priceEuro": 30000.0,
+      "horsepower": 168,
+      "salesVolume": 1140000,
+      "popCultureScore": 60,
+      "technicalInnovation": 75,
+      "launchYear": 1974
+    },
+    {
+      "name": "Citroën BX",
+      "productionRun": 2315000,
+      "priceEuro": 15000.0,
+      "horsepower": 160,
+      "salesVolume": 2315000,
+      "popCultureScore": 65,
+      "technicalInnovation": 80,
+      "launchYear": 1982
+    },
+    {
+      "name": "Citroën ZX",
+      "productionRun": 2130000,
+      "priceEuro": 10000.0,
+      "horsepower": 120,
+      "salesVolume": 2130000,
+      "popCultureScore": 55,
+      "technicalInnovation": 55,
+      "launchYear": 1991
+    },
+    {
+      "name": "Citroën Saxo",
+      "productionRun": 1650000,
+      "priceEuro": 8000.0,
+      "horsepower": 120,
+      "salesVolume": 1650000,
+      "popCultureScore": 75,
+      "technicalInnovation": 55,
+      "launchYear": 1996
+    },
+    {
+      "name": "Citroën Berlingo",
+      "productionRun": 3500000,
+      "priceEuro": 13000.0,
+      "horsepower": 75,
+      "salesVolume": 3500000,
+      "popCultureScore": 70,
+      "technicalInnovation": 60,
+      "launchYear": 1996
+    },
+    {
+      "name": "Citroën Xsara Picasso",
+      "productionRun": 1736727,
+      "priceEuro": 17000.0,
+      "horsepower": 90,
+      "salesVolume": 1736727,
+      "popCultureScore": 55,
+      "technicalInnovation": 65,
+      "launchYear": 1999
+    },
+    {
+      "name": "Citroën C3",
+      "productionRun": 6000000,
+      "priceEuro": 14000.0,
+      "horsepower": 110,
+      "salesVolume": 6000000,
+      "popCultureScore": 60,
+      "technicalInnovation": 55,
+      "launchYear": 2002
+    },
+    {
+      "name": "Citroën C2",
+      "productionRun": 650000,
+      "priceEuro": 12000.0,
+      "horsepower": 125,
+      "salesVolume": 650000,
+      "popCultureScore": 65,
+      "technicalInnovation": 60,
+      "launchYear": 2003
+    },
+    {
+      "name": "Citroën C1",
+      "productionRun": 1200000,
+      "priceEuro": 10000.0,
+      "horsepower": 68,
+      "salesVolume": 1200000,
+      "popCultureScore": 45,
+      "technicalInnovation": 55,
+      "launchYear": 2005
+    },
+    {
+      "name": "Citroën C4",
+      "productionRun": 3000000,
+      "priceEuro": 17000.0,
+      "horsepower": 110,
+      "salesVolume": 3000000,
+      "popCultureScore": 55,
+      "technicalInnovation": 65,
+      "launchYear": 2004
+    },
+    {
+      "name": "Citroën C5",
+      "productionRun": 1200000,
+      "priceEuro": 30000.0,
+      "horsepower": 180,
+      "salesVolume": 1200000,
+      "popCultureScore": 60,
+      "technicalInnovation": 70,
+      "launchYear": 2001
+    },
+    {
+      "name": "Citroën C6",
+      "productionRun": 23000,
+      "priceEuro": 60000.0,
+      "horsepower": 240,
+      "salesVolume": 23000,
+      "popCultureScore": 70,
+      "technicalInnovation": 70,
+      "launchYear": 2005
+    },
+    {
+      "name": "Citroën C4 Cactus",
+      "productionRun": 900000,
+      "priceEuro": 18000.0,
+      "horsepower": 110,
+      "salesVolume": 900000,
+      "popCultureScore": 60,
+      "technicalInnovation": 75,
+      "launchYear": 2014
+    },
+    {
+      "name": "Citroën Ami",
+      "productionRun": 80000,
+      "priceEuro": 8000.0,
+      "horsepower": 8,
+      "salesVolume": 80000,
+      "popCultureScore": 65,
+      "technicalInnovation": 80,
+      "launchYear": 2020
+    }
+  ]
+},
   "Tesla": {
     "brandScore": 75,
     "brandHeritage": 40,
@@ -8398,8 +8720,8 @@
     ]
   },
   "Jeep": {
-    "brandScore": 70,
-    "brandHeritage": 80,
+    "brandScore": 65,
+    "brandHeritage": 75,
     "models": [
       {
         "name": "Jeep Avenger",
