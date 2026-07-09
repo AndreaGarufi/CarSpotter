@@ -251,7 +251,7 @@ class DbService {
 
       if (response.statusCode != 200) {
         debugPrint(
-          "❌ Errore di rete: Impossibile raggiungere GitHub (Codice ${response.statusCode})",
+          "❌ Errore di rete: impossibile raggiungere GitHub (${response.statusCode})",
         );
         return -1;
       }
@@ -261,10 +261,33 @@ class DbService {
 
       int addedCars = 0;
       int updatedCars = 0;
+      int deletedCars = 0;
+      int deletedBrands = 0;
+
+      // Lista di controllo del contenuto JSON
+      final jsonBrands = <String>{};
+      final jsonCars = <String>{};
+
+      for (var brandName in data.keys) {
+        jsonBrands.add(brandName);
+
+        final brandInfo = data[brandName] as Map<String, dynamic>;
+        final modelsData = brandInfo["models"] as List<dynamic>;
+
+        for (var item in modelsData) {
+          final m = item as Map<String, dynamic>;
+          jsonCars.add(m["name"] as String);
+        }
+      }
 
       await isar.writeTxn(() async {
+        // ==========================
+        // AGGIUNTA / UPDATE DATI
+        // ==========================
+
         for (var brandName in data.keys) {
           final brandInfo = data[brandName] as Map<String, dynamic>;
+
           final brandScore = brandInfo["brandScore"] as int;
           final brandHeritage = brandInfo["brandHeritage"] as int;
 
@@ -272,22 +295,21 @@ class DbService {
               .filter()
               .nameEqualTo(brandName)
               .findFirst();
+
           if (brand == null) {
             brand = Brand()..name = brandName;
             await isar.brands.put(brand);
+
+            debugPrint("🟢 Nuova marca aggiunta: $brandName");
           }
 
           final modelsData = brandInfo["models"] as List<dynamic>;
+
           for (var item in modelsData) {
             final m = item as Map<String, dynamic>;
+
             final carName = m["name"] as String;
 
-            final existingCar = await isar.carModels
-                .filter()
-                .nameEqualTo(carName)
-                .findFirst();
-
-            // 🔥 CALCOLI ESEGUITI SEMPRE (sia per auto nuove che vecchie)
             final rarityTier = RarityController.calculateRarity(
               brandScore: brandScore,
               productionRun: m["productionRun"] as int,
@@ -304,6 +326,7 @@ class DbService {
             );
 
             int baseScore;
+
             switch (rarityTier) {
               case RarityTier.legendary:
                 baseScore = 95;
@@ -322,9 +345,13 @@ class DbService {
                 break;
             }
 
+            var existingCar = await isar.carModels
+                .filter()
+                .nameEqualTo(carName)
+                .findFirst();
+
             if (existingCar == null) {
-              // 🟢 AUTO NUOVA
-              final newCarModel = CarModel()
+              final newCar = CarModel()
                 ..name = carName
                 ..isIcon = isIcon
                 ..baseRarityScore = baseScore
@@ -334,14 +361,15 @@ class DbService {
                 ..productionRun = m["productionRun"] as int
                 ..launchYear = m["launchYear"] as int;
 
-              newCarModel.brand.value = brand;
-              await isar.carModels.put(newCarModel);
-              await newCarModel.brand.save();
+              newCar.brand.value = brand;
+
+              await isar.carModels.put(newCar);
+              await newCar.brand.save();
 
               addedCars++;
             } else {
-              // 🟡 AUTO ESISTENTE: Aggiorniamo i dati modificati su GitHub
               existingCar
+                ..name = carName
                 ..isIcon = isIcon
                 ..baseRarityScore = baseScore
                 ..rarityTier = rarityTier
@@ -350,18 +378,77 @@ class DbService {
                 ..productionRun = m["productionRun"] as int
                 ..launchYear = m["launchYear"] as int;
 
+              existingCar.brand.value = brand;
+
               await isar.carModels.put(existingCar);
+              await existingCar.brand.save();
+
               updatedCars++;
             }
           }
         }
+
+        // ==========================
+        // ELIMINAZIONE MODELLI REMOVI
+        // ==========================
+
+        final allCars = await isar.carModels.where().findAll();
+
+        for (var car in allCars) {
+          if (!jsonCars.contains(car.name)) {
+            final spots = await isar.userSpots
+                .filter()
+                .carModel((q) => q.idEqualTo(car.id))
+                .findAll();
+
+            if (spots.isEmpty) {
+              await isar.carModels.delete(car.id);
+              deletedCars++;
+
+              debugPrint("🔴 Modello eliminato: ${car.name}");
+            } else {
+              debugPrint(
+                "⚠️ Modello ${car.name} rimosso dal JSON ma mantenuto perché ha spot salvati",
+              );
+            }
+          }
+        }
+
+        // ==========================
+        // ELIMINAZIONE MARCHE VUOTE
+        // ==========================
+
+        final allBrands = await isar.brands.where().findAll();
+
+        for (var brand in allBrands) {
+          if (!jsonBrands.contains(brand.name)) {
+            final models = await isar.carModels
+                .filter()
+                .brand((q) => q.idEqualTo(brand.id))
+                .findAll();
+
+            if (models.isEmpty) {
+              await isar.brands.delete(brand.id);
+              deletedBrands++;
+
+              debugPrint("🔴 Marca eliminata: ${brand.name}");
+            }
+          }
+        }
       });
+
       debugPrint(
-        "✅ Sincronizzazione GitHub completata: aggiunte $addedCars nuove auto, aggiornate $updatedCars esistenti.",
+        "✅ Sync completato:"
+        "\n+ $addedCars auto aggiunte"
+        "\n↻ $updatedCars auto aggiornate"
+        "\n- $deletedCars auto eliminate"
+        "\n- $deletedBrands marche eliminate",
       );
+
       return addedCars;
     } catch (e) {
-      debugPrint("❌ Errore durante la sincronizzazione da GitHub: $e");
+      debugPrint("❌ Errore durante sincronizzazione GitHub: $e");
+
       return -1;
     }
   }
