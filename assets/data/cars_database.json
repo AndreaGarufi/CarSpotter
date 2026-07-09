@@ -439,9 +439,19 @@
         "priceEuro": 219000,
         "horsepower": 620,
         "salesVolume": 2100,
-        "popCultureScore": 60,
+        "popCultureScore": 65,
         "technicalInnovation": 70,
         "launchYear": 2020
+      },
+      {
+        "name": "Ferrari 499P (WEC HYPERCAR)",
+        "productionRun": 33,
+        "priceEuro": 5100000,
+        "horsepower": 1000,
+        "salesVolume": 33,
+        "popCultureScore": 90,
+        "technicalInnovation": 98,
+        "launchYear": 2022
       }
     ]
   },
