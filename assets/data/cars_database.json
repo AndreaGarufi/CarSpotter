@@ -5,38 +5,38 @@
     "models": [
       {
         "name": "Ferrari Enzo",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 400,
+        "priceEuro": 665000,
+        "horsepower": 660,
+        "salesVolume": 400,
         "popCultureScore": 80,
         "technicalInnovation": 95,
-        "launchYear": 2000
+        "launchYear": 2002
       },
       {
         "name": "Ferrari 458",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 24500,
+        "priceEuro": 205000,
+        "horsepower": 570,
+        "salesVolume": 24500,
         "popCultureScore": 80,
         "technicalInnovation": 95,
-        "launchYear": 2000
+        "launchYear": 2009
       },
       {
         "name": "Ferrari 488",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 15000,
+        "priceEuro": 216000,
+        "horsepower": 670,
+        "salesVolume": 15000,
         "popCultureScore": 80,
         "technicalInnovation": 90,
-        "launchYear": 2000
+        "launchYear": 2015
       },
       {
         "name": "Ferrari 360 modena",
         "productionRun": 8800,
-        "priceEuro": 118785.0,
+        "priceEuro": 118785,
         "horsepower": 425,
         "salesVolume": 8800,
         "popCultureScore": 80,
@@ -45,108 +45,108 @@
       },
       {
         "name": "Ferrari Testarossa",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 7177,
+        "priceEuro": 47500,
+        "horsepower": 390,
+        "salesVolume": 7177,
         "popCultureScore": 80,
         "technicalInnovation": 60,
-        "launchYear": 2000
+        "launchYear": 1984
       },
       {
         "name": "Ferrari Monza",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 30,
+        "priceEuro": 18000,
+        "horsepower": 260,
+        "salesVolume": 30,
         "popCultureScore": 80,
         "technicalInnovation": 60,
-        "launchYear": 2000
+        "launchYear": 1954
       },
       {
         "name": "Ferrari 250",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 350,
+        "priceEuro": 13400,
+        "horsepower": 240,
+        "salesVolume": 350,
         "popCultureScore": 80,
         "technicalInnovation": 70,
-        "launchYear": 2000
+        "launchYear": 1962
       },
       {
         "name": "LaFerrari",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 499,
+        "priceEuro": 1400000,
+        "horsepower": 963,
+        "salesVolume": 499,
         "popCultureScore": 80,
         "technicalInnovation": 95,
-        "launchYear": 2000
+        "launchYear": 2013
       },
       {
         "name": "Ferrari F430",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 14980,
+        "priceEuro": 176000,
+        "horsepower": 490,
+        "salesVolume": 14980,
         "popCultureScore": 80,
         "technicalInnovation": 95,
-        "launchYear": 2000
+        "launchYear": 2004
       },
       {
         "name": "Ferrari 330",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 1099,
+        "priceEuro": 13500,
+        "horsepower": 300,
+        "salesVolume": 1099,
         "popCultureScore": 80,
         "technicalInnovation": 60,
-        "launchYear": 2000
+        "launchYear": 1964
       },
       {
         "name": "Ferrari 599",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 2999,
+        "priceEuro": 236000,
+        "horsepower": 620,
+        "salesVolume": 2999,
         "popCultureScore": 80,
         "technicalInnovation": 70,
-        "launchYear": 2000
+        "launchYear": 2006
       },
       {
         "name": "Ferrari F12",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 2943,
+        "priceEuro": 296000,
+        "horsepower": 730,
+        "salesVolume": 2943,
         "popCultureScore": 80,
         "technicalInnovation": 95,
-        "launchYear": 2000
+        "launchYear": 2012
       },
       {
         "name": "Ferrari 296",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 10000,
+        "priceEuro": 269000,
+        "horsepower": 830,
+        "salesVolume": 10000,
         "popCultureScore": 80,
         "technicalInnovation": 70,
-        "launchYear": 2000
+        "launchYear": 2021
       },
       {
         "name": "Ferrari America",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 200,
+        "priceEuro": 18000,
+        "horsepower": 340,
+        "salesVolume": 200,
         "popCultureScore": 80,
         "technicalInnovation": 60,
-        "launchYear": 2000
+        "launchYear": 1959
       },
       {
         "name": "Ferrari 812 Superfast",
         "productionRun": 999,
-        "priceEuro": 291642.0,
+        "priceEuro": 291642,
         "horsepower": 800,
         "salesVolume": 999,
         "popCultureScore": 80,
@@ -155,138 +155,128 @@
       },
       {
         "name": "Ferrari 348",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 8844,
+        "priceEuro": 100000,
+        "horsepower": 300,
+        "salesVolume": 8844,
         "popCultureScore": 30,
         "technicalInnovation": 60,
-        "launchYear": 2000
+        "launchYear": 1989
       },
       {
         "name": "Ferrari 456",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 3289,
+        "priceEuro": 175000,
+        "horsepower": 442,
+        "salesVolume": 3289,
         "popCultureScore": 40,
         "technicalInnovation": 30,
-        "launchYear": 2000
+        "launchYear": 1992
       },
       {
         "name": "Ferrari Berlinetta Boxer",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 2323,
+        "priceEuro": 40000,
+        "horsepower": 340,
+        "salesVolume": 2323,
         "popCultureScore": 80,
         "technicalInnovation": 70,
-        "launchYear": 2000
+        "launchYear": 1973
       },
       {
         "name": "Ferrari Daytona",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 1284,
+        "priceEuro": 30000,
+        "horsepower": 352,
+        "salesVolume": 1284,
         "popCultureScore": 60,
         "technicalInnovation": 40,
-        "launchYear": 2000
+        "launchYear": 1968
       },
       {
         "name": "Ferrari 328",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 7412,
+        "priceEuro": 78000,
+        "horsepower": 270,
+        "salesVolume": 7412,
         "popCultureScore": 80,
         "technicalInnovation": 60,
-        "launchYear": 2000
+        "launchYear": 1985
       },
       {
         "name": "Ferrari F40",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 1315,
+        "priceEuro": 142000,
+        "horsepower": 478,
+        "salesVolume": 1315,
         "popCultureScore": 80,
         "technicalInnovation": 95,
-        "launchYear": 2000
+        "launchYear": 1987
       },
       {
         "name": "Ferrari California",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 14300,
+        "priceEuro": 168000,
+        "horsepower": 490,
+        "salesVolume": 14300,
         "popCultureScore": 80,
         "technicalInnovation": 60,
-        "launchYear": 2000
+        "launchYear": 2008
       },
       {
         "name": "Ferrari SP",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 1,
+        "priceEuro": 3000000,
+        "horsepower": 700,
+        "salesVolume": 1,
         "popCultureScore": 80,
         "technicalInnovation": 60,
-        "launchYear": 2000
+        "launchYear": 2010
       },
       {
         "name": "Ferrari F50",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 349,
+        "priceEuro": 250000,
+        "horsepower": 520,
+        "salesVolume": 349,
         "popCultureScore": 80,
         "technicalInnovation": 95,
-        "launchYear": 2000
+        "launchYear": 1995
       },
       {
         "name": "Ferrari Purosangue",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 5000,
+        "priceEuro": 390000,
+        "horsepower": 725,
+        "salesVolume": 5000,
         "popCultureScore": 80,
         "technicalInnovation": 60,
-        "launchYear": 2000
+        "launchYear": 2022
       },
       {
         "name": "Ferrari Mondial",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 6149,
+        "priceEuro": 65000,
+        "horsepower": 270,
+        "salesVolume": 6149,
         "popCultureScore": 40,
         "technicalInnovation": 30,
-        "launchYear": 2000
-      },
-      {
-        "name": "Ferrari Modulo",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 60,
-        "launchYear": 2000
+        "launchYear": 1980
       },
       {
         "name": "Ferrari 575M Maranello",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 2056,
+        "priceEuro": 200000,
+        "horsepower": 515,
+        "salesVolume": 2056,
         "popCultureScore": 80,
         "technicalInnovation": 70,
-        "launchYear": 2000
+        "launchYear": 2002
       },
       {
         "name": "Ferrari F8 Tributo",
         "productionRun": 3000,
-        "priceEuro": 295000.0,
+        "priceEuro": 295000,
         "horsepower": 720,
         "salesVolume": 3000,
         "popCultureScore": 80,
@@ -295,218 +285,158 @@
       },
       {
         "name": "Ferrari 550",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 3083,
+        "priceEuro": 168000,
+        "horsepower": 485,
+        "salesVolume": 3083,
         "popCultureScore": 80,
         "technicalInnovation": 60,
-        "launchYear": 2000
-      },
-      {
-        "name": "Ferrari 290 MM",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 95,
-        "launchYear": 2000
+        "launchYear": 1996
       },
       {
         "name": "Ferrari FF",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 2211,
+        "priceEuro": 240000,
+        "horsepower": 651,
+        "salesVolume": 2211,
         "popCultureScore": 80,
         "technicalInnovation": 70,
-        "launchYear": 2000
+        "launchYear": 2011
       },
       {
         "name": "Ferrari GT4",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 2826,
+        "priceEuro": 20000,
+        "horsepower": 240,
+        "salesVolume": 2826,
         "popCultureScore": 80,
         "technicalInnovation": 40,
-        "launchYear": 2000
-      },
-      {
-        "name": "Ferrari 315 S",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 70,
-        "technicalInnovation": 80,
-        "launchYear": 2000
+        "launchYear": 1973
       },
       {
         "name": "Ferrari 308 GTB/GTS",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 12920,
+        "priceEuro": 28500,
+        "horsepower": 255,
+        "salesVolume": 12920,
         "popCultureScore": 80,
         "technicalInnovation": 60,
-        "launchYear": 2000
+        "launchYear": 1975
       },
       {
         "name": "Ferrari 365",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 1000,
+        "priceEuro": 25000,
+        "horsepower": 320,
+        "salesVolume": 1000,
         "popCultureScore": 80,
         "technicalInnovation": 60,
-        "launchYear": 2000
+        "launchYear": 1968
       },
       {
         "name": "Ferrari 612 Scaglietti",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 3025,
+        "priceEuro": 220000,
+        "horsepower": 540,
+        "salesVolume": 3025,
         "popCultureScore": 80,
         "technicalInnovation": 60,
-        "launchYear": 2000
+        "launchYear": 2004
       },
       {
         "name": "Ferrari 166 S",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 21,
+        "priceEuro": 8500,
+        "horsepower": 110,
+        "salesVolume": 21,
         "popCultureScore": 30,
         "technicalInnovation": 70,
-        "launchYear": 2000
+        "launchYear": 1948
       },
       {
         "name": "Ferrari 275",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 1076,
+        "priceEuro": 15000,
+        "horsepower": 280,
+        "salesVolume": 1076,
         "popCultureScore": 80,
         "technicalInnovation": 60,
-        "launchYear": 2000
-      },
-      {
-        "name": "Ferrari 335 S",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 95,
-        "launchYear": 2000
+        "launchYear": 1964
       },
       {
         "name": "Ferrari SF90 Stradale",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 6000,
+        "priceEuro": 430000,
+        "horsepower": 1000,
+        "salesVolume": 6000,
         "popCultureScore": 80,
         "technicalInnovation": 95,
-        "launchYear": 2000
+        "launchYear": 2019
       },
       {
         "name": "Ferrari Monza SP",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 499,
+        "priceEuro": 1700000,
+        "horsepower": 810,
+        "salesVolume": 499,
         "popCultureScore": 80,
         "technicalInnovation": 60,
-        "launchYear": 2000
+        "launchYear": 2018
       },
       {
         "name": "Ferrari 735 LM",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 1,
+        "priceEuro": 20000,
+        "horsepower": 330,
+        "salesVolume": 1,
         "popCultureScore": 60,
         "technicalInnovation": 40,
-        "launchYear": 2000
+        "launchYear": 1954
       },
       {
         "name": "Ferrari 288 GTO",
         "productionRun": 500,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
+        "priceEuro": 75000,
+        "horsepower": 400,
         "salesVolume": 500,
         "popCultureScore": 80,
         "technicalInnovation": 95,
-        "launchYear": 2000
+        "launchYear": 1984
       },
       {
         "name": "Ferrari Portofino",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 4240,
+        "priceEuro": 195000,
+        "horsepower": 600,
+        "salesVolume": 4240,
         "popCultureScore": 80,
         "technicalInnovation": 60,
-        "launchYear": 2000
+        "launchYear": 2017
       },
       {
         "name": "Ferrari 250 Testa Rossa",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 34,
+        "priceEuro": 11400,
+        "horsepower": 300,
+        "salesVolume": 34,
         "popCultureScore": 80,
         "technicalInnovation": 60,
-        "launchYear": 2000
-      },
-      {
-        "name": "Ferrari 376 S",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 60,
-        "launchYear": 2000
-      },
-      {
-        "name": "Ferrari 225 S",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 70,
-        "technicalInnovation": 80,
-        "launchYear": 2000
+        "launchYear": 1958
       },
       {
         "name": "Ferrari F355",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
+        "productionRun": 11273,
+        "priceEuro": 133000,
+        "horsepower": 380,
+        "salesVolume": 11273,
         "popCultureScore": 80,
         "technicalInnovation": 70,
-        "launchYear": 2000
-      },
-      {
-        "name": "Ferrari 365 P Berlinetta Speciale",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 20,
-        "technicalInnovation": 80,
-        "launchYear": 2000
+        "launchYear": 1994
       },
       {
         "name": "Ferrari Roma",
         "productionRun": 2100,
-        "priceEuro": 219000.0,
+        "priceEuro": 219000,
         "horsepower": 620,
         "salesVolume": 2100,
         "popCultureScore": 60,
@@ -8605,214 +8535,214 @@
       }
     ]
   },
-  "Aston Martin": {
-    "brandScore": 90,
-    "brandHeritage": 95,
-    "models": [
-      {
-        "name": "Aston Martin Vanquish II",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 40,
-        "launchYear": 2012
-      },
-      {
-        "name": "Aston Martin Victor",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 40,
-        "launchYear": 2000
-      },
-      {
-        "name": "Aston Martin DP214",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 20,
-        "technicalInnovation": 60,
-        "launchYear": 2000
-      }
-    ]
-  },
+"Aston Martin": {
+  "brandScore": 90,
+  "brandHeritage": 95,
+  "models": [
+    {
+      "name": "Aston Martin Vanquish II",
+      "productionRun": 2700,
+      "priceEuro": 230000.0,
+      "horsepower": 565,
+      "salesVolume": 2700,
+      "popCultureScore": 80,
+      "technicalInnovation": 40,
+      "launchYear": 2012
+    },
+    {
+      "name": "Aston Martin DB9",
+      "productionRun": 16500,
+      "priceEuro": 175000.0,
+      "horsepower": 450,
+      "salesVolume": 16500,
+      "popCultureScore": 60,
+      "technicalInnovation": 40,
+      "launchYear": 2004
+    },
+    {
+      "name": "Aston Martin V8 Vantage",
+      "productionRun": 21800,
+      "priceEuro": 100000.0,
+      "horsepower": 380,
+      "salesVolume": 21800,
+      "popCultureScore": 60,
+      "technicalInnovation": 60,
+      "launchYear": 2005
+    }
+  ]
+},
   "McLaren": {
-    "brandScore": 95,
-    "brandHeritage": 80,
-    "models": [
-      {
-        "name": "McLaren 12C",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 95,
-        "launchYear": 2000
-      },
-      {
-        "name": "McLaren 650S",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 95,
-        "launchYear": 2000
-      },
-      {
-        "name": "McLaren 720S",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 95,
-        "launchYear": 2000
-      },
-      {
-        "name": "McLaren 570S",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 70,
-        "launchYear": 2000
-      },
-      {
-        "name": "McLaren Senna",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 95,
-        "launchYear": 2000
-      },
-      {
-        "name": "McLaren F1",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 95,
-        "launchYear": 2000
-      },
-      {
-        "name": "McLaren P1",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 95,
-        "launchYear": 2000
-      },
-      {
-        "name": "McLaren Artura",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 20,
-        "technicalInnovation": 80,
-        "launchYear": 2000
-      },
-      {
-        "name": "McLaren GT",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 20,
-        "technicalInnovation": 30,
-        "launchYear": 2000
-      },
-      {
-        "name": "McLaren Speedtail",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 20,
-        "technicalInnovation": 80,
-        "launchYear": 2000
-      },
-      {
-        "name": "McLaren Elva",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 20,
-        "technicalInnovation": 80,
-        "launchYear": 2000
-      },
-      {
-        "name": "McLaren Solus GT",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 20,
-        "technicalInnovation": 60,
-        "launchYear": 2000
-      },
-      {
-        "name": "McLaren W1",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 95,
-        "launchYear": 2000
-      }
-    ]
-  },
-  "Bugatti": {
-    "brandScore": 95,
-    "brandHeritage": 98,
-    "models": [
-      {
-        "name": "Bugatti Chiron",
-        "productionRun": 500,
-        "priceEuro": 2400000.0,
-        "horsepower": 1500,
-        "salesVolume": 500,
-        "popCultureScore": 80,
-        "technicalInnovation": 95,
-        "launchYear": 2016
-      },
-      {
-        "name": "Bugatti Centodieci",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 2,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 95,
-        "launchYear": 2000
-      },
-      {
-        "name": "Bugatti Veyron Super Sport",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 95,
-        "launchYear": 2000
-      }
-    ]
-  },
+  "brandScore": 95,
+  "brandHeritage": 80,
+  "models": [
+    {
+    "name": "McLaren 12C", 
+    "productionRun": 3200, 
+    "priceEuro": 195000.0, 
+    "horsepower": 592, 
+    "salesVolume": 3200, 
+    "popCultureScore": 80, 
+    "technicalInnovation": 95, 
+    "launchYear": 2011
+    },
+    {
+    "name": "McLaren 650S", 
+    "productionRun": 3400, 
+    "priceEuro": 215000.0, 
+    "horsepower": 641, 
+    "salesVolume": 3400, 
+    "popCultureScore": 80,
+    "technicalInnovation": 95, 
+    "launchYear": 2014
+    },
+    {
+    "name": "McLaren 720S", 
+    "productionRun": 5000, 
+    "priceEuro": 237000.0, 
+    "horsepower": 720, 
+    "salesVolume": 5000, 
+    "popCultureScore": 80, 
+    "technicalInnovation": 95, 
+    "launchYear": 2017
+    },
+    {
+    "name": "McLaren 570S", 
+    "productionRun": 5500, 
+    "priceEuro": 175000.0, 
+    "horsepower": 570, 
+    "salesVolume": 5500, 
+    "popCultureScore": 80, 
+    "technicalInnovation": 70, 
+    "launchYear": 2015
+    },
+    {
+    "name": "McLaren Senna", 
+    "productionRun": 500, 
+    "priceEuro": 950000.0, 
+    "horsepower": 800, 
+    "salesVolume": 500, 
+    "popCultureScore": 85, 
+    "technicalInnovation": 95, 
+    "launchYear": 2018
+    },
+    {
+    "name": "McLaren F1", 
+    "productionRun": 106, 
+    "priceEuro": 675000.0, 
+    "horsepower": 627, 
+    "salesVolume": 106, 
+    "popCultureScore": 85, 
+    "technicalInnovation": 95, 
+    "launchYear": 1992
+    },
+    {
+    "name": "McLaren P1", 
+    "productionRun": 375, 
+    "priceEuro": 1150000.0, 
+    "horsepower": 903, 
+    "salesVolume": 375, 
+    "popCultureScore": 85, 
+    "technicalInnovation": 95, 
+    "launchYear": 2013
+    },
+    {
+    "name": "McLaren Artura", 
+    "productionRun": 5000, 
+    "priceEuro": 237000.0, 
+    "horsepower": 671, 
+    "salesVolume": 5000, 
+    "popCultureScore": 40, 
+    "technicalInnovation": 80, 
+    "launchYear": 2021
+    },
+    {
+    "name": "McLaren GT", 
+    "productionRun": 2000, 
+    "priceEuro": 210000.0, 
+    "horsepower": 620, 
+    "salesVolume": 2000, 
+    "popCultureScore": 40, 
+    "technicalInnovation": 30,
+    "launchYear": 2019
+    },
+    {
+    "name": "McLaren Speedtail", 
+    "productionRun": 106, 
+    "priceEuro": 2000000.0, 
+    "horsepower": 1035, 
+    "salesVolume": 106, 
+    "popCultureScore": 40, 
+    "technicalInnovation": 80, 
+    "launchYear": 2018
+    },
+    {
+    "name": "McLaren Elva", 
+    "productionRun": 149, 
+    "priceEuro": 1600000.0, 
+    "horsepower": 815, 
+    "salesVolume": 149, 
+    "popCultureScore": 20, 
+    "technicalInnovation": 80, 
+    "launchYear": 2020
+    },
+    {
+    "name": "McLaren Solus GT", 
+    "productionRun": 25, 
+    "priceEuro": 3300000.0, 
+    "horsepower": 829, 
+    "salesVolume": 25, 
+    "popCultureScore": 20, 
+    "technicalInnovation": 60, 
+    "launchYear": 2023
+    },
+    {
+    "name": "McLaren W1", 
+    "productionRun": 399, 
+    "priceEuro": 2000000.0, 
+    "horsepower": 1258, 
+    "salesVolume": 399, 
+    "popCultureScore": 80, 
+    "technicalInnovation": 95, 
+    "launchYear": 2024
+    }
+  ]
+},
+"Bugatti": {
+  "brandScore": 95,
+  "brandHeritage": 98,
+  "models": [
+    {
+      "name": "Bugatti Chiron",
+      "productionRun": 500,
+      "priceEuro": 2400000.0,
+      "horsepower": 1500,
+      "salesVolume": 500,
+      "popCultureScore": 80,
+      "technicalInnovation": 95,
+      "launchYear": 2016
+    },
+    {
+      "name": "Bugatti Centodieci",
+      "productionRun": 10,
+      "priceEuro": 8000000.0,
+      "horsepower": 1600,
+      "salesVolume": 10,
+      "popCultureScore": 80,
+      "technicalInnovation": 95,
+      "launchYear": 2019
+    },
+    {
+      "name": "Bugatti Veyron Super Sport",
+      "productionRun": 30,
+      "priceEuro": 1700000.0,
+      "horsepower": 1200,
+      "salesVolume": 30,
+      "popCultureScore": 80,
+      "technicalInnovation": 95,
+      "launchYear": 2010
+    }
+  ]
+},
   "Koenigsegg": {
     "brandScore": 95,
     "brandHeritage": 85,
@@ -8917,52 +8847,52 @@
       }
     ]
   },
-  "Mercury": {
-    "brandScore": 55,
-    "brandHeritage": 75,
-    "models": [
-      {
-        "name": "Mercury Capri",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 20,
-        "technicalInnovation": 30,
-        "launchYear": 2000
-      },
-      {
-        "name": "Mercury Marquis",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 40,
-        "technicalInnovation": 20,
-        "launchYear": 1967
-      },
-      {
-        "name": "Mercury Cyclone",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 60,
-        "launchYear": 1964
-      },
-      {
-        "name": "Mercury Tracer",
-        "productionRun": 500000,
-        "priceEuro": 25000.0,
-        "horsepower": 150,
-        "salesVolume": 500000,
-        "popCultureScore": 5,
-        "technicalInnovation": 20,
-        "launchYear": 2000
-      }
-    ]
-  },
+"Mercury": {
+  "brandScore": 55,
+  "brandHeritage": 75,
+  "models": [
+    {
+      "name": "Mercury Capri",
+      "productionRun": 400000,
+      "priceEuro": 2200.0,
+      "horsepower": 105,
+      "salesVolume": 400000,
+      "popCultureScore": 20,
+      "technicalInnovation": 30,
+      "launchYear": 1970
+    },
+    {
+      "name": "Mercury Marquis",
+      "productionRun": 400000,
+      "priceEuro": 3080.0,
+      "horsepower": 330,
+      "salesVolume": 400000,
+      "popCultureScore": 40,
+      "technicalInnovation": 20,
+      "launchYear": 1967
+    },
+    {
+      "name": "Mercury Cyclone",
+      "productionRun": 7454,
+      "priceEuro": 2600.0,
+      "horsepower": 210,
+      "salesVolume": 7454,
+      "popCultureScore": 80,
+      "technicalInnovation": 60,
+      "launchYear": 1964
+    },
+    {
+      "name": "Mercury Tracer",
+      "productionRun": 700000,
+      "priceEuro": 8000.0,
+      "horsepower": 90,
+      "salesVolume": 700000,
+      "popCultureScore": 5,
+      "technicalInnovation": 20,
+      "launchYear": 1987
+    }
+  ]
+},
   "Chrysler": {
     "brandScore": 60,
     "brandHeritage": 80,
@@ -9005,40 +8935,40 @@
       },
       {
         "name": "Peugeot 206",
-        "productionRun": 8358000,
+        "productionRun": 8332416,
         "priceEuro": 11000.0,
         "horsepower": 75,
-        "salesVolume": 8358000,
+        "salesVolume": 8332416,
         "popCultureScore": 75,
         "technicalInnovation": 50,
         "launchYear": 1998
       },
       {
         "name": "Peugeot 106",
-        "productionRun": 2800000,
+        "productionRun": 2798246,
         "priceEuro": 9000.0,
         "horsepower": 60,
-        "salesVolume": 2800000,
+        "salesVolume": 2798246,
         "popCultureScore": 65,
         "technicalInnovation": 35,
         "launchYear": 1991
       },
       {
         "name": "Peugeot 207",
-        "productionRun": 4100000,
+        "productionRun": 2573523,
         "priceEuro": 12500.0,
         "horsepower": 90,
-        "salesVolume": 4100000,
+        "salesVolume": 2573523,
         "popCultureScore": 45,
         "technicalInnovation": 40,
         "launchYear": 2006
       },
       {
         "name": "Peugeot 208",
-        "productionRun": 3000000,
+        "productionRun": 2158177,
         "priceEuro": 15000.0,
         "horsepower": 100,
-        "salesVolume": 3000000,
+        "salesVolume": 2158177,
         "popCultureScore": 50,
         "technicalInnovation": 50,
         "launchYear": 2012
@@ -9074,7 +9004,7 @@
         "launchYear": 2016
       }
     ]
-  },
+},
   "Citroen": {
     "brandScore": 60,
     "brandHeritage": 80,
