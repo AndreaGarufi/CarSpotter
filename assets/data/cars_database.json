@@ -7372,24 +7372,14 @@
         "launchYear": 1959
       },
       {
-        "name": "Ford Shelby Cobra Concept",
-        "productionRun": 1,
-        "priceEuro": 2000000.0,
-        "horsepower": 605,
-        "salesVolume": 1,
-        "popCultureScore": 75,
-        "technicalInnovation": 60,
-        "launchYear": 2004
-      },
-      {
-        "name": "Ford Shelby GR-1 Concept",
-        "productionRun": 1,
-        "priceEuro": 2000000.0,
-        "horsepower": 605,
-        "salesVolume": 1,
-        "popCultureScore": 70,
-        "technicalInnovation": 60,
-        "launchYear": 2005
+        "name": "Ford Shelby Mustang GT500",
+        "productionRun": 65834,
+        "priceEuro": 80000.0,
+        "horsepower": 760,
+        "salesVolume": 65834,
+        "popCultureScore": 80,
+        "technicalInnovation": 75,
+        "launchYear": 2007
       },
       {
         "name": "Ford GT70",
