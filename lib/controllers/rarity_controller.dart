@@ -91,6 +91,6 @@ class RarityController {
         (legacyScore * 0.6);
 
     // 📈 Alziamo la soglia a 80. Solo le auto con un alto impatto culturale ce la faranno.
-    return iconScore >= 80;
+    return iconScore >= 89;
   }
 }

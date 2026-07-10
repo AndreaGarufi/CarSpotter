@@ -150,9 +150,7 @@ class DbService {
     final spots = await isar.userSpots.where().findAll();
     return spots.where((spot) {
       final model = spot.carModel.value;
-      return model != null &&
-          (model.rarityTier == RarityTier.legendary ||
-              model.baseRarityScore >= 85);
+      return model != null && model.rarityTier == RarityTier.legendary;
     }).length;
   }
 
