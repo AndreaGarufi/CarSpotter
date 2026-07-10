@@ -6631,10 +6631,10 @@
       },
       {
         "name": "Audi R8 (Type 42)",
-        "productionRun": 1,
+        "productionRun": 24000,
         "priceEuro": 188000.0,
-        "horsepower": 1730,
-        "salesVolume": 1,
+        "horsepower": 430,
+        "salesVolume": 24000,
         "popCultureScore": 80,
         "technicalInnovation": 95,
         "launchYear": 2006
