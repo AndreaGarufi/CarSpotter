@@ -8216,6 +8216,36 @@
       "popCultureScore": 80,
       "technicalInnovation": 95,
       "launchYear": 2010
+    },
+    {
+      "name": "Bugatti La Voiture Noire",
+      "productionRun": 1,
+      "priceEuro": 11000000.0,
+      "horsepower": 1500,
+      "salesVolume": 1,
+      "popCultureScore": 90,
+      "technicalInnovation": 95,
+      "launchYear": 2019
+    },
+    {
+      "name": "Bugatti Tourbillon",
+      "productionRun": 250,
+      "priceEuro": 3800000.0,
+      "horsepower": 1800,
+      "salesVolume": 250,
+      "popCultureScore": 85,
+      "technicalInnovation": 98,
+      "launchYear": 2024
+    },
+    {
+      "name": "Bugatti Bolide",
+      "productionRun": 40,
+      "priceEuro": 4000000.0,
+      "horsepower": 1600,
+      "salesVolume": 40,
+      "popCultureScore": 85,
+      "technicalInnovation": 96,
+      "launchYear": 2021
     }
   ]
 },
