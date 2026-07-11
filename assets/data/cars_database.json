@@ -8898,6 +8898,66 @@
         "popCultureScore": 40,
         "technicalInnovation": 65,
         "launchYear": 2023
+      },
+      {
+        "name": "Jeep Wrangler Rubicon (JL)",
+        "productionRun": 250000,
+        "priceEuro": 55000.0,
+        "horsepower": 272,
+        "salesVolume": 250000,
+        "popCultureScore": 80,
+        "technicalInnovation": 65,
+        "launchYear": 2018
+      },
+      {
+        "name": "Jeep Cherokee (XJ)",
+        "productionRun": 2884172,
+        "priceEuro": 22000.0,
+        "horsepower": 190,
+        "salesVolume": 2884172,
+        "popCultureScore": 70,
+        "technicalInnovation": 85,
+        "launchYear": 1984
+      },
+      {
+        "name": "Jeep Grand Cherokee Trackhawk",
+        "productionRun": 10000,
+        "priceEuro": 125000.0,
+        "horsepower": 707,
+        "salesVolume": 10000,
+        "popCultureScore": 70,
+        "technicalInnovation": 75,
+        "launchYear": 2018
+      },
+      {
+        "name": "Jeep Renegade",
+        "productionRun": 1000000,
+        "priceEuro": 24000.0,
+        "horsepower": 120,
+        "salesVolume": 1000000,
+        "popCultureScore": 60,
+        "technicalInnovation": 50,
+        "launchYear": 2014
+      },
+      {
+        "name": "Jeep Compass (2nd Gen)",
+        "productionRun": 1200000,
+        "priceEuro": 28000.0,
+        "horsepower": 140,
+        "salesVolume": 1200000,
+        "popCultureScore": 50,
+        "technicalInnovation": 50,
+        "launchYear": 2016
+      },
+      {
+        "name": "Jeep Gladiator (JT)",
+        "productionRun": 350000,
+        "priceEuro": 65000.0,
+        "horsepower": 264,
+        "salesVolume": 350000,
+        "popCultureScore": 70,
+        "technicalInnovation": 60,
+        "launchYear": 2019
       }
     ]
   },
