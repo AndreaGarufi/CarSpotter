@@ -1653,6 +1653,122 @@
       }
     ]
   },
+  "Abarth": {
+    "brandScore": 70,
+    "brandHeritage": 90,
+    "models": [
+      {
+        "name": "Abarth 595 (Modern)",
+        "productionRun": 120000,
+        "priceEuro": 26800.0,
+        "horsepower": 160,
+        "salesVolume": 120000,
+        "popCultureScore": 79,
+        "technicalInnovation": 50,
+        "launchYear": 2008
+      },
+      {
+        "name": "Abarth 695 Esseesse",
+        "productionRun": 1390,
+        "priceEuro": 43000.0,
+        "horsepower": 180,
+        "salesVolume": 1390,
+        "popCultureScore": 80,
+        "technicalInnovation": 65,
+        "launchYear": 2021
+      },
+      {
+        "name": "Abarth 695 Biposto",
+        "productionRun": 133,
+        "priceEuro": 39000.0,
+        "horsepower": 190,
+        "salesVolume": 133,
+        "popCultureScore": 85,
+        "technicalInnovation": 80,
+        "launchYear": 2014
+      },
+      {
+        "name": "Abarth 124 Spider",
+        "productionRun": 15000,
+        "priceEuro": 36000.0,
+        "horsepower": 170,
+        "salesVolume": 15000,
+        "popCultureScore": 70,
+        "technicalInnovation": 60,
+        "launchYear": 2016
+      },
+      {
+        "name": "Abarth 124 GT",
+        "productionRun": 1000,
+        "priceEuro": 42000.0,
+        "horsepower": 170,
+        "salesVolume": 1000,
+        "popCultureScore": 75,
+        "technicalInnovation": 65,
+        "launchYear": 2018
+      },
+      {
+        "name": "Abarth Grande Punto",
+        "productionRun": 20000,
+        "priceEuro": 18000.0,
+        "horsepower": 155,
+        "salesVolume": 20000,
+        "popCultureScore": 60,
+        "technicalInnovation": 50,
+        "launchYear": 2007
+      },
+      {
+        "name": "Abarth Punto Evo",
+        "productionRun": 10000,
+        "priceEuro": 195000.0,
+        "horsepower": 165,
+        "salesVolume": 10000,
+        "popCultureScore": 60,
+        "technicalInnovation": 55,
+        "launchYear": 2010
+      },
+      {
+        "name": "Abarth 131 Rally",
+        "productionRun": 400,
+        "priceEuro": 10000.0,
+        "horsepower": 140,
+        "salesVolume": 400,
+        "popCultureScore": 90,
+        "technicalInnovation": 85,
+        "launchYear": 1976
+      },
+      {
+        "name": "Fiat-Abarth 595 (1963)",
+        "productionRun": 5000,
+        "priceEuro": 1500.0,
+        "horsepower": 27,
+        "salesVolume": 5000,
+        "popCultureScore": 95,
+        "technicalInnovation": 70,
+        "launchYear": 1963
+      },
+      {
+        "name": "Abarth 1000 TCR",
+        "productionRun": 1000,
+        "priceEuro": 3000.0,
+        "horsepower": 112,
+        "salesVolume": 1000,
+        "popCultureScore": 85,
+        "technicalInnovation": 80,
+        "launchYear": 1970
+      },
+      {
+        "name": "Abarth 500e",
+        "productionRun": 15000,
+        "priceEuro": 38000.0,
+        "horsepower": 155,
+        "salesVolume": 15000,
+        "popCultureScore": 60,
+        "technicalInnovation": 75,
+        "launchYear": 2023
+      }
+    ]
+  },
 "Alfa Romeo": {
     "brandScore": 80,
     "brandHeritage": 95,
