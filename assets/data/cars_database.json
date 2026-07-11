@@ -79,7 +79,7 @@
         "priceEuro": 1400000,
         "horsepower": 963,
         "salesVolume": 499,
-        "popCultureScore": 80,
+        "popCultureScore": 95,
         "technicalInnovation": 95,
         "launchYear": 2013
       },
@@ -209,7 +209,7 @@
         "priceEuro": 142000,
         "horsepower": 478,
         "salesVolume": 1315,
-        "popCultureScore": 80,
+        "popCultureScore": 99,
         "technicalInnovation": 95,
         "launchYear": 1987
       },
@@ -283,6 +283,16 @@
         "technicalInnovation": 75,
         "launchYear": 2019
       },
+      {
+        "name": "Ferrari F80",
+        "productionRun": 799,
+        "priceEuro": 3600000.0,
+        "horsepower": 1200,
+        "salesVolume": 799,
+        "popCultureScore": 85,
+        "technicalInnovation": 98,
+        "launchYear": 2024
+        },
       {
         "name": "Ferrari 550",
         "productionRun": 3083,
@@ -372,6 +382,16 @@
         "popCultureScore": 80,
         "technicalInnovation": 95,
         "launchYear": 2019
+      },
+      {
+        "name": "Ferrari SF90 XX Stradale",
+        "productionRun": 799,
+        "priceEuro": 770000.0,
+        "horsepower": 1030,
+        "salesVolume": 799,
+        "popCultureScore": 85,
+        "technicalInnovation": 96,
+        "launchYear": 2023
       },
       {
         "name": "Ferrari Monza SP",
@@ -7100,6 +7120,16 @@
         "popCultureScore": 100,
         "technicalInnovation": 60,
         "launchYear": 1938
+      },
+      {
+      "name": "Volkswagen Golf",
+      "productionRun": 35000000,
+      "priceEuro": 28000.0,
+      "horsepower": 160,
+      "salesVolume": 35000000,
+      "popCultureScore": 79,
+      "technicalInnovation": 69,
+      "launchYear": 1974
       },
       {
         "name": "Volkswagen Golf Mk1",
