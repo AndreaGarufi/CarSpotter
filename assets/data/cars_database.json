@@ -9219,10 +9219,10 @@
     "models": [
       {
         "name": "Caterham Seven",
-        "productionRun": 25000,
+        "productionRun": 25,
         "priceEuro": 45000.0,
-        "horsepower": 150,
-        "salesVolume": 25000,
+        "horsepower": 1500,
+        "salesVolume": 25,
         "popCultureScore": 80,
         "technicalInnovation": 50,
         "launchYear": 1973
