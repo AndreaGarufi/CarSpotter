@@ -6224,16 +6224,6 @@
         "launchYear": 1989
       },
       {
-        "name": "BMW X3",
-        "productionRun": 1500000,
-        "priceEuro": 45000.0,
-        "horsepower": 150,
-        "salesVolume": 1500000,
-        "popCultureScore": 70,
-        "technicalInnovation": 80,
-        "launchYear": 2003
-      },
-      {
         "name": "BMW i8",
         "productionRun": 20465,
         "priceEuro": 140000.0,
@@ -6272,16 +6262,6 @@
         "popCultureScore": 40,
         "technicalInnovation": 60,
         "launchYear": 1991
-      },
-      {
-        "name": "BMW X5",
-        "productionRun": 2500000,
-        "priceEuro": 60000.0,
-        "horsepower": 286,
-        "salesVolume": 2500000,
-        "popCultureScore": 80,
-        "technicalInnovation": 70,
-        "launchYear": 1999
       },
       {
         "name": "BMW 3200 CS",
@@ -6339,7 +6319,7 @@
         "priceEuro": 10000.0,
         "horsepower": 100,
         "salesVolume": 5000,
-        "popCultureScore": 80,
+        "popCultureScore": 70,
         "technicalInnovation": 60,
         "launchYear": 1973
       },
@@ -6352,16 +6332,6 @@
         "popCultureScore": 60,
         "technicalInnovation": 80,
         "launchYear": 1998
-      },
-      {
-        "name": "BMW Serie 4 (G22)",
-        "productionRun": 200000,
-        "priceEuro": 47000.0,
-        "horsepower": 184,
-        "salesVolume": 200000,
-        "popCultureScore": 45,
-        "technicalInnovation": 60,
-        "launchYear": 2020
       },
       {
         "name": "BMW M4 Coupe (G82)",
@@ -6422,6 +6392,176 @@
         "popCultureScore": 80,
         "technicalInnovation": 70,
         "launchYear": 2015
+      },
+      {
+        "name": "BMW Serie 1 (F40)",
+        "productionRun": 500000,
+        "priceEuro": 32000.0,
+        "horsepower": 140,
+        "salesVolume": 500000,
+        "popCultureScore": 65,
+        "technicalInnovation": 70,
+        "launchYear": 2019
+      },
+      {
+        "name": "BMW Serie 2 Coupe (G42)",
+        "productionRun": 150000,
+        "priceEuro": 42000.0,
+        "horsepower": 184,
+        "salesVolume": 150000,
+        "popCultureScore": 70,
+        "technicalInnovation": 75,
+        "launchYear": 2021
+      },
+      {
+        "name": "BMW Serie 3 (G20)",
+        "productionRun": 1200000,
+        "priceEuro": 45000.0,
+        "horsepower": 184,
+        "salesVolume": 1200000,
+        "popCultureScore": 85,
+        "technicalInnovation": 80,
+        "launchYear": 2018
+      },
+      {
+        "name": "BMW Serie 4 (G22)",
+        "productionRun": 200000,
+        "priceEuro": 47000.0,
+        "horsepower": 184,
+        "salesVolume": 200000,
+        "popCultureScore": 45,
+        "technicalInnovation": 60,
+        "launchYear": 2020
+      },
+      {
+        "name": "BMW Serie 5 (G30)",
+        "productionRun": 800000,
+        "priceEuro": 60000.0,
+        "horsepower": 252,
+        "salesVolume": 800000,
+        "popCultureScore": 80,
+        "technicalInnovation": 85,
+        "launchYear": 2017
+      },
+      {
+        "name": "BMW Serie 5 (G60)",
+        "productionRun": 150000,
+        "priceEuro": 66000.0,
+        "horsepower": 208,
+        "salesVolume": 150000,
+        "popCultureScore": 75,
+        "technicalInnovation": 90,
+        "launchYear": 2023
+      },
+      {
+        "name": "BMW Serie 6 Gran Turismo (G32)",
+        "productionRun": 60000,
+        "priceEuro": 68000.0,
+        "horsepower": 265,
+        "salesVolume": 60000,
+        "popCultureScore": 50,
+        "technicalInnovation": 80,
+        "launchYear": 2017
+      },
+      {
+        "name": "BMW Serie 7 (G70)",
+        "productionRun": 60000,
+        "priceEuro": 110000.0,
+        "horsepower": 380,
+        "salesVolume": 60000,
+        "popCultureScore": 75,
+        "technicalInnovation": 95,
+        "launchYear": 2022
+      },
+      {
+        "name": "BMW Serie 8 (G15)",
+        "productionRun": 45000,
+        "priceEuro": 105000.0,
+        "horsepower": 340,
+        "salesVolume": 45000,
+        "popCultureScore": 75,
+        "technicalInnovation": 85,
+        "launchYear": 2018
+      },
+      {
+        "name": "BMW X1 (U11)",
+        "productionRun": 400000,
+        "priceEuro": 42000.0,
+        "horsepower": 170,
+        "salesVolume": 400000,
+        "popCultureScore": 70,
+        "technicalInnovation": 75,
+        "launchYear": 2022
+      },
+      {
+        "name": "BMW X3 (G45)",
+        "productionRun": 250000,
+        "priceEuro": 60000.0,
+        "horsepower": 208,
+        "salesVolume": 250000,
+        "popCultureScore": 75,
+        "technicalInnovation": 85,
+        "launchYear": 2024
+      },
+      {
+        "name": "BMW X2 (U10)",
+        "productionRun": 100000,
+        "priceEuro": 46000.0,
+        "horsepower": 241,
+        "salesVolume": 100000,
+        "popCultureScore": 70,
+        "technicalInnovation": 80,
+        "launchYear": 2023
+      },
+      {
+        "name": "BMW X4 (G02)",
+        "productionRun": 250000,
+        "priceEuro": 58000.0,
+        "horsepower": 184,
+        "salesVolume": 250000,
+        "popCultureScore": 65,
+        "technicalInnovation": 75,
+        "launchYear": 2018
+      },
+      {
+        "name": "BMW X5 (G05)",
+        "productionRun": 1000000,
+        "priceEuro": 85000.0,
+        "horsepower": 298,
+        "salesVolume": 1000000,
+        "popCultureScore": 85,
+        "technicalInnovation": 85,
+        "launchYear": 2018
+      },
+      {
+        "name": "BMW X6 (G06)",
+        "productionRun": 200000,
+        "priceEuro": 85000.0,
+        "horsepower": 340,
+        "salesVolume": 200000,
+        "popCultureScore": 85,
+        "technicalInnovation": 80,
+        "launchYear": 2019
+      },
+      {
+        "name": "BMW X7 (G07)",
+        "productionRun": 150000,
+        "priceEuro": 105000.0,
+        "horsepower": 380,
+        "salesVolume": 150000,
+        "popCultureScore": 80,
+        "technicalInnovation": 85,
+        "launchYear": 2018
+      },
+      {
+        "name": "BMW XM",
+        "productionRun": 15000,
+        "priceEuro": 175000.0,
+        "horsepower": 653,
+        "salesVolume": 15000,
+        "popCultureScore": 75,
+        "technicalInnovation": 90,
+        "launchYear": 2022
       }
     ]
   },
@@ -9070,6 +9210,22 @@
         "popCultureScore": 45,
         "technicalInnovation": 70,
         "launchYear": 2020
+      }
+    ]
+  },
+  "Caterham": {
+    "brandScore": 75,
+    "brandHeritage": 90,
+    "models": [
+      {
+        "name": "Caterham Seven",
+        "productionRun": 250000,
+        "priceEuro": 45000.0,
+        "horsepower": 150,
+        "salesVolume": 25000,
+        "popCultureScore": 80,
+        "technicalInnovation": 50,
+        "launchYear": 1973
       }
     ]
   }
