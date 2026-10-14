@@ -9258,5 +9258,151 @@
         "launchYear": 1973
       }
     ]
+  },
+  "Jaguar": {
+    "brandScore": 82,
+    "brandHeritage": 93,
+    "models": [
+      {
+        "name": "Jaguar XK120",
+        "productionRun": 12055,
+        "priceEuro": 4000,
+        "horsepower": 160,
+        "salesVolume": 12055,
+        "popCultureScore": 85,
+        "technicalInnovation": 80,
+        "launchYear": 1948
+      },
+      {
+        "name": "Jaguar D-Type",
+        "productionRun": 75,
+        "priceEuro": 10000,
+        "horsepower": 250,
+        "salesVolume": 75,
+        "popCultureScore": 88,
+        "technicalInnovation": 92,
+        "launchYear": 1954
+      },
+      {
+        "name": "Jaguar Mark 2",
+        "productionRun": 83976,
+        "priceEuro": 2500,
+        "horsepower": 220,
+        "salesVolume": 83976,
+        "popCultureScore": 85,
+        "technicalInnovation": 75,
+        "launchYear": 1959
+      },
+      {
+        "name": "Jaguar E-Type Series 1",
+        "productionRun": 38419,
+        "priceEuro": 6000,
+        "horsepower": 265,
+        "salesVolume": 38419,
+        "popCultureScore": 98,
+        "technicalInnovation": 88,
+        "launchYear": 1961
+      },
+      {
+        "name": "Jaguar XJ6 Series 1",
+        "productionRun": 98227,
+        "priceEuro": 7500,
+        "horsepower": 245,
+        "salesVolume": 98227,
+        "popCultureScore": 75,
+        "technicalInnovation": 80,
+        "launchYear": 1968
+      },
+      {
+        "name": "Jaguar XJR-15",
+        "productionRun": 53,
+        "priceEuro": 900000,
+        "horsepower": 450,
+        "salesVolume": 53,
+        "popCultureScore": 80,
+        "technicalInnovation": 95,
+        "launchYear": 1990
+      },
+      {
+        "name": "Jaguar XJ220",
+        "productionRun": 282,
+        "priceEuro": 470000,
+        "horsepower": 549,
+        "salesVolume": 282,
+        "popCultureScore": 90,
+        "technicalInnovation": 92,
+        "launchYear": 1992
+      },
+      {
+        "name": "Jaguar XJR (X308)",
+        "productionRun": 15303,
+        "priceEuro": 75000,
+        "horsepower": 370,
+        "salesVolume": 15303,
+        "popCultureScore": 75,
+        "technicalInnovation": 75,
+        "launchYear": 1997
+      },
+      {
+        "name": "Jaguar XKR-S (X150)",
+        "productionRun": 2000,
+        "priceEuro": 130000,
+        "horsepower": 550,
+        "salesVolume": 2000,
+        "popCultureScore": 75,
+        "technicalInnovation": 75,
+        "launchYear": 2011
+      },
+      {
+        "name": "Jaguar F-Type R",
+        "productionRun": 87000,
+        "priceEuro": 107000,
+        "horsepower": 550,
+        "salesVolume": 87000,
+        "popCultureScore": 82,
+        "technicalInnovation": 75,
+        "launchYear": 2014
+      },
+      {
+        "name": "Jaguar F-Type Project 7",
+        "productionRun": 250,
+        "priceEuro": 165000,
+        "horsepower": 575,
+        "salesVolume": 250,
+        "popCultureScore": 80,
+        "technicalInnovation": 80,
+        "launchYear": 2015
+      },
+      {
+        "name": "Jaguar XE SV Project 8",
+        "productionRun": 300,
+        "priceEuro": 180000,
+        "horsepower": 600,
+        "salesVolume": 300,
+        "popCultureScore": 80,
+        "technicalInnovation": 88,
+        "launchYear": 2018
+      },
+      {
+        "name": "Jaguar I-Pace",
+        "productionRun": 60000,
+        "priceEuro": 82000,
+        "horsepower": 400,
+        "salesVolume": 60000,
+        "popCultureScore": 65,
+        "technicalInnovation": 85,
+        "launchYear": 2018
+      },
+      {
+        "name": "Jaguar F-Pace SVR",
+        "productionRun": 15000,
+        "priceEuro": 105000,
+        "horsepower": 550,
+        "salesVolume": 15000,
+        "popCultureScore": 70,
+        "technicalInnovation": 75,
+        "launchYear": 2018
+      }
+    ]
   }
 }
