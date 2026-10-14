@@ -9261,26 +9261,16 @@
   },
   "Jaguar": {
     "brandScore": 82,
-    "brandHeritage": 93,
+    "brandHeritage": 90,
     "models": [
-      {
-        "name": "Jaguar XK120",
-        "productionRun": 12055,
-        "priceEuro": 4000,
-        "horsepower": 160,
-        "salesVolume": 12055,
-        "popCultureScore": 85,
-        "technicalInnovation": 80,
-        "launchYear": 1948
-      },
       {
         "name": "Jaguar D-Type",
         "productionRun": 75,
         "priceEuro": 10000,
         "horsepower": 250,
         "salesVolume": 75,
-        "popCultureScore": 88,
-        "technicalInnovation": 92,
+        "popCultureScore": 80,
+        "technicalInnovation": 85,
         "launchYear": 1954
       },
       {
@@ -9299,8 +9289,8 @@
         "priceEuro": 6000,
         "horsepower": 265,
         "salesVolume": 38419,
-        "popCultureScore": 98,
-        "technicalInnovation": 88,
+        "popCultureScore": 90,
+        "technicalInnovation": 80,
         "launchYear": 1961
       },
       {
@@ -9402,6 +9392,550 @@
         "popCultureScore": 70,
         "technicalInnovation": 75,
         "launchYear": 2018
+      }
+    ]
+  },
+  "Bentley": {
+    "brandScore": 85,
+    "brandHeritage": 90,
+    "models": [
+      {
+        "name": "Bentley Turbo R",
+        "productionRun": 7230,
+        "priceEuro": 130000,
+        "horsepower": 300,
+        "salesVolume": 7230,
+        "popCultureScore": 82,
+        "technicalInnovation": 75,
+        "launchYear": 1985
+      },
+      {
+        "name": "Bentley Arnage T",
+        "productionRun": 2577,
+        "priceEuro": 240000,
+        "horsepower": 456,
+        "salesVolume": 2577,
+        "popCultureScore": 82,
+        "technicalInnovation": 75,
+        "launchYear": 2002
+      },
+      {
+        "name": "Bentley Speed 8",
+        "productionRun": 5,
+        "priceEuro": 2000000,
+        "horsepower": 600,
+        "salesVolume": 5,
+        "popCultureScore": 85,
+        "technicalInnovation": 95,
+        "launchYear": 2003
+      },
+      {
+        "name": "Bentley Continental GT (1st Gen)",
+        "productionRun": 40000,
+        "priceEuro": 165000,
+        "horsepower": 560,
+        "salesVolume": 40000,
+        "popCultureScore": 92,
+        "technicalInnovation": 85,
+        "launchYear": 2003
+      },
+      {
+        "name": "Bentley Continental Supersports",
+        "productionRun": 1800,
+        "priceEuro": 245000,
+        "horsepower": 630,
+        "salesVolume": 1800,
+        "popCultureScore": 80,
+        "technicalInnovation": 85,
+        "launchYear": 2009
+      },
+      {
+        "name": "Bentley Mulsanne",
+        "productionRun": 7300,
+        "priceEuro": 300000,
+        "horsepower": 505,
+        "salesVolume": 7300,
+        "popCultureScore": 85,
+        "technicalInnovation": 80,
+        "launchYear": 2010
+      },
+      {
+        "name": "Bentley Mulsanne Speed",
+        "productionRun": 2000,
+        "priceEuro": 340000,
+        "horsepower": 537,
+        "salesVolume": 2000,
+        "popCultureScore": 80,
+        "technicalInnovation": 80,
+        "launchYear": 2014
+      },
+      {
+        "name": "Bentley Bentayga",
+        "productionRun": 40000,
+        "priceEuro": 215000,
+        "horsepower": 608,
+        "salesVolume": 40000,
+        "popCultureScore": 82,
+        "technicalInnovation": 85,
+        "launchYear": 2016
+      },
+      {
+        "name": "Bentley Flying Spur (3rd Gen)",
+        "productionRun": 25000,
+        "priceEuro": 225000,
+        "horsepower": 635,
+        "salesVolume": 25000,
+        "popCultureScore": 80,
+        "technicalInnovation": 88,
+        "launchYear": 2019
+      },
+      {
+        "name": "Bentley Bentayga Speed",
+        "productionRun": 5000,
+        "priceEuro": 260000,
+        "horsepower": 635,
+        "salesVolume": 5000,
+        "popCultureScore": 80,
+        "technicalInnovation": 85,
+        "launchYear": 2019
+      },
+      {
+        "name": "Bentley Bacalar",
+        "productionRun": 12,
+        "priceEuro": 1750000,
+        "horsepower": 659,
+        "salesVolume": 12,
+        "popCultureScore": 82,
+        "technicalInnovation": 90,
+        "launchYear": 2020
+      },
+      {
+        "name": "Bentley Continental GT Speed (3rd Gen)",
+        "productionRun": 15000,
+        "priceEuro": 285000,
+        "horsepower": 659,
+        "salesVolume": 15000,
+        "popCultureScore": 85,
+        "technicalInnovation": 88,
+        "launchYear": 2021
+      },
+      {
+        "name": "Bentley Batur",
+        "productionRun": 18,
+        "priceEuro": 2000000,
+        "horsepower": 740,
+        "salesVolume": 18,
+        "popCultureScore": 82,
+        "technicalInnovation": 92,
+        "launchYear": 2022
+      }
+    ]
+  },
+  "Land Rover": {
+    "brandScore": 80,
+    "brandHeritage": 89,
+    "models": [
+      {
+        "name": "Range Rover Classic",
+        "productionRun": 317615,
+        "priceEuro": 2500,
+        "horsepower": 135,
+        "salesVolume": 317615,
+        "popCultureScore": 95,
+        "technicalInnovation": 85,
+        "launchYear": 1970
+      },
+      {
+        "name": "Land Rover Defender (Classic)",
+        "productionRun": 2000000,
+        "priceEuro": 25000,
+        "horsepower": 122,
+        "salesVolume": 2000000,
+        "popCultureScore": 96,
+        "technicalInnovation": 70,
+        "launchYear": 1983
+      },
+      {
+        "name": "Land Rover Discovery 1",
+        "productionRun": 392053,
+        "priceEuro": 28000,
+        "horsepower": 182,
+        "salesVolume": 392053,
+        "popCultureScore": 90,
+        "technicalInnovation": 80,
+        "launchYear": 1989
+      },
+      {
+        "name": "Range Rover (P38A)",
+        "productionRun": 167041,
+        "priceEuro": 60000,
+        "horsepower": 225,
+        "salesVolume": 167041,
+        "popCultureScore": 75,
+        "technicalInnovation": 80,
+        "launchYear": 1994
+      },
+      {
+        "name": "Land Rover Freelander (1st Gen)",
+        "productionRun": 540000,
+        "priceEuro": 24000,
+        "horsepower": 120,
+        "salesVolume": 540000,
+        "popCultureScore": 70,
+        "technicalInnovation": 75,
+        "launchYear": 1997
+      },
+      {
+        "name": "Range Rover (L322)",
+        "productionRun": 290000,
+        "priceEuro": 85000,
+        "horsepower": 395,
+        "salesVolume": 290000,
+        "popCultureScore": 85,
+        "technicalInnovation": 82,
+        "launchYear": 2002
+      },
+      {
+        "name": "Range Rover Sport (1st Gen)",
+        "productionRun": 380000,
+        "priceEuro": 70000,
+        "horsepower": 390,
+        "salesVolume": 380000,
+        "popCultureScore": 85,
+        "technicalInnovation": 80,
+        "launchYear": 2005
+      },
+      {
+        "name": "Range Rover Evoque (1st Gen)",
+        "productionRun": 800000,
+        "priceEuro": 36000,
+        "horsepower": 240,
+        "salesVolume": 800000,
+        "popCultureScore": 88,
+        "technicalInnovation": 80,
+        "launchYear": 2011
+      },
+      {
+        "name": "Range Rover (L405)",
+        "productionRun": 320000,
+        "priceEuro": 95000,
+        "horsepower": 510,
+        "salesVolume": 320000,
+        "popCultureScore": 85,
+        "technicalInnovation": 90,
+        "launchYear": 2012
+      },
+      {
+        "name": "Range Rover Sport SVR",
+        "productionRun": 25000,
+        "priceEuro": 130000,
+        "horsepower": 550,
+        "salesVolume": 25000,
+        "popCultureScore": 88,
+        "technicalInnovation": 85,
+        "launchYear": 2015
+      },
+      {
+        "name": "Range Rover Velar",
+        "productionRun": 180000,
+        "priceEuro": 62000,
+        "horsepower": 380,
+        "salesVolume": 180000,
+        "popCultureScore": 80,
+        "technicalInnovation": 85,
+        "launchYear": 2017
+      },
+      {
+        "name": "Land Rover Defender (L663)",
+        "productionRun": 250000,
+        "priceEuro": 55000,
+        "horsepower": 400,
+        "salesVolume": 250000,
+        "popCultureScore": 88,
+        "technicalInnovation": 88,
+        "launchYear": 2020
+      },
+      {
+        "name": "Land Rover Defender V8",
+        "productionRun": 15000,
+        "priceEuro": 125000,
+        "horsepower": 525,
+        "salesVolume": 15000,
+        "popCultureScore": 85,
+        "technicalInnovation": 80,
+        "launchYear": 2021
+      },
+      {
+        "name": "Range Rover (L460)",
+        "productionRun": 100000,
+        "priceEuro": 135000,
+        "horsepower": 530,
+        "salesVolume": 100000,
+        "popCultureScore": 88,
+        "technicalInnovation": 92,
+        "launchYear": 2022
+      },
+      {
+        "name": "Range Rover Sport SV",
+        "productionRun": 10000,
+        "priceEuro": 190000,
+        "horsepower": 635,
+        "salesVolume": 10000,
+        "popCultureScore": 82,
+        "technicalInnovation": 92,
+        "launchYear": 2023
+      }
+    ]
+  },
+  "Dallara": {
+    "brandScore": 85,
+    "brandHeritage": 92,
+    "models": [
+      {
+        "name": "Dallara BMS 192 (F1)",
+        "productionRun": 6,
+        "priceEuro": 1500000,
+        "horsepower": 700,
+        "salesVolume": 6,
+        "popCultureScore": 80,
+        "technicalInnovation": 92,
+        "launchYear": 1992
+      },
+      {
+        "name": "Dallara SP1 (LMP900)",
+        "productionRun": 6,
+        "priceEuro": 800000,
+        "horsepower": 650,
+        "salesVolume": 6,
+        "popCultureScore": 75,
+        "technicalInnovation": 90,
+        "launchYear": 2002
+      },
+      {
+        "name": "Dallara DP01 (Champ Car)",
+        "productionRun": 40,
+        "priceEuro": 400000,
+        "horsepower": 750,
+        "salesVolume": 40,
+        "popCultureScore": 85,
+        "technicalInnovation": 92,
+        "launchYear": 2007
+      },
+      {
+        "name": "Dallara Stradale",
+        "productionRun": 600,
+        "priceEuro": 185000,
+        "horsepower": 400,
+        "salesVolume": 600,
+        "popCultureScore": 88,
+        "technicalInnovation": 95,
+        "launchYear": 2017
+      },
+      {
+        "name": "Dallara P217 (LMP2)",
+        "productionRun": 30,
+        "priceEuro": 483000,
+        "horsepower": 600,
+        "salesVolume": 30,
+        "popCultureScore": 80,
+        "technicalInnovation": 94,
+        "launchYear": 2017
+      },
+      {
+        "name": "Dallara IR-18 (IndyCar)",
+        "productionRun": 150,
+        "priceEuro": 450000,
+        "horsepower": 750,
+        "salesVolume": 150,
+        "popCultureScore": 90,
+        "technicalInnovation": 95,
+        "launchYear": 2018
+      },
+      {
+        "name": "Dallara F3 2019",
+        "productionRun": 45,
+        "priceEuro": 250000,
+        "horsepower": 380,
+        "salesVolume": 45,
+        "popCultureScore": 75,
+        "technicalInnovation": 92,
+        "launchYear": 2019
+      },
+      {
+        "name": "Dallara Stradale Club Italia",
+        "productionRun": 10,
+        "priceEuro": 250000,
+        "horsepower": 400,
+        "salesVolume": 10,
+        "popCultureScore": 80,
+        "technicalInnovation": 95,
+        "launchYear": 2020
+      },
+      {
+        "name": "Dallara EXP",
+        "productionRun": 100,
+        "priceEuro": 340000,
+        "horsepower": 500,
+        "salesVolume": 100,
+        "popCultureScore": 85,
+        "technicalInnovation": 96,
+        "launchYear": 2021
+      },
+      {
+        "name": "Dallara Stradale D50",
+        "productionRun": 50,
+        "priceEuro": 230000,
+        "horsepower": 400,
+        "salesVolume": 50,
+        "popCultureScore": 80,
+        "technicalInnovation": 95,
+        "launchYear": 2022
+      },
+      {
+        "name": "Dallara SF23 (Super Formula)",
+        "productionRun": 30,
+        "priceEuro": 400000,
+        "horsepower": 550,
+        "salesVolume": 30,
+        "popCultureScore": 80,
+        "technicalInnovation": 95,
+        "launchYear": 2023
+      },
+      {
+        "name": "Dallara F2 2024",
+        "productionRun": 40,
+        "priceEuro": 500000,
+        "horsepower": 620,
+        "salesVolume": 40,
+        "popCultureScore": 82,
+        "technicalInnovation": 96,
+        "launchYear": 2024
+      }
+    ]
+  },
+  "BYD": {
+    "brandScore": 78,
+    "brandHeritage": 55,
+    "models": [
+      {
+        "name": "BYD Han EV",
+        "productionRun": 500000,
+        "priceEuro": 70000,
+        "horsepower": 517,
+        "salesVolume": 500000,
+        "popCultureScore": 80,
+        "technicalInnovation": 88,
+        "launchYear": 2020
+      },
+      {
+        "name": "BYD Tang EV",
+        "productionRun": 350000,
+        "priceEuro": 72000,
+        "horsepower": 517,
+        "salesVolume": 350000,
+        "popCultureScore": 75,
+        "technicalInnovation": 85,
+        "launchYear": 2021
+      },
+      {
+        "name": "BYD Song Plus DM-i",
+        "productionRun": 800000,
+        "priceEuro": 25000,
+        "horsepower": 307,
+        "salesVolume": 800000,
+        "popCultureScore": 70,
+        "technicalInnovation": 85,
+        "launchYear": 2021
+      },
+      {
+        "name": "BYD Dolphin",
+        "productionRun": 500000,
+        "priceEuro": 30000,
+        "horsepower": 204,
+        "salesVolume": 500000,
+        "popCultureScore": 75,
+        "technicalInnovation": 80,
+        "launchYear": 2021
+      },
+      {
+        "name": "BYD Atto 3",
+        "productionRun": 600000,
+        "priceEuro": 38000,
+        "horsepower": 204,
+        "salesVolume": 600000,
+        "popCultureScore": 75,
+        "technicalInnovation": 82,
+        "launchYear": 2022
+      },
+      {
+        "name": "BYD Seal",
+        "productionRun": 200000,
+        "priceEuro": 46000,
+        "horsepower": 530,
+        "salesVolume": 200000,
+        "popCultureScore": 80,
+        "technicalInnovation": 88,
+        "launchYear": 2022
+      },
+      {
+        "name": "BYD Denza D9",
+        "productionRun": 150000,
+        "priceEuro": 50000,
+        "horsepower": 374,
+        "salesVolume": 150000,
+        "popCultureScore": 75,
+        "technicalInnovation": 85,
+        "launchYear": 2022
+      },
+      {
+        "name": "BYD Seagull",
+        "productionRun": 400000,
+        "priceEuro": 10000,
+        "horsepower": 75,
+        "salesVolume": 400000,
+        "popCultureScore": 80,
+        "technicalInnovation": 82,
+        "launchYear": 2023
+      },
+      {
+        "name": "BYD Fangchengbao Bao 5",
+        "productionRun": 50000,
+        "priceEuro": 40000,
+        "horsepower": 687,
+        "salesVolume": 50000,
+        "popCultureScore": 80,
+        "technicalInnovation": 90,
+        "launchYear": 2023
+      },
+      {
+        "name": "BYD Yangwang U8",
+        "productionRun": 25000,
+        "priceEuro": 140000,
+        "horsepower": 1197,
+        "salesVolume": 25000,
+        "popCultureScore": 90,
+        "technicalInnovation": 96,
+        "launchYear": 2023
+      },
+      {
+        "name": "BYD Yangwang U9",
+        "productionRun": 2000,
+        "priceEuro": 215000,
+        "horsepower": 1306,
+        "salesVolume": 2000,
+        "popCultureScore": 85,
+        "technicalInnovation": 96,
+        "launchYear": 2024
+      },
+      {
+        "name": "BYD Shark",
+        "productionRun": 30000,
+        "priceEuro": 50000,
+        "horsepower": 430,
+        "salesVolume": 30000,
+        "popCultureScore": 78,
+        "technicalInnovation": 88,
+        "launchYear": 2024
       }
     ]
   }
