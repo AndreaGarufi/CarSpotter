@@ -6868,6 +6868,26 @@
         "popCultureScore": 70,
         "technicalInnovation": 65,
         "launchYear": 2013
+      },
+      {
+        "name": "Mercedes-Benz SL-Class (R231)",
+        "productionRun": 35000,
+        "priceEuro": 99000,
+        "horsepower": 455,
+        "salesVolume": 35000,
+        "popCultureScore": 70,
+        "technicalInnovation": 70,
+        "launchYear": 2012
+      },
+      {
+        "name": "Mercedes-Maybach GLS 600",
+        "productionRun": 15000,
+        "priceEuro": 175000,
+        "horsepower": 558,
+        "salesVolume": 15000,
+        "popCultureScore": 75,
+        "technicalInnovation": 70,
+        "launchYear": 2020
       }
     ]
   },
@@ -7882,6 +7902,16 @@
         "popCultureScore": 20,
         "technicalInnovation": 40,
         "launchYear": 2023
+      },
+      {
+        "name": "Chevrolet Corvette C6",
+        "productionRun": 215000,
+        "priceEuro": 52000,
+        "horsepower": 436,
+        "salesVolume": 215000,
+        "popCultureScore": 75,
+        "technicalInnovation": 70,
+        "launchYear": 2005
       }
     ]
   },
