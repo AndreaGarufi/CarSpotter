@@ -9938,5 +9938,761 @@
         "launchYear": 2024
       }
     ]
+  },
+  "Lexus": {
+    "brandScore": 86,
+    "brandHeritage": 80,
+    "models": [
+      {
+        "name": "Lexus LS 400 (XF10)",
+        "productionRun": 165000,
+        "priceEuro": 38000,
+        "horsepower": 250,
+        "salesVolume": 165000,
+        "popCultureScore": 90,
+        "technicalInnovation": 92,
+        "launchYear": 1989
+      },
+      {
+        "name": "Lexus IS 200 (XE10)",
+        "productionRun": 150000,
+        "priceEuro": 26000,
+        "horsepower": 155,
+        "salesVolume": 150000,
+        "popCultureScore": 82,
+        "technicalInnovation": 78,
+        "launchYear": 1998
+      },
+      {
+        "name": "Lexus SC 430",
+        "productionRun": 72000,
+        "priceEuro": 72000,
+        "horsepower": 286,
+        "salesVolume": 72000,
+        "popCultureScore": 75,
+        "technicalInnovation": 75,
+        "launchYear": 2001
+      },
+      {
+        "name": "Lexus RX 400h",
+        "productionRun": 200000,
+        "priceEuro": 58000,
+        "horsepower": 272,
+        "salesVolume": 200000,
+        "popCultureScore": 80,
+        "technicalInnovation": 90,
+        "launchYear": 2005
+      },
+      {
+        "name": "Lexus IS F",
+        "productionRun": 12000,
+        "priceEuro": 70000,
+        "horsepower": 423,
+        "salesVolume": 12000,
+        "popCultureScore": 85,
+        "technicalInnovation": 85,
+        "launchYear": 2007
+      },
+      {
+        "name": "Lexus LFA",
+        "productionRun": 500,
+        "priceEuro": 375000,
+        "horsepower": 560,
+        "salesVolume": 500,
+        "popCultureScore": 98,
+        "technicalInnovation": 96,
+        "launchYear": 2010
+      },
+      {
+        "name": "Lexus LFA Nürburgring Package",
+        "productionRun": 50,
+        "priceEuro": 445000,
+        "horsepower": 571,
+        "salesVolume": 50,
+        "popCultureScore": 92,
+        "technicalInnovation": 96,
+        "launchYear": 2012
+      },
+      {
+        "name": "Lexus RC F",
+        "productionRun": 18000,
+        "priceEuro": 82000,
+        "horsepower": 477,
+        "salesVolume": 18000,
+        "popCultureScore": 80,
+        "technicalInnovation": 82,
+        "launchYear": 2014
+      },
+      {
+        "name": "Lexus GS F",
+        "productionRun": 4000,
+        "priceEuro": 95000,
+        "horsepower": 477,
+        "salesVolume": 4000,
+        "popCultureScore": 80,
+        "technicalInnovation": 84,
+        "launchYear": 2015
+      },
+      {
+        "name": "Lexus LC 500",
+        "productionRun": 25000,
+        "priceEuro": 105000,
+        "horsepower": 477,
+        "salesVolume": 25000,
+        "popCultureScore": 85,
+        "technicalInnovation": 86,
+        "launchYear": 2017
+      },
+      {
+        "name": "Lexus LX 600",
+        "productionRun": 35000,
+        "priceEuro": 110000,
+        "horsepower": 415,
+        "salesVolume": 35000,
+        "popCultureScore": 82,
+        "technicalInnovation": 85,
+        "launchYear": 2021
+      },
+      {
+        "name": "Lexus NX 450h+",
+        "productionRun": 150000,
+        "priceEuro": 65000,
+        "horsepower": 309,
+        "salesVolume": 150000,
+        "popCultureScore": 75,
+        "technicalInnovation": 86,
+        "launchYear": 2021
+      },
+      {
+        "name": "Lexus LBX",
+        "productionRun": 40000,
+        "priceEuro": 38000,
+        "horsepower": 136,
+        "salesVolume": 40000,
+        "popCultureScore": 70,
+        "technicalInnovation": 80,
+        "launchYear": 2023
+      }
+    ]
+  },
+  "Suzuki": {
+    "brandScore": 76,
+    "brandHeritage": 85,
+    "models": [
+      {
+        "name": "Suzuki Jimny (LJ10)",
+        "productionRun": 105000,
+        "priceEuro": 2000,
+        "horsepower": 25,
+        "salesVolume": 105000,
+        "popCultureScore": 85,
+        "technicalInnovation": 80,
+        "launchYear": 1970
+      },
+      {
+        "name": "Suzuki Samurai (SJ413)",
+        "productionRun": 800000,
+        "priceEuro": 9000,
+        "horsepower": 64,
+        "salesVolume": 800000,
+        "popCultureScore": 90,
+        "technicalInnovation": 75,
+        "launchYear": 1985
+      },
+      {
+        "name": "Suzuki Vitara (1st Gen)",
+        "productionRun": 1100000,
+        "priceEuro": 13000,
+        "horsepower": 80,
+        "salesVolume": 1100000,
+        "popCultureScore": 85,
+        "technicalInnovation": 78,
+        "launchYear": 1988
+      },
+      {
+        "name": "Suzuki Cappuccino",
+        "productionRun": 28010,
+        "priceEuro": 12000,
+        "horsepower": 64,
+        "salesVolume": 28010,
+        "popCultureScore": 90,
+        "technicalInnovation": 82,
+        "launchYear": 1991
+      },
+      {
+        "name": "Suzuki Escudo Pikes Peak",
+        "productionRun": 2,
+        "priceEuro": 1000000,
+        "horsepower": 985,
+        "salesVolume": 2,
+        "popCultureScore": 98,
+        "technicalInnovation": 95,
+        "launchYear": 1996
+      },
+      {
+        "name": "Suzuki Swift Sport (ZC31S)",
+        "productionRun": 85000,
+        "priceEuro": 15000,
+        "horsepower": 125,
+        "salesVolume": 85000,
+        "popCultureScore": 82,
+        "technicalInnovation": 75,
+        "launchYear": 2005
+      },
+      {
+        "name": "Suzuki Grand Vitara (2nd Gen)",
+        "productionRun": 850000,
+        "priceEuro": 24000,
+        "horsepower": 140,
+        "salesVolume": 850000,
+        "popCultureScore": 75,
+        "technicalInnovation": 80,
+        "launchYear": 2005
+      },
+      {
+        "name": "Suzuki Kizashi",
+        "productionRun": 40000,
+        "priceEuro": 28000,
+        "horsepower": 185,
+        "salesVolume": 40000,
+        "popCultureScore": 70,
+        "technicalInnovation": 80,
+        "launchYear": 2009
+      },
+      {
+        "name": "Suzuki Swift Sport (ZC32S)",
+        "productionRun": 90000,
+        "priceEuro": 18000,
+        "horsepower": 136,
+        "salesVolume": 90000,
+        "popCultureScore": 80,
+        "technicalInnovation": 76,
+        "launchYear": 2011
+      },
+      {
+        "name": "Suzuki Alto Works (HA36S)",
+        "productionRun": 45000,
+        "priceEuro": 12500,
+        "horsepower": 64,
+        "salesVolume": 45000,
+        "popCultureScore": 85,
+        "technicalInnovation": 80,
+        "launchYear": 2015
+      },
+      {
+        "name": "Suzuki Ignis (3rd Gen)",
+        "productionRun": 300000,
+        "priceEuro": 16500,
+        "horsepower": 90,
+        "salesVolume": 300000,
+        "popCultureScore": 75,
+        "technicalInnovation": 78,
+        "launchYear": 2016
+      },
+      {
+        "name": "Suzuki Swift Sport (ZC33S)",
+        "productionRun": 95000,
+        "priceEuro": 21500,
+        "horsepower": 140,
+        "salesVolume": 95000,
+        "popCultureScore": 85,
+        "technicalInnovation": 82,
+        "launchYear": 2017
+      },
+      {
+        "name": "Suzuki Jimny (JB74)",
+        "productionRun": 350000,
+        "priceEuro": 22000,
+        "horsepower": 102,
+        "salesVolume": 350000,
+        "popCultureScore": 95,
+        "technicalInnovation": 80,
+        "launchYear": 2018
+      }
+    ]
+  },
+  "Seat": {
+    "brandScore": 72,
+    "brandHeritage": 78,
+    "models": [
+      {
+        "name": "Seat 600",
+        "productionRun": 797319,
+        "priceEuro": 400,
+        "horsepower": 21,
+        "salesVolume": 797319,
+        "popCultureScore": 95,
+        "technicalInnovation": 60,
+        "launchYear": 1957
+      },
+      {
+        "name": "Seat 124",
+        "productionRun": 896136,
+        "priceEuro": 1200,
+        "horsepower": 60,
+        "salesVolume": 896136,
+        "popCultureScore": 85,
+        "technicalInnovation": 65,
+        "launchYear": 1968
+      },
+      {
+        "name": "Seat 127",
+        "productionRun": 1345203,
+        "priceEuro": 1500,
+        "horsepower": 47,
+        "salesVolume": 1345203,
+        "popCultureScore": 80,
+        "technicalInnovation": 70,
+        "launchYear": 1972
+      },
+      {
+        "name": "Seat Ibiza (1st Gen)",
+        "productionRun": 1342001,
+        "priceEuro": 6000,
+        "horsepower": 85,
+        "salesVolume": 1342001,
+        "popCultureScore": 90,
+        "technicalInnovation": 78,
+        "launchYear": 1984
+      },
+      {
+        "name": "Seat Toledo (1st Gen)",
+        "productionRun": 559041,
+        "priceEuro": 13000,
+        "horsepower": 115,
+        "salesVolume": 559041,
+        "popCultureScore": 75,
+        "technicalInnovation": 75,
+        "launchYear": 1991
+      },
+      {
+        "name": "Seat Ibiza Cupra (6K)",
+        "productionRun": 15000,
+        "priceEuro": 17000,
+        "horsepower": 150,
+        "salesVolume": 15000,
+        "popCultureScore": 85,
+        "technicalInnovation": 80,
+        "launchYear": 1996
+      },
+      {
+        "name": "Seat Leon Cupra R (1M)",
+        "productionRun": 10000,
+        "priceEuro": 26000,
+        "horsepower": 225,
+        "salesVolume": 10000,
+        "popCultureScore": 88,
+        "technicalInnovation": 82,
+        "launchYear": 2002
+      },
+      {
+        "name": "Seat Ibiza Cupra (6L)",
+        "productionRun": 12000,
+        "priceEuro": 21000,
+        "horsepower": 180,
+        "salesVolume": 12000,
+        "popCultureScore": 85,
+        "technicalInnovation": 80,
+        "launchYear": 2004
+      },
+      {
+        "name": "Seat Leon Cupra (5F)",
+        "productionRun": 25000,
+        "priceEuro": 32000,
+        "horsepower": 280,
+        "salesVolume": 25000,
+        "popCultureScore": 88,
+        "technicalInnovation": 85,
+        "launchYear": 2014
+      },
+      {
+        "name": "Seat Ateca",
+        "productionRun": 400000,
+        "priceEuro": 25000,
+        "horsepower": 150,
+        "salesVolume": 400000,
+        "popCultureScore": 75,
+        "technicalInnovation": 80,
+        "launchYear": 2016
+      },
+      {
+        "name": "Seat Arona",
+        "productionRun": 500000,
+        "priceEuro": 19000,
+        "horsepower": 115,
+        "salesVolume": 500000,
+        "popCultureScore": 75,
+        "technicalInnovation": 78,
+        "launchYear": 2017
+      },
+      {
+        "name": "Seat Tarraco",
+        "productionRun": 90000,
+        "priceEuro": 35000,
+        "horsepower": 190,
+        "salesVolume": 90000,
+        "popCultureScore": 70,
+        "technicalInnovation": 80,
+        "launchYear": 2018
+      }
+    ]
+  },
+  "Skoda": {
+    "brandScore": 75,
+    "brandHeritage": 88,
+    "models": [
+      {
+        "name": "Skoda Felicia",
+        "productionRun": 14863,
+        "priceEuro": 1500,
+        "horsepower": 50,
+        "salesVolume": 14863,
+        "popCultureScore": 85,
+        "technicalInnovation": 70,
+        "launchYear": 1959
+      },
+      {
+        "name": "Skoda 1000 MB",
+        "productionRun": 443156,
+        "priceEuro": 1800,
+        "horsepower": 42,
+        "salesVolume": 443156,
+        "popCultureScore": 80,
+        "technicalInnovation": 75,
+        "launchYear": 1964
+      },
+      {
+        "name": "Skoda 130 RS",
+        "productionRun": 200,
+        "priceEuro": 8000,
+        "horsepower": 140,
+        "salesVolume": 200,
+        "popCultureScore": 88,
+        "technicalInnovation": 80,
+        "launchYear": 1975
+      },
+      {
+        "name": "Skoda Favorit",
+        "productionRun": 783168,
+        "priceEuro": 5000,
+        "horsepower": 62,
+        "salesVolume": 783168,
+        "popCultureScore": 82,
+        "technicalInnovation": 75,
+        "launchYear": 1987
+      },
+      {
+        "name": "Skoda Octavia (1st Gen)",
+        "productionRun": 1442126,
+        "priceEuro": 12000,
+        "horsepower": 90,
+        "salesVolume": 1442126,
+        "popCultureScore": 82,
+        "technicalInnovation": 78,
+        "launchYear": 1996
+      },
+      {
+        "name": "Skoda Octavia RS (1st Gen)",
+        "productionRun": 25000,
+        "priceEuro": 22000,
+        "horsepower": 180,
+        "salesVolume": 25000,
+        "popCultureScore": 85,
+        "technicalInnovation": 80,
+        "launchYear": 2001
+      },
+      {
+        "name": "Skoda Fabia RS (1st Gen)",
+        "productionRun": 21554,
+        "priceEuro": 17500,
+        "horsepower": 130,
+        "salesVolume": 21554,
+        "popCultureScore": 85,
+        "technicalInnovation": 80,
+        "launchYear": 2003
+      },
+      {
+        "name": "Skoda Yeti",
+        "productionRun": 684686,
+        "priceEuro": 21000,
+        "horsepower": 140,
+        "salesVolume": 684686,
+        "popCultureScore": 85,
+        "technicalInnovation": 80,
+        "launchYear": 2009
+      },
+      {
+        "name": "Skoda Superb (3rd Gen)",
+        "productionRun": 500000,
+        "priceEuro": 38000,
+        "horsepower": 280,
+        "salesVolume": 500000,
+        "popCultureScore": 80,
+        "technicalInnovation": 84,
+        "launchYear": 2015
+      },
+      {
+        "name": "Skoda Kodiaq RS",
+        "productionRun": 20000,
+        "priceEuro": 50000,
+        "horsepower": 240,
+        "salesVolume": 20000,
+        "popCultureScore": 80,
+        "technicalInnovation": 82,
+        "launchYear": 2018
+      },
+      {
+        "name": "Skoda Octavia RS (4th Gen)",
+        "productionRun": 45000,
+        "priceEuro": 42000,
+        "horsepower": 245,
+        "salesVolume": 45000,
+        "popCultureScore": 82,
+        "technicalInnovation": 84,
+        "launchYear": 2020
+      },
+      {
+        "name": "Skoda Enyaq RS iV",
+        "productionRun": 15000,
+        "priceEuro": 62000,
+        "horsepower": 299,
+        "salesVolume": 15000,
+        "popCultureScore": 80,
+        "technicalInnovation": 88,
+        "launchYear": 2022
+      }
+    ]
+  },
+  "Rimac": {
+    "brandScore": 92,
+    "brandHeritage": 65,
+    "models": [
+      {
+        "name": "Rimac Green Monster",
+        "productionRun": 1,
+        "priceEuro": 150000,
+        "horsepower": 600,
+        "salesVolume": 1,
+        "popCultureScore": 85,
+        "technicalInnovation": 90,
+        "launchYear": 2011
+      },
+      {
+        "name": "Rimac Concept_One",
+        "productionRun": 8,
+        "priceEuro": 1000000,
+        "horsepower": 1088,
+        "salesVolume": 8,
+        "popCultureScore": 92,
+        "technicalInnovation": 95,
+        "launchYear": 2011
+      },
+      {
+        "name": "Rimac Ampster",
+        "productionRun": 1,
+        "priceEuro": 40000,
+        "horsepower": 85,
+        "salesVolume": 1,
+        "popCultureScore": 65,
+        "technicalInnovation": 85,
+        "launchYear": 2012
+      },
+      {
+        "name": "Rimac Tajima E-Runner",
+        "productionRun": 1,
+        "priceEuro": 1200000,
+        "horsepower": 1475,
+        "salesVolume": 1,
+        "popCultureScore": 80,
+        "technicalInnovation": 94,
+        "launchYear": 2015
+      },
+      {
+        "name": "Rimac Concept S",
+        "productionRun": 2,
+        "priceEuro": 1400000,
+        "horsepower": 1384,
+        "salesVolume": 2,
+        "popCultureScore": 85,
+        "technicalInnovation": 95,
+        "launchYear": 2016
+      },
+      {
+        "name": "Rimac C_Two",
+        "productionRun": 4,
+        "priceEuro": 1800000,
+        "horsepower": 1914,
+        "salesVolume": 4,
+        "popCultureScore": 90,
+        "technicalInnovation": 96,
+        "launchYear": 2018
+      },
+      {
+        "name": "Rimac Nevera",
+        "productionRun": 150,
+        "priceEuro": 2000000,
+        "horsepower": 1914,
+        "salesVolume": 150,
+        "popCultureScore": 96,
+        "technicalInnovation": 98,
+        "launchYear": 2021
+      },
+      {
+        "name": "Rimac Nevera Time Attack",
+        "productionRun": 12,
+        "priceEuro": 2300000,
+        "horsepower": 1914,
+        "salesVolume": 12,
+        "popCultureScore": 90,
+        "technicalInnovation": 98,
+        "launchYear": 2023
+      },
+      {
+        "name": "Rimac Nevera R",
+        "productionRun": 40,
+        "priceEuro": 2500000,
+        "horsepower": 2107,
+        "salesVolume": 40,
+        "popCultureScore": 92,
+        "technicalInnovation": 98,
+        "launchYear": 2024
+      },
+      {
+        "name": "Rimac Verne",
+        "productionRun": 100,
+        "priceEuro": 80000,
+        "horsepower": 200,
+        "salesVolume": 100,
+        "popCultureScore": 75,
+        "technicalInnovation": 92,
+        "launchYear": 2024
+      }
+    ]
+  },
+  "Rolls-Royce": {
+    "brandScore": 95,
+    "brandHeritage": 98,
+    "models": [
+      {
+        "name": "Rolls-Royce Silver Cloud",
+        "productionRun": 7372,
+        "priceEuro": 14000,
+        "horsepower": 178,
+        "salesVolume": 7372,
+        "popCultureScore": 92,
+        "technicalInnovation": 75,
+        "launchYear": 1955
+      },
+      {
+        "name": "Rolls-Royce Phantom V",
+        "productionRun": 516,
+        "priceEuro": 28000,
+        "horsepower": 200,
+        "salesVolume": 516,
+        "popCultureScore": 95,
+        "technicalInnovation": 78,
+        "launchYear": 1959
+      },
+      {
+        "name": "Rolls-Royce Silver Shadow",
+        "productionRun": 30057,
+        "priceEuro": 18000,
+        "horsepower": 220,
+        "salesVolume": 30057,
+        "popCultureScore": 90,
+        "technicalInnovation": 85,
+        "launchYear": 1965
+      },
+      {
+        "name": "Rolls-Royce Corniche",
+        "productionRun": 6078,
+        "priceEuro": 45000,
+        "horsepower": 240,
+        "salesVolume": 6078,
+        "popCultureScore": 90,
+        "technicalInnovation": 80,
+        "launchYear": 1971
+      },
+      {
+        "name": "Rolls-Royce Silver Seraph",
+        "productionRun": 1570,
+        "priceEuro": 220000,
+        "horsepower": 326,
+        "salesVolume": 1570,
+        "popCultureScore": 82,
+        "technicalInnovation": 82,
+        "launchYear": 1998
+      },
+      {
+        "name": "Rolls-Royce Phantom VII",
+        "productionRun": 10327,
+        "priceEuro": 380000,
+        "horsepower": 460,
+        "salesVolume": 10327,
+        "popCultureScore": 96,
+        "technicalInnovation": 90,
+        "launchYear": 2003
+      },
+      {
+        "name": "Rolls-Royce Ghost (1st Gen)",
+        "productionRun": 15000,
+        "priceEuro": 260000,
+        "horsepower": 570,
+        "salesVolume": 15000,
+        "popCultureScore": 90,
+        "technicalInnovation": 88,
+        "launchYear": 2009
+      },
+      {
+        "name": "Rolls-Royce Wraith",
+        "productionRun": 12000,
+        "priceEuro": 290000,
+        "horsepower": 632,
+        "salesVolume": 12000,
+        "popCultureScore": 92,
+        "technicalInnovation": 88,
+        "launchYear": 2013
+      },
+      {
+        "name": "Rolls-Royce Dawn",
+        "productionRun": 6000,
+        "priceEuro": 330000,
+        "horsepower": 571,
+        "salesVolume": 6000,
+        "popCultureScore": 88,
+        "technicalInnovation": 86,
+        "launchYear": 2015
+      },
+      {
+        "name": "Rolls-Royce Cullinan",
+        "productionRun": 25000,
+        "priceEuro": 365000,
+        "horsepower": 571,
+        "salesVolume": 25000,
+        "popCultureScore": 95,
+        "technicalInnovation": 90,
+        "launchYear": 2018
+      },
+      {
+        "name": "Rolls-Royce Phantom VIII",
+        "productionRun": 8000,
+        "priceEuro": 480000,
+        "horsepower": 571,
+        "salesVolume": 8000,
+        "popCultureScore": 95,
+        "technicalInnovation": 94,
+        "launchYear": 2017
+      },
+      {
+        "name": "Rolls-Royce Spectre",
+        "productionRun": 3000,
+        "priceEuro": 395000,
+        "horsepower": 585,
+        "salesVolume": 3000,
+        "popCultureScore": 92,
+        "technicalInnovation": 96,
+        "launchYear": 2023
+      }
+    ]
   }
 }
