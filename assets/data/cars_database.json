@@ -10964,5 +10964,343 @@
         "launchYear": 2023
       }
     ]
+  },
+  "Renault": {
+    "brandScore": 62,
+    "brandHeritage": 88,
+    "models": [
+      {
+        "name": "Renault 4",
+        "productionRun": 8135424,
+        "priceEuro": 600,
+        "horsepower": 32,
+        "salesVolume": 8135424,
+        "popCultureScore": 90,
+        "technicalInnovation": 65,
+        "launchYear": 1961
+      },
+      {
+        "name": "Renault 5",
+        "productionRun": 9008912,
+        "priceEuro": 5700,
+        "horsepower": 55,
+        "salesVolume": 9008912,
+        "popCultureScore": 95,
+        "technicalInnovation": 70,
+        "launchYear": 1972
+      },
+      {
+        "name": "Renault 5 Turbo",
+        "productionRun": 4987,
+        "priceEuro": 17500,
+        "horsepower": 160,
+        "salesVolume": 4987,
+        "popCultureScore": 92,
+        "technicalInnovation": 85,
+        "launchYear": 1980
+      },
+      {
+        "name": "Renault Espace",
+        "productionRun": 1400000,
+        "priceEuro": 42000,
+        "horsepower": 200,
+        "salesVolume": 1400000,
+        "popCultureScore": 75,
+        "technicalInnovation": 85,
+        "launchYear": 1984
+      },
+      {
+        "name": "Renault Clio",
+        "productionRun": 17000000,
+        "priceEuro": 19900,
+        "horsepower": 115,
+        "salesVolume": 17000000,
+        "popCultureScore": 80,
+        "technicalInnovation": 60,
+        "launchYear": 1990
+      },
+      {
+        "name": "Renault Clio Williams",
+        "productionRun": 12100,
+        "priceEuro": 19700,
+        "horsepower": 150,
+        "salesVolume": 12100,
+        "popCultureScore": 85,
+        "technicalInnovation": 60,
+        "launchYear": 1993
+      },
+      {
+        "name": "Renault Twingo",
+        "productionRun": 5200000,
+        "priceEuro": 10000,
+        "horsepower": 70,
+        "salesVolume": 5200000,
+        "popCultureScore": 75,
+        "technicalInnovation": 65,
+        "launchYear": 1992
+      },
+      {
+        "name": "Renault Sport Spider",
+        "productionRun": 1726,
+        "priceEuro": 33000,
+        "horsepower": 150,
+        "salesVolume": 1726,
+        "popCultureScore": 78,
+        "technicalInnovation": 88,
+        "launchYear": 1995
+      },
+      {
+        "name": "Renault Clio V6",
+        "productionRun": 2822,
+        "priceEuro": 40000,
+        "horsepower": 255,
+        "salesVolume": 2822,
+        "popCultureScore": 85,
+        "technicalInnovation": 85,
+        "launchYear": 2000
+      },
+      {
+        "name": "Renault Mégane R26.R",
+        "productionRun": 450,
+        "priceEuro": 32500,
+        "horsepower": 230,
+        "salesVolume": 450,
+        "popCultureScore": 80,
+        "technicalInnovation": 70,
+        "launchYear": 2008
+      },
+      {
+        "name": "Renault Zoe",
+        "productionRun": 426000,
+        "priceEuro": 32000,
+        "horsepower": 135,
+        "salesVolume": 426000,
+        "popCultureScore": 50,
+        "technicalInnovation": 78,
+        "launchYear": 2012
+      },
+      {
+        "name": "Renault 5 E-Tech",
+        "productionRun": 110000,
+        "priceEuro": 24990,
+        "horsepower": 120,
+        "salesVolume": 110000,
+        "popCultureScore": 80,
+        "technicalInnovation": 85,
+        "launchYear": 2024
+      }
+    ]
+  },
+  "Alpine": {
+    "brandScore": 84,
+    "brandHeritage": 80,
+    "models": [
+      {
+        "name": "Alpine A106",
+        "productionRun": 251,
+        "priceEuro": 1300,
+        "horsepower": 38,
+        "salesVolume": 251,
+        "popCultureScore": 35,
+        "technicalInnovation": 55,
+        "launchYear": 1955
+      },
+      {
+        "name": "Alpine A108",
+        "productionRun": 236,
+        "priceEuro": 2000,
+        "horsepower": 59,
+        "salesVolume": 236,
+        "popCultureScore": 35,
+        "technicalInnovation": 55,
+        "launchYear": 1958
+      },
+      {
+        "name": "Alpine GT4",
+        "productionRun": 263,
+        "priceEuro": 3500,
+        "horsepower": 66,
+        "salesVolume": 263,
+        "popCultureScore": 30,
+        "technicalInnovation": 50,
+        "launchYear": 1962
+      },
+      {
+        "name": "Alpine A110 Berlinette",
+        "productionRun": 7176,
+        "priceEuro": 4500,
+        "horsepower": 140,
+        "salesVolume": 7176,
+        "popCultureScore": 92,
+        "technicalInnovation": 70,
+        "launchYear": 1961
+      },
+      {
+        "name": "Alpine A310",
+        "productionRun": 11616,
+        "priceEuro": 9000,
+        "horsepower": 150,
+        "salesVolume": 11616,
+        "popCultureScore": 70,
+        "technicalInnovation": 65,
+        "launchYear": 1971
+      },
+      {
+        "name": "Alpine GTA",
+        "productionRun": 6494,
+        "priceEuro": 27000,
+        "horsepower": 200,
+        "salesVolume": 6494,
+        "popCultureScore": 65,
+        "technicalInnovation": 70,
+        "launchYear": 1984
+      },
+      {
+        "name": "Alpine A610",
+        "productionRun": 818,
+        "priceEuro": 52000,
+        "horsepower": 250,
+        "salesVolume": 818,
+        "popCultureScore": 72,
+        "technicalInnovation": 75,
+        "launchYear": 1991
+      },
+      {
+        "name": "Alpine A110",
+        "productionRun": 28701,
+        "priceEuro": 58500,
+        "horsepower": 252,
+        "salesVolume": 28701,
+        "popCultureScore": 90,
+        "technicalInnovation": 88,
+        "launchYear": 2017
+      },
+      {
+        "name": "Alpine A290",
+        "productionRun": 10650,
+        "priceEuro": 39300,
+        "horsepower": 180,
+        "salesVolume": 10650,
+        "popCultureScore": 75,
+        "technicalInnovation": 85,
+        "launchYear": 2024
+      },
+      {
+        "name": "Alpine A390",
+        "productionRun": 2500,
+        "priceEuro": 67500,
+        "horsepower": 400,
+        "salesVolume": 2500,
+        "popCultureScore": 70,
+        "technicalInnovation": 90,
+        "launchYear": 2025
+      }
+    ]
+  },
+  "DS Automobiles": {
+    "brandScore": 55,
+    "brandHeritage": 68,
+    "models": [
+      {
+        "name": "Citroën DS",
+        "productionRun": 1455746,
+        "priceEuro": 1450,
+        "horsepower": 75,
+        "salesVolume": 1455746,
+        "popCultureScore": 98,
+        "technicalInnovation": 100,
+        "launchYear": 1955
+      },
+      {
+        "name": "Citroën DS Décapotable",
+        "productionRun": 1365,
+        "priceEuro": 3500,
+        "horsepower": 75,
+        "salesVolume": 1365,
+        "popCultureScore": 85,
+        "technicalInnovation": 90,
+        "launchYear": 1958
+      },
+      {
+        "name": "DS 3",
+        "productionRun": 183482,
+        "priceEuro": 15000,
+        "horsepower": 95,
+        "salesVolume": 183482,
+        "popCultureScore": 60,
+        "technicalInnovation": 55,
+        "launchYear": 2009
+      },
+      {
+        "name": "DS 3 Racing",
+        "productionRun": 2400,
+        "priceEuro": 29900,
+        "horsepower": 207,
+        "salesVolume": 2400,
+        "popCultureScore": 70,
+        "technicalInnovation": 60,
+        "launchYear": 2010
+      },
+      {
+        "name": "DS 3 Crossback",
+        "productionRun": 90000,
+        "priceEuro": 24500,
+        "horsepower": 100,
+        "salesVolume": 90000,
+        "popCultureScore": 45,
+        "technicalInnovation": 70,
+        "launchYear": 2018
+      },
+      {
+        "name": "DS 4",
+        "productionRun": 150000,
+        "priceEuro": 30000,
+        "horsepower": 130,
+        "salesVolume": 150000,
+        "popCultureScore": 40,
+        "technicalInnovation": 65,
+        "launchYear": 2011
+      },
+      {
+        "name": "DS 5",
+        "productionRun": 80000,
+        "priceEuro": 30000,
+        "horsepower": 160,
+        "salesVolume": 80000,
+        "popCultureScore": 40,
+        "technicalInnovation": 75,
+        "launchYear": 2011
+      },
+      {
+        "name": "DS 7",
+        "productionRun": 130000,
+        "priceEuro": 32000,
+        "horsepower": 130,
+        "salesVolume": 130000,
+        "popCultureScore": 45,
+        "technicalInnovation": 75,
+        "launchYear": 2017
+      },
+      {
+        "name": "DS 9",
+        "productionRun": 20000,
+        "priceEuro": 47000,
+        "horsepower": 225,
+        "salesVolume": 20000,
+        "popCultureScore": 40,
+        "technicalInnovation": 75,
+        "launchYear": 2020
+      },
+      {
+        "name": "DS N°8",
+        "productionRun": 8000,
+        "priceEuro": 55000,
+        "horsepower": 245,
+        "salesVolume": 8000,
+        "popCultureScore": 40,
+        "technicalInnovation": 80,
+        "launchYear": 2025
+      }
+    ]
   }
 }
