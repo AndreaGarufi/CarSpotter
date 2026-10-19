@@ -11544,5 +11544,1483 @@
         "launchYear": 1960
       }
     ]
+  },
+  "Formula 1": {
+    "brandScore": 99,
+    "brandHeritage": 99,
+    "models": [
+      {
+        "name": "Alfa Romeo Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1950
+      },
+      {
+        "name": "Alta Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1950
+      },
+      {
+        "name": "Cooper Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1950
+      },
+      {
+        "name": "ERA Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1950
+      },
+      {
+        "name": "Ferrari Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1950
+      },
+      {
+        "name": "Kurtis Kraft Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1950
+      },
+      {
+        "name": "Maserati Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1950
+      },
+      {
+        "name": "Milano Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1950
+      },
+      {
+        "name": "Simca-Gordini Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1950
+      },
+      {
+        "name": "SVA Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1950
+      },
+      {
+        "name": "Talbot Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1950
+      },
+      {
+        "name": "Talbot-Lago Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1950
+      },
+      {
+        "name": "BRM Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1951
+      },
+      {
+        "name": "HWM Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1951
+      },
+      {
+        "name": "OSCA Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1951
+      },
+      {
+        "name": "Veritas Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1951
+      },
+      {
+        "name": "AFM Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1952
+      },
+      {
+        "name": "Aston Butterworth Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1952
+      },
+      {
+        "name": "Cisitalia Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1952
+      },
+      {
+        "name": "Connaught Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1952
+      },
+      {
+        "name": "Frazer-Nash Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1952
+      },
+      {
+        "name": "Gordini Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1952
+      },
+      {
+        "name": "Eisenacher Motorenwerk Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1953
+      },
+      {
+        "name": "Greifzu Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1953
+      },
+      {
+        "name": "Klenk Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1954
+      },
+      {
+        "name": "Lancia Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1954
+      },
+      {
+        "name": "Mercedes Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1954
+      },
+      {
+        "name": "Vanwall Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1954
+      },
+      {
+        "name": "Arzani-Volpini Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1955
+      },
+      {
+        "name": "Bugatti Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1956
+      },
+      {
+        "name": "Emeryson Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1956
+      },
+      {
+        "name": "Porsche Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1957
+      },
+      {
+        "name": "Lotus Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1958
+      },
+      {
+        "name": "Aston Martin Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1959
+      },
+      {
+        "name": "Behra-Porsche Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1959
+      },
+      {
+        "name": "Fry Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1959
+      },
+      {
+        "name": "JBW Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1959
+      },
+      {
+        "name": "Tec-Mec Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1959
+      },
+      {
+        "name": "Scarab Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1960
+      },
+      {
+        "name": "De Tomaso Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1961
+      },
+      {
+        "name": "Ferguson Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1961
+      },
+      {
+        "name": "Gilby Engineering Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1961
+      },
+      {
+        "name": "MBM Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1961
+      },
+      {
+        "name": "Brabham Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1962
+      },
+      {
+        "name": "Ecurie Nationale Belge Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1962
+      },
+      {
+        "name": "LDS Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1962
+      },
+      {
+        "name": "Lola Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1962
+      },
+      {
+        "name": "Alfa Special Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1963
+      },
+      {
+        "name": "Automobili Turismo e Sport Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1963
+      },
+      {
+        "name": "British Racing Partnership Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1963
+      },
+      {
+        "name": "Scirocco Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1963
+      },
+      {
+        "name": "Stebro Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1963
+      },
+      {
+        "name": "Honda Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1964
+      },
+      {
+        "name": "RE Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1965
+      },
+      {
+        "name": "Eagle Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1966
+      },
+      {
+        "name": "McLaren Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1966
+      },
+      {
+        "name": "Shannon Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1966
+      },
+      {
+        "name": "Matra Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1967
+      },
+      {
+        "name": "Bellasi Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1970
+      },
+      {
+        "name": "March Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1970
+      },
+      {
+        "name": "Surtees Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1970
+      },
+      {
+        "name": "Tyrrell Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1970
+      },
+      {
+        "name": "Connew Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1972
+      },
+      {
+        "name": "Eifelland Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1972
+      },
+      {
+        "name": "Frank Williams Racing Cars Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1972
+      },
+      {
+        "name": "Tecno Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1972
+      },
+      {
+        "name": "Ensign Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1973
+      },
+      {
+        "name": "Shadow Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1973
+      },
+      {
+        "name": "Amon Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1974
+      },
+      {
+        "name": "Hesketh Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1974
+      },
+      {
+        "name": "Lyncar Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1974
+      },
+      {
+        "name": "Maki Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1974
+      },
+      {
+        "name": "Parnelli Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1974
+      },
+      {
+        "name": "Penske Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1974
+      },
+      {
+        "name": "Token Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1974
+      },
+      {
+        "name": "Trojan Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1974
+      },
+      {
+        "name": "Fittipaldi Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1975
+      },
+      {
+        "name": "Hill Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1975
+      },
+      {
+        "name": "Boro Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1976
+      },
+      {
+        "name": "Kojima Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1976
+      },
+      {
+        "name": "Ligier Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1976
+      },
+      {
+        "name": "Apollon Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1977
+      },
+      {
+        "name": "ATS Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1977
+      },
+      {
+        "name": "LEC Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1977
+      },
+      {
+        "name": "McGuire Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1977
+      },
+      {
+        "name": "Renault Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1977
+      },
+      {
+        "name": "Wolf Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1977
+      },
+      {
+        "name": "Arrows Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1978
+      },
+      {
+        "name": "Martini Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1978
+      },
+      {
+        "name": "Merzario Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1978
+      },
+      {
+        "name": "Theodore Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1978
+      },
+      {
+        "name": "Williams Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1978
+      },
+      {
+        "name": "Kauhsen Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1979
+      },
+      {
+        "name": "Rebaque Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1979
+      },
+      {
+        "name": "Osella Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1980
+      },
+      {
+        "name": "Toleman Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1981
+      },
+      {
+        "name": "RAM Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1983
+      },
+      {
+        "name": "Spirit Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1983
+      },
+      {
+        "name": "Minardi Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1985
+      },
+      {
+        "name": "Zakspeed Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1985
+      },
+      {
+        "name": "AGS Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1986
+      },
+      {
+        "name": "Benetton Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1986
+      },
+      {
+        "name": "Coloni Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1987
+      },
+      {
+        "name": "Dallara Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1988
+      },
+      {
+        "name": "EuroBrun Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1988
+      },
+      {
+        "name": "Rial Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1988
+      },
+      {
+        "name": "FIRST Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1989
+      },
+      {
+        "name": "Onyx Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1989
+      },
+      {
+        "name": "Leyton House Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1990
+      },
+      {
+        "name": "Life Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1990
+      },
+      {
+        "name": "Fondmetal Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1991
+      },
+      {
+        "name": "Jordan Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1991
+      },
+      {
+        "name": "Lambo Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1991
+      },
+      {
+        "name": "Andrea Moda Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1992
+      },
+      {
+        "name": "Venturi Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1992
+      },
+      {
+        "name": "Larrousse Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1993
+      },
+      {
+        "name": "Sauber Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1993
+      },
+      {
+        "name": "Pacific Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1994
+      },
+      {
+        "name": "Simtek Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1994
+      },
+      {
+        "name": "Forti Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1995
+      },
+      {
+        "name": "Prost Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1997
+      },
+      {
+        "name": "Stewart Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1997
+      },
+      {
+        "name": "British American Racing Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 1999
+      },
+      {
+        "name": "Jaguar Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2000
+      },
+      {
+        "name": "Toyota Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2002
+      },
+      {
+        "name": "Red Bull Racing Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2005
+      },
+      {
+        "name": "Midland Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2006
+      },
+      {
+        "name": "Super Aguri Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2006
+      },
+      {
+        "name": "Toro Rosso Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2006
+      },
+      {
+        "name": "Spyker Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2007
+      },
+      {
+        "name": "Force India Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2008
+      },
+      {
+        "name": "Brawn GP Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2009
+      },
+      {
+        "name": "HRT Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2010
+      },
+      {
+        "name": "Lotus Racing Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2010
+      },
+      {
+        "name": "Virgin Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2010
+      },
+      {
+        "name": "Caterham Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2012
+      },
+      {
+        "name": "Lotus F1 Team Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2012
+      },
+      {
+        "name": "Marussia Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2012
+      },
+      {
+        "name": "Haas Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2016
+      },
+      {
+        "name": "Manor Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2016
+      },
+      {
+        "name": "Racing Point Force India Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2018
+      },
+      {
+        "name": "Racing Point Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2019
+      },
+      {
+        "name": "AlphaTauri Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2020
+      },
+      {
+        "name": "Alpine Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2021
+      },
+      {
+        "name": "Racing Bulls Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2024
+      },
+      {
+        "name": "Audi Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2026
+      },
+      {
+        "name": "Cadillac Formula 1",
+        "productionRun": 2,
+        "priceEuro": 1440000,
+        "horsepower": 1000,
+        "salesVolume": 0,
+        "popCultureScore": 99,
+        "technicalInnovation": 99,
+        "launchYear": 2026
+      }
+    ]
   }
 }
+
+
