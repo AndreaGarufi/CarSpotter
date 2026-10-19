@@ -271,13 +271,14 @@ class _WelcomeScreenState extends State<WelcomeScreen>
   void _showSettingsBottomSheet() {
     showModalBottomSheet(
       context: context,
+      isScrollControlled: true,
       backgroundColor: Colors.white,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
       ),
       // 👇 1. Rinominiamo il context in "sheetContext" per non confonderlo 👇
       builder: (sheetContext) => SafeArea(
-        child: Padding(
+        child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -494,7 +495,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 ),
                 subtitle: const Text("Cancella tutte le auto salvate"),
                 onTap: () {
-                  Navigator.pop(context);
+                  Navigator.pop(sheetContext);
                   _showResetConfirmationDialog();
                 },
               ),
