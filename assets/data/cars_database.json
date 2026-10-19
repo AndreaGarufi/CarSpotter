@@ -11563,7 +11563,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1950
+        "launchYear": 1950,
+        "isIconOverride": true
       },
       {
         "name": "Alta Formula 1",
@@ -11573,7 +11574,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1950
+        "launchYear": 1950,
+        "isIconOverride": true
       },
       {
         "name": "Cooper Formula 1",
@@ -11583,7 +11585,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1950
+        "launchYear": 1950,
+        "isIconOverride": true
       },
       {
         "name": "ERA Formula 1",
@@ -11593,7 +11596,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1950
+        "launchYear": 1950,
+        "isIconOverride": true
       },
       {
         "name": "Ferrari Formula 1",
@@ -11603,7 +11607,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1950
+        "launchYear": 1950,
+        "isIconOverride": true
       },
       {
         "name": "Kurtis Kraft Formula 1",
@@ -11613,7 +11618,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1950
+        "launchYear": 1950,
+        "isIconOverride": true
       },
       {
         "name": "Maserati Formula 1",
@@ -11623,7 +11629,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1950
+        "launchYear": 1950,
+        "isIconOverride": true
       },
       {
         "name": "Milano Formula 1",
@@ -11633,7 +11640,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1950
+        "launchYear": 1950,
+        "isIconOverride": true
       },
       {
         "name": "Simca-Gordini Formula 1",
@@ -11643,7 +11651,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1950
+        "launchYear": 1950,
+        "isIconOverride": true
       },
       {
         "name": "SVA Formula 1",
@@ -11653,7 +11662,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1950
+        "launchYear": 1950,
+        "isIconOverride": true
       },
       {
         "name": "Talbot Formula 1",
@@ -11663,7 +11673,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1950
+        "launchYear": 1950,
+        "isIconOverride": true
       },
       {
         "name": "Talbot-Lago Formula 1",
@@ -11673,7 +11684,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1950
+        "launchYear": 1950,
+        "isIconOverride": true
       },
       {
         "name": "BRM Formula 1",
@@ -11683,7 +11695,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1951
+        "launchYear": 1951,
+        "isIconOverride": true
       },
       {
         "name": "HWM Formula 1",
@@ -11693,7 +11706,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1951
+        "launchYear": 1951,
+        "isIconOverride": true
       },
       {
         "name": "OSCA Formula 1",
@@ -11703,7 +11717,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1951
+        "launchYear": 1951,
+        "isIconOverride": true
       },
       {
         "name": "Veritas Formula 1",
@@ -11713,7 +11728,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1951
+        "launchYear": 1951,
+        "isIconOverride": true
       },
       {
         "name": "AFM Formula 1",
@@ -11723,7 +11739,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1952
+        "launchYear": 1952,
+        "isIconOverride": true
       },
       {
         "name": "Aston Butterworth Formula 1",
@@ -11733,7 +11750,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1952
+        "launchYear": 1952,
+        "isIconOverride": true
       },
       {
         "name": "Cisitalia Formula 1",
@@ -11743,7 +11761,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1952
+        "launchYear": 1952,
+        "isIconOverride": true
       },
       {
         "name": "Connaught Formula 1",
@@ -11753,7 +11772,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1952
+        "launchYear": 1952,
+        "isIconOverride": true
       },
       {
         "name": "Frazer-Nash Formula 1",
@@ -11763,7 +11783,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1952
+        "launchYear": 1952,
+        "isIconOverride": true
       },
       {
         "name": "Gordini Formula 1",
@@ -11773,7 +11794,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1952
+        "launchYear": 1952,
+        "isIconOverride": true
       },
       {
         "name": "Eisenacher Motorenwerk Formula 1",
@@ -11783,7 +11805,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1953
+        "launchYear": 1953,
+        "isIconOverride": true
       },
       {
         "name": "Greifzu Formula 1",
@@ -11793,7 +11816,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1953
+        "launchYear": 1953,
+        "isIconOverride": true
       },
       {
         "name": "Klenk Formula 1",
@@ -11803,7 +11827,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1954
+        "launchYear": 1954,
+        "isIconOverride": true
       },
       {
         "name": "Lancia Formula 1",
@@ -11813,7 +11838,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1954
+        "launchYear": 1954,
+        "isIconOverride": true
       },
       {
         "name": "Mercedes Formula 1",
@@ -11823,7 +11849,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1954
+        "launchYear": 1954,
+        "isIconOverride": true
       },
       {
         "name": "Vanwall Formula 1",
@@ -11833,7 +11860,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1954
+        "launchYear": 1954,
+        "isIconOverride": true
       },
       {
         "name": "Arzani-Volpini Formula 1",
@@ -11843,7 +11871,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1955
+        "launchYear": 1955,
+        "isIconOverride": true
       },
       {
         "name": "Bugatti Formula 1",
@@ -11853,7 +11882,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1956
+        "launchYear": 1956,
+        "isIconOverride": true
       },
       {
         "name": "Emeryson Formula 1",
@@ -11863,7 +11893,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1956
+        "launchYear": 1956,
+        "isIconOverride": true
       },
       {
         "name": "Porsche Formula 1",
@@ -11873,7 +11904,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1957
+        "launchYear": 1957,
+        "isIconOverride": true
       },
       {
         "name": "Lotus Formula 1",
@@ -11883,7 +11915,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1958
+        "launchYear": 1958,
+        "isIconOverride": true
       },
       {
         "name": "Aston Martin Formula 1",
@@ -11893,7 +11926,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1959
+        "launchYear": 1959,
+        "isIconOverride": true
       },
       {
         "name": "Behra-Porsche Formula 1",
@@ -11903,7 +11937,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1959
+        "launchYear": 1959,
+        "isIconOverride": true
       },
       {
         "name": "Fry Formula 1",
@@ -11913,7 +11948,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1959
+        "launchYear": 1959,
+        "isIconOverride": true
       },
       {
         "name": "JBW Formula 1",
@@ -11923,7 +11959,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1959
+        "launchYear": 1959,
+        "isIconOverride": true
       },
       {
         "name": "Tec-Mec Formula 1",
@@ -11933,7 +11970,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1959
+        "launchYear": 1959,
+        "isIconOverride": true
       },
       {
         "name": "Scarab Formula 1",
@@ -11943,7 +11981,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1960
+        "launchYear": 1960,
+        "isIconOverride": true
       },
       {
         "name": "De Tomaso Formula 1",
@@ -11953,7 +11992,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1961
+        "launchYear": 1961,
+        "isIconOverride": true
       },
       {
         "name": "Ferguson Formula 1",
@@ -11963,7 +12003,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1961
+        "launchYear": 1961,
+        "isIconOverride": true
       },
       {
         "name": "Gilby Engineering Formula 1",
@@ -11973,7 +12014,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1961
+        "launchYear": 1961,
+        "isIconOverride": true
       },
       {
         "name": "MBM Formula 1",
@@ -11983,7 +12025,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1961
+        "launchYear": 1961,
+        "isIconOverride": true
       },
       {
         "name": "Brabham Formula 1",
@@ -11993,7 +12036,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1962
+        "launchYear": 1962,
+        "isIconOverride": true
       },
       {
         "name": "Ecurie Nationale Belge Formula 1",
@@ -12003,7 +12047,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1962
+        "launchYear": 1962,
+        "isIconOverride": true
       },
       {
         "name": "LDS Formula 1",
@@ -12013,7 +12058,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1962
+        "launchYear": 1962,
+        "isIconOverride": true
       },
       {
         "name": "Lola Formula 1",
@@ -12023,7 +12069,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1962
+        "launchYear": 1962,
+        "isIconOverride": true
       },
       {
         "name": "Alfa Special Formula 1",
@@ -12033,7 +12080,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1963
+        "launchYear": 1963,
+        "isIconOverride": true
       },
       {
         "name": "Automobili Turismo e Sport Formula 1",
@@ -12043,7 +12091,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1963
+        "launchYear": 1963,
+        "isIconOverride": true
       },
       {
         "name": "British Racing Partnership Formula 1",
@@ -12053,7 +12102,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1963
+        "launchYear": 1963,
+        "isIconOverride": true
       },
       {
         "name": "Scirocco Formula 1",
@@ -12063,7 +12113,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1963
+        "launchYear": 1963,
+        "isIconOverride": true
       },
       {
         "name": "Stebro Formula 1",
@@ -12073,7 +12124,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1963
+        "launchYear": 1963,
+        "isIconOverride": true
       },
       {
         "name": "Honda Formula 1",
@@ -12083,7 +12135,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1964
+        "launchYear": 1964,
+        "isIconOverride": true
       },
       {
         "name": "RE Formula 1",
@@ -12093,7 +12146,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1965
+        "launchYear": 1965,
+        "isIconOverride": true
       },
       {
         "name": "Eagle Formula 1",
@@ -12103,7 +12157,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1966
+        "launchYear": 1966,
+        "isIconOverride": true
       },
       {
         "name": "McLaren Formula 1",
@@ -12113,7 +12168,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1966
+        "launchYear": 1966,
+        "isIconOverride": true
       },
       {
         "name": "Shannon Formula 1",
@@ -12123,7 +12179,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1966
+        "launchYear": 1966,
+        "isIconOverride": true
       },
       {
         "name": "Matra Formula 1",
@@ -12133,7 +12190,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1967
+        "launchYear": 1967,
+        "isIconOverride": true
       },
       {
         "name": "Bellasi Formula 1",
@@ -12143,7 +12201,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1970
+        "launchYear": 1970,
+        "isIconOverride": true
       },
       {
         "name": "March Formula 1",
@@ -12153,7 +12212,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1970
+        "launchYear": 1970,
+        "isIconOverride": true
       },
       {
         "name": "Surtees Formula 1",
@@ -12163,7 +12223,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1970
+        "launchYear": 1970,
+        "isIconOverride": true
       },
       {
         "name": "Tyrrell Formula 1",
@@ -12173,7 +12234,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1970
+        "launchYear": 1970,
+        "isIconOverride": true
       },
       {
         "name": "Connew Formula 1",
@@ -12183,7 +12245,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1972
+        "launchYear": 1972,
+        "isIconOverride": true
       },
       {
         "name": "Eifelland Formula 1",
@@ -12193,7 +12256,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1972
+        "launchYear": 1972,
+        "isIconOverride": true
       },
       {
         "name": "Frank Williams Racing Cars Formula 1",
@@ -12203,7 +12267,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1972
+        "launchYear": 1972,
+        "isIconOverride": true
       },
       {
         "name": "Tecno Formula 1",
@@ -12213,7 +12278,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1972
+        "launchYear": 1972,
+        "isIconOverride": true
       },
       {
         "name": "Ensign Formula 1",
@@ -12223,7 +12289,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1973
+        "launchYear": 1973,
+        "isIconOverride": true
       },
       {
         "name": "Shadow Formula 1",
@@ -12233,7 +12300,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1973
+        "launchYear": 1973,
+        "isIconOverride": true
       },
       {
         "name": "Amon Formula 1",
@@ -12243,7 +12311,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1974
+        "launchYear": 1974,
+        "isIconOverride": true
       },
       {
         "name": "Hesketh Formula 1",
@@ -12253,7 +12322,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1974
+        "launchYear": 1974,
+        "isIconOverride": true
       },
       {
         "name": "Lyncar Formula 1",
@@ -12263,7 +12333,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1974
+        "launchYear": 1974,
+        "isIconOverride": true
       },
       {
         "name": "Maki Formula 1",
@@ -12273,7 +12344,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1974
+        "launchYear": 1974,
+        "isIconOverride": true
       },
       {
         "name": "Parnelli Formula 1",
@@ -12283,7 +12355,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1974
+        "launchYear": 1974,
+        "isIconOverride": true
       },
       {
         "name": "Penske Formula 1",
@@ -12293,7 +12366,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1974
+        "launchYear": 1974,
+        "isIconOverride": true
       },
       {
         "name": "Token Formula 1",
@@ -12303,7 +12377,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1974
+        "launchYear": 1974,
+        "isIconOverride": true
       },
       {
         "name": "Trojan Formula 1",
@@ -12313,7 +12388,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1974
+        "launchYear": 1974,
+        "isIconOverride": true
       },
       {
         "name": "Fittipaldi Formula 1",
@@ -12323,7 +12399,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1975
+        "launchYear": 1975,
+        "isIconOverride": true
       },
       {
         "name": "Hill Formula 1",
@@ -12333,7 +12410,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1975
+        "launchYear": 1975,
+        "isIconOverride": true
       },
       {
         "name": "Boro Formula 1",
@@ -12343,7 +12421,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1976
+        "launchYear": 1976,
+        "isIconOverride": true
       },
       {
         "name": "Kojima Formula 1",
@@ -12353,7 +12432,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1976
+        "launchYear": 1976,
+        "isIconOverride": true
       },
       {
         "name": "Ligier Formula 1",
@@ -12363,7 +12443,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1976
+        "launchYear": 1976,
+        "isIconOverride": true
       },
       {
         "name": "Apollon Formula 1",
@@ -12373,7 +12454,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1977
+        "launchYear": 1977,
+        "isIconOverride": true
       },
       {
         "name": "ATS Formula 1",
@@ -12383,7 +12465,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1977
+        "launchYear": 1977,
+        "isIconOverride": true
       },
       {
         "name": "LEC Formula 1",
@@ -12393,7 +12476,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1977
+        "launchYear": 1977,
+        "isIconOverride": true
       },
       {
         "name": "McGuire Formula 1",
@@ -12403,7 +12487,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1977
+        "launchYear": 1977,
+        "isIconOverride": true
       },
       {
         "name": "Renault Formula 1",
@@ -12413,7 +12498,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1977
+        "launchYear": 1977,
+        "isIconOverride": true
       },
       {
         "name": "Wolf Formula 1",
@@ -12423,7 +12509,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1977
+        "launchYear": 1977,
+        "isIconOverride": true
       },
       {
         "name": "Arrows Formula 1",
@@ -12433,7 +12520,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1978
+        "launchYear": 1978,
+        "isIconOverride": true
       },
       {
         "name": "Martini Formula 1",
@@ -12443,7 +12531,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1978
+        "launchYear": 1978,
+        "isIconOverride": true
       },
       {
         "name": "Merzario Formula 1",
@@ -12453,7 +12542,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1978
+        "launchYear": 1978,
+        "isIconOverride": true
       },
       {
         "name": "Theodore Formula 1",
@@ -12463,7 +12553,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1978
+        "launchYear": 1978,
+        "isIconOverride": true
       },
       {
         "name": "Williams Formula 1",
@@ -12473,7 +12564,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1978
+        "launchYear": 1978,
+        "isIconOverride": true
       },
       {
         "name": "Kauhsen Formula 1",
@@ -12483,7 +12575,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1979
+        "launchYear": 1979,
+        "isIconOverride": true
       },
       {
         "name": "Rebaque Formula 1",
@@ -12493,7 +12586,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1979
+        "launchYear": 1979,
+        "isIconOverride": true
       },
       {
         "name": "Osella Formula 1",
@@ -12503,7 +12597,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1980
+        "launchYear": 1980,
+        "isIconOverride": true
       },
       {
         "name": "Toleman Formula 1",
@@ -12513,7 +12608,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1981
+        "launchYear": 1981,
+        "isIconOverride": true
       },
       {
         "name": "RAM Formula 1",
@@ -12523,7 +12619,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1983
+        "launchYear": 1983,
+        "isIconOverride": true
       },
       {
         "name": "Spirit Formula 1",
@@ -12533,7 +12630,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1983
+        "launchYear": 1983,
+        "isIconOverride": true
       },
       {
         "name": "Minardi Formula 1",
@@ -12543,7 +12641,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1985
+        "launchYear": 1985,
+        "isIconOverride": true
       },
       {
         "name": "Zakspeed Formula 1",
@@ -12553,7 +12652,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1985
+        "launchYear": 1985,
+        "isIconOverride": true
       },
       {
         "name": "AGS Formula 1",
@@ -12563,7 +12663,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1986
+        "launchYear": 1986,
+        "isIconOverride": true
       },
       {
         "name": "Benetton Formula 1",
@@ -12573,7 +12674,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1986
+        "launchYear": 1986,
+        "isIconOverride": true
       },
       {
         "name": "Coloni Formula 1",
@@ -12583,7 +12685,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1987
+        "launchYear": 1987,
+        "isIconOverride": true
       },
       {
         "name": "Dallara Formula 1",
@@ -12593,7 +12696,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1988
+        "launchYear": 1988,
+        "isIconOverride": true
       },
       {
         "name": "EuroBrun Formula 1",
@@ -12603,7 +12707,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1988
+        "launchYear": 1988,
+        "isIconOverride": true
       },
       {
         "name": "Rial Formula 1",
@@ -12613,7 +12718,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1988
+        "launchYear": 1988,
+        "isIconOverride": true
       },
       {
         "name": "FIRST Formula 1",
@@ -12623,7 +12729,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1989
+        "launchYear": 1989,
+        "isIconOverride": true
       },
       {
         "name": "Onyx Formula 1",
@@ -12633,7 +12740,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1989
+        "launchYear": 1989,
+        "isIconOverride": true
       },
       {
         "name": "Leyton House Formula 1",
@@ -12643,7 +12751,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1990
+        "launchYear": 1990,
+        "isIconOverride": true
       },
       {
         "name": "Life Formula 1",
@@ -12653,7 +12762,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1990
+        "launchYear": 1990,
+        "isIconOverride": true
       },
       {
         "name": "Fondmetal Formula 1",
@@ -12663,7 +12773,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1991
+        "launchYear": 1991,
+        "isIconOverride": true
       },
       {
         "name": "Jordan Formula 1",
@@ -12673,7 +12784,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1991
+        "launchYear": 1991,
+        "isIconOverride": true
       },
       {
         "name": "Lambo Formula 1",
@@ -12683,7 +12795,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1991
+        "launchYear": 1991,
+        "isIconOverride": true
       },
       {
         "name": "Andrea Moda Formula 1",
@@ -12693,7 +12806,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1992
+        "launchYear": 1992,
+        "isIconOverride": true
       },
       {
         "name": "Venturi Formula 1",
@@ -12703,7 +12817,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1992
+        "launchYear": 1992,
+        "isIconOverride": true
       },
       {
         "name": "Larrousse Formula 1",
@@ -12713,7 +12828,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1993
+        "launchYear": 1993,
+        "isIconOverride": true
       },
       {
         "name": "Sauber Formula 1",
@@ -12723,7 +12839,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1993
+        "launchYear": 1993,
+        "isIconOverride": true
       },
       {
         "name": "Pacific Formula 1",
@@ -12733,7 +12850,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1994
+        "launchYear": 1994,
+        "isIconOverride": true
       },
       {
         "name": "Simtek Formula 1",
@@ -12743,7 +12861,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1994
+        "launchYear": 1994,
+        "isIconOverride": true
       },
       {
         "name": "Forti Formula 1",
@@ -12753,7 +12872,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1995
+        "launchYear": 1995,
+        "isIconOverride": true
       },
       {
         "name": "Prost Formula 1",
@@ -12763,7 +12883,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1997
+        "launchYear": 1997,
+        "isIconOverride": true
       },
       {
         "name": "Stewart Formula 1",
@@ -12773,7 +12894,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1997
+        "launchYear": 1997,
+        "isIconOverride": true
       },
       {
         "name": "British American Racing Formula 1",
@@ -12783,7 +12905,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 1999
+        "launchYear": 1999,
+        "isIconOverride": true
       },
       {
         "name": "Jaguar Formula 1",
@@ -12793,7 +12916,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2000
+        "launchYear": 2000,
+        "isIconOverride": true
       },
       {
         "name": "Toyota Formula 1",
@@ -12803,7 +12927,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2002
+        "launchYear": 2002,
+        "isIconOverride": true
       },
       {
         "name": "Red Bull Racing Formula 1",
@@ -12813,7 +12938,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2005
+        "launchYear": 2005,
+        "isIconOverride": true
       },
       {
         "name": "Midland Formula 1",
@@ -12823,7 +12949,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2006
+        "launchYear": 2006,
+        "isIconOverride": true
       },
       {
         "name": "Super Aguri Formula 1",
@@ -12833,7 +12960,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2006
+        "launchYear": 2006,
+        "isIconOverride": true
       },
       {
         "name": "Toro Rosso Formula 1",
@@ -12843,7 +12971,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2006
+        "launchYear": 2006,
+        "isIconOverride": true
       },
       {
         "name": "Spyker Formula 1",
@@ -12853,7 +12982,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2007
+        "launchYear": 2007,
+        "isIconOverride": true
       },
       {
         "name": "Force India Formula 1",
@@ -12863,7 +12993,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2008
+        "launchYear": 2008,
+        "isIconOverride": true
       },
       {
         "name": "Brawn GP Formula 1",
@@ -12873,7 +13004,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2009
+        "launchYear": 2009,
+        "isIconOverride": true
       },
       {
         "name": "HRT Formula 1",
@@ -12883,7 +13015,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2010
+        "launchYear": 2010,
+        "isIconOverride": true
       },
       {
         "name": "Lotus Racing Formula 1",
@@ -12893,7 +13026,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2010
+        "launchYear": 2010,
+        "isIconOverride": true
       },
       {
         "name": "Virgin Formula 1",
@@ -12903,7 +13037,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2010
+        "launchYear": 2010,
+        "isIconOverride": true
       },
       {
         "name": "Caterham Formula 1",
@@ -12913,7 +13048,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2012
+        "launchYear": 2012,
+        "isIconOverride": true
       },
       {
         "name": "Lotus F1 Team Formula 1",
@@ -12923,7 +13059,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2012
+        "launchYear": 2012,
+        "isIconOverride": true
       },
       {
         "name": "Marussia Formula 1",
@@ -12933,7 +13070,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2012
+        "launchYear": 2012,
+        "isIconOverride": true
       },
       {
         "name": "Haas Formula 1",
@@ -12943,7 +13081,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2016
+        "launchYear": 2016,
+        "isIconOverride": true
       },
       {
         "name": "Manor Formula 1",
@@ -12953,7 +13092,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2016
+        "launchYear": 2016,
+        "isIconOverride": true
       },
       {
         "name": "Racing Point Force India Formula 1",
@@ -12963,7 +13103,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2018
+        "launchYear": 2018,
+        "isIconOverride": true
       },
       {
         "name": "Racing Point Formula 1",
@@ -12973,7 +13114,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2019
+        "launchYear": 2019,
+        "isIconOverride": true
       },
       {
         "name": "AlphaTauri Formula 1",
@@ -12983,7 +13125,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2020
+        "launchYear": 2020,
+        "isIconOverride": true
       },
       {
         "name": "Alpine Formula 1",
@@ -12993,7 +13136,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2021
+        "launchYear": 2021,
+        "isIconOverride": true
       },
       {
         "name": "Racing Bulls Formula 1",
@@ -13003,7 +13147,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2024
+        "launchYear": 2024,
+        "isIconOverride": true
       },
       {
         "name": "Audi Formula 1",
@@ -13013,7 +13158,8 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2026
+        "launchYear": 2026,
+        "isIconOverride": true
       },
       {
         "name": "Cadillac Formula 1",
@@ -13023,10 +13169,9 @@
         "salesVolume": 0,
         "popCultureScore": 99,
         "technicalInnovation": 99,
-        "launchYear": 2026
+        "launchYear": 2026,
+        "isIconOverride": true
       }
     ]
   }
 }
-
-
