@@ -11302,5 +11302,247 @@
         "launchYear": 2025
       }
     ]
+  },
+  "Hennessey": {
+    "brandScore": 85,
+    "brandHeritage": 72,
+    "models": [
+      {
+        "name": "Hennessey Venom GT",
+        "productionRun": 13,
+        "priceEuro": 1100000,
+        "horsepower": 1244,
+        "salesVolume": 13,
+        "popCultureScore": 95,
+        "technicalInnovation": 94,
+        "launchYear": 2011
+      },
+      {
+        "name": "Hennessey Venom F5",
+        "productionRun": 24,
+        "priceEuro": 1900000,
+        "horsepower": 1817,
+        "salesVolume": 24,
+        "popCultureScore": 92,
+        "technicalInnovation": 96,
+        "launchYear": 2020
+      },
+      {
+        "name": "Hennessey Venom GT Spyder",
+        "productionRun": 6,
+        "priceEuro": 1300000,
+        "horsepower": 1451,
+        "salesVolume": 6,
+        "popCultureScore": 88,
+        "technicalInnovation": 92,
+        "launchYear": 2016
+      },
+      {
+        "name": "Hennessey Venom F5 Revolution",
+        "productionRun": 24,
+        "priceEuro": 2500000,
+        "horsepower": 1817,
+        "salesVolume": 24,
+        "popCultureScore": 88,
+        "technicalInnovation": 96,
+        "launchYear": 2023
+      },
+      {
+        "name": "Hennessey Venom F5 Roadster",
+        "productionRun": 30,
+        "priceEuro": 2800000,
+        "horsepower": 1817,
+        "salesVolume": 30,
+        "popCultureScore": 88,
+        "technicalInnovation": 95,
+        "launchYear": 2022
+      },
+      {
+        "name": "Hennessey Exorcist Camaro ZL1",
+        "productionRun": 100,
+        "priceEuro": 115000,
+        "horsepower": 1000,
+        "salesVolume": 100,
+        "popCultureScore": 90,
+        "technicalInnovation": 88,
+        "launchYear": 2017
+      },
+      {
+        "name": "Hennessey Resurrection Corvette C8",
+        "productionRun": 25,
+        "priceEuro": 190000,
+        "horsepower": 1200,
+        "salesVolume": 25,
+        "popCultureScore": 85,
+        "technicalInnovation": 90,
+        "launchYear": 2020
+      },
+      {
+        "name": "Hennessey Venom 1200 Mustang GT500",
+        "productionRun": 66,
+        "priceEuro": 140000,
+        "horsepower": 1204,
+        "salesVolume": 66,
+        "popCultureScore": 85,
+        "technicalInnovation": 88,
+        "launchYear": 2022
+      },
+      {
+        "name": "Hennessey Mammoth 1000 6x6 TRX",
+        "productionRun": 20,
+        "priceEuro": 400000,
+        "horsepower": 1012,
+        "salesVolume": 20,
+        "popCultureScore": 88,
+        "technicalInnovation": 85,
+        "launchYear": 2021
+      },
+      {
+        "name": "Hennessey VelociRaptor 600",
+        "productionRun": 500,
+        "priceEuro": 85000,
+        "horsepower": 600,
+        "salesVolume": 500,
+        "popCultureScore": 85,
+        "technicalInnovation": 82,
+        "launchYear": 2017
+      },
+      {
+        "name": "Hennessey VelociRaptor 6x6",
+        "productionRun": 50,
+        "priceEuro": 300000,
+        "horsepower": 600,
+        "salesVolume": 50,
+        "popCultureScore": 88,
+        "technicalInnovation": 85,
+        "launchYear": 2017
+      }
+    ]
+  },
+  "Cadillac": {
+    "brandScore": 80,
+    "brandHeritage": 92,
+    "models": [
+      {
+        "name": "Cadillac CT5-V Blackwing",
+        "productionRun": 4500,
+        "priceEuro": 85000,
+        "horsepower": 668,
+        "salesVolume": 4500,
+        "popCultureScore": 92,
+        "technicalInnovation": 90,
+        "launchYear": 2021
+      },
+      {
+        "name": "Cadillac CTS-V (3rd Gen)",
+        "productionRun": 8000,
+        "priceEuro": 78000,
+        "horsepower": 640,
+        "salesVolume": 8000,
+        "popCultureScore": 90,
+        "technicalInnovation": 88,
+        "launchYear": 2016
+      },
+      {
+        "name": "Cadillac Cien",
+        "productionRun": 1,
+        "priceEuro": 1500000,
+        "horsepower": 750,
+        "salesVolume": 1,
+        "popCultureScore": 90,
+        "technicalInnovation": 94,
+        "launchYear": 2002
+      },
+      {
+        "name": "Cadillac Escalade-V",
+        "productionRun": 5000,
+        "priceEuro": 145000,
+        "horsepower": 682,
+        "salesVolume": 5000,
+        "popCultureScore": 92,
+        "technicalInnovation": 88,
+        "launchYear": 2022
+      },
+      {
+        "name": "Cadillac CTS-V Sport Wagon",
+        "productionRun": 2139,
+        "priceEuro": 63000,
+        "horsepower": 556,
+        "salesVolume": 2139,
+        "popCultureScore": 88,
+        "technicalInnovation": 85,
+        "launchYear": 2011
+      },
+      {
+        "name": "Cadillac CT4-V Blackwing",
+        "productionRun": 3500,
+        "priceEuro": 60000,
+        "horsepower": 472,
+        "salesVolume": 3500,
+        "popCultureScore": 85,
+        "technicalInnovation": 88,
+        "launchYear": 2021
+      },
+      {
+        "name": "Cadillac XLR-V",
+        "productionRun": 2188,
+        "priceEuro": 95000,
+        "horsepower": 443,
+        "salesVolume": 2188,
+        "popCultureScore": 82,
+        "technicalInnovation": 84,
+        "launchYear": 2006
+      },
+      {
+        "name": "Cadillac Sixteen",
+        "productionRun": 1,
+        "priceEuro": 2000000,
+        "horsepower": 1000,
+        "salesVolume": 1,
+        "popCultureScore": 88,
+        "technicalInnovation": 92,
+        "launchYear": 2003
+      },
+      {
+        "name": "Cadillac Escalade (5th Gen)",
+        "productionRun": 120000,
+        "priceEuro": 78000,
+        "horsepower": 420,
+        "salesVolume": 120000,
+        "popCultureScore": 95,
+        "technicalInnovation": 88,
+        "launchYear": 2020
+      },
+      {
+        "name": "Cadillac Celestiq",
+        "productionRun": 500,
+        "priceEuro": 340000,
+        "horsepower": 600,
+        "salesVolume": 500,
+        "popCultureScore": 82,
+        "technicalInnovation": 95,
+        "launchYear": 2024
+      },
+      {
+        "name": "Cadillac Eldorado Biarritz",
+        "productionRun": 1320,
+        "priceEuro": 7400,
+        "horsepower": 345,
+        "salesVolume": 1320,
+        "popCultureScore": 98,
+        "technicalInnovation": 80,
+        "launchYear": 1959
+      },
+      {
+        "name": "Cadillac Coupe DeVille",
+        "productionRun": 21585,
+        "priceEuro": 5200,
+        "horsepower": 325,
+        "salesVolume": 21585,
+        "popCultureScore": 90,
+        "technicalInnovation": 75,
+        "launchYear": 1960
+      }
+    ]
   }
 }
