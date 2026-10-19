@@ -69,14 +69,19 @@ class DbService {
               productionRun: m["productionRun"] as int,
               priceEuro: (m["priceEuro"] as num).toDouble(),
               horsepower: m["horsepower"] as int,
+              popCultureScore: m["popCultureScore"] as int,
+              technicalInnovation: m["technicalInnovation"] as int,
+              rarityOverride: RarityController.rarityTierFromOverride(
+                m["rarityOverride"] as String?,
+              ),
             );
 
             final isIcon = RarityController.checkIfIcon(
-              salesVolume: m["salesVolume"] as int,
               brandHeritage: brandHeritage,
               popCultureScore: m["popCultureScore"] as int,
               technicalInnovation: m["technicalInnovation"] as int,
               launchYear: m["launchYear"] as int,
+              isIconOverride: m["isIconOverride"] as bool?,
             );
 
             int baseScore;
@@ -313,14 +318,19 @@ class DbService {
               productionRun: m["productionRun"] as int,
               priceEuro: (m["priceEuro"] as num).toDouble(),
               horsepower: m["horsepower"] as int,
+              popCultureScore: m["popCultureScore"] as int,
+              technicalInnovation: m["technicalInnovation"] as int,
+              rarityOverride: RarityController.rarityTierFromOverride(
+                m["rarityOverride"] as String?,
+              ),
             );
 
             final isIcon = RarityController.checkIfIcon(
-              salesVolume: m["salesVolume"] as int,
               brandHeritage: brandHeritage,
               popCultureScore: m["popCultureScore"] as int,
               technicalInnovation: m["technicalInnovation"] as int,
               launchYear: m["launchYear"] as int,
+              isIconOverride: m["isIconOverride"] as bool?,
             );
 
             int baseScore;

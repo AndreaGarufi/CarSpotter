@@ -310,7 +310,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                   "Esporta Backup Dati",
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
-                subtitle: const Text("Salva il database e le foto in uno ZIP"),
+                subtitle: const Text("ZIP con spot e foto — scegli Download o un'altra cartella"),
                 onTap: () async {
                   // 👇 2. Catturiamo il "Messaggero" della pagina principale PRIMA di chiudere il menù
                   final messenger = ScaffoldMessenger.of(context);
@@ -344,17 +344,15 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                   );
 
                   // 5. Avvia la compressione ZIP in background
-                  final success = await BackupService.exportBackup();
+                  final result = await BackupService.exportBackup();
 
                   if (mounted) {
                     messenger.hideCurrentSnackBar(); // Rimuove il caricamento
 
-                    if (success) {
+                    if (result.success) {
                       messenger.showSnackBar(
-                        const SnackBar(
-                          content: Text(
-                            "✅ Salvato nei Download e pronto da condividere!",
-                          ),
+                        SnackBar(
+                          content: Text("✅ Backup salvato: ${result.spotCount} spot."),
                           duration: Duration(seconds: 2),
                           behavior: SnackBarBehavior.floating,
                         ),
@@ -372,6 +370,32 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                       );
                     }
                   }
+                },
+              ),
+
+              ListTile(
+                leading: Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: Colors.indigo.withValues(alpha: 0.1),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(Icons.restore_rounded, color: Colors.indigo),
+                ),
+                title: const Text("Importa Backup", style: TextStyle(fontWeight: FontWeight.w600)),
+                subtitle: const Text(
+                  "Scegli un file ZIP; gli spot esistenti non vengono cancellati\nPrima di importare conviene quindi usare “Sincronizza Catalogo”",
+                ),
+                onTap: () async {
+                  final messenger = ScaffoldMessenger.of(context);
+                  Navigator.pop(sheetContext);
+                  final result = await BackupService.importBackup();
+                  if (!mounted) return;
+                  messenger.showSnackBar(SnackBar(
+                    content: Text(result.success ? "✅ ${result.message}" : "❌ ${result.message}"),
+                    backgroundColor: result.success ? const Color(0xFF10B981) : Colors.red,
+                    behavior: SnackBarBehavior.floating,
+                  ));
                 },
               ),
 

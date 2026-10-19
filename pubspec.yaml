@@ -29,6 +29,7 @@ dependencies:
   latlong2: ^0.10.1
   archive: ^4.0.9
   share_plus: ^13.2.0
+  file_picker: ^13.1.0
   path: ^1.9.1
   http: ^1.6.0
 

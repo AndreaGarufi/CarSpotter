@@ -81,7 +81,8 @@
         "salesVolume": 499,
         "popCultureScore": 95,
         "technicalInnovation": 95,
-        "launchYear": 2013
+        "launchYear": 2013,
+        "isIconOverride": true
       },
       {
         "name": "Ferrari F430",
@@ -577,7 +578,8 @@
         "salesVolume": 25000,
         "popCultureScore": 85,
         "technicalInnovation": 70,
-        "launchYear": 2014
+        "launchYear": 2014,
+        "rarityOverride": "legendary"
       },
       {
         "name": "Lamborghini Diablo",
@@ -1503,7 +1505,8 @@
         "salesVolume": 8000,
         "popCultureScore": 80,
         "technicalInnovation": 90,
-        "launchYear": 2022
+        "launchYear": 2022,
+        "isIconOverride": true
       },
       {
         "name": "Porsche 917",
@@ -2703,7 +2706,8 @@
         "salesVolume": 1295,
         "popCultureScore": 30,
         "technicalInnovation": 40,
-        "launchYear": 1967
+        "launchYear": 1967,
+        "rarityOverride": "rare"
       },
       {
         "name": "Maserati Grecale",
@@ -8127,7 +8131,8 @@
         "salesVolume": 76935,
         "popCultureScore": 80,
         "technicalInnovation": 40,
-        "launchYear": 1970
+        "launchYear": 1970,
+        "rarityOverride": "epic"
       },
       {
         "name": "Dodge Viper",
@@ -8499,7 +8504,8 @@
         "salesVolume": 106,
         "popCultureScore": 85,
         "technicalInnovation": 95,
-        "launchYear": 1992
+        "launchYear": 1992,
+        "isIconOverride": true
       },
       {
         "name": "McLaren P1",
