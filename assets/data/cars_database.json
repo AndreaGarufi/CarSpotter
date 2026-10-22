@@ -526,7 +526,7 @@
       },
       {
         "name": "Ferrari 12Cilindri",
-        "productionRun": 2500,
+        "productionRun": 2000,
         "priceEuro": 395000.0,
         "horsepower": 830,
         "salesVolume": 2500,
@@ -543,6 +543,846 @@
         "popCultureScore": 55,
         "technicalInnovation": 90,
         "launchYear": 2024
+      },
+      {
+        "name": "Ferrari 212 Inter / Export",
+        "productionRun": 107,
+        "priceEuro": 9000,
+        "horsepower": 170,
+        "salesVolume": 107,
+        "popCultureScore": 30,
+        "technicalInnovation": 50,
+        "launchYear": 1951
+      },
+      {
+        "name": "Ferrari 340 / 342 / 375 America",
+        "productionRun": 41,
+        "priceEuro": 12000,
+        "horsepower": 300,
+        "salesVolume": 41,
+        "popCultureScore": 35,
+        "technicalInnovation": 55,
+        "launchYear": 1951
+      },
+      {
+        "name": "Ferrari 250 MM",
+        "productionRun": 31,
+        "priceEuro": 9500,
+        "horsepower": 240,
+        "salesVolume": 31,
+        "popCultureScore": 45,
+        "technicalInnovation": 60,
+        "launchYear": 1952
+      },
+      {
+        "name": "Ferrari 340 MM / Mexico",
+        "productionRun": 14,
+        "priceEuro": 15000,
+        "horsepower": 280,
+        "salesVolume": 14,
+        "popCultureScore": 40,
+        "technicalInnovation": 65,
+        "launchYear": 1952
+      },
+      {
+        "name": "Ferrari 250 Europa",
+        "productionRun": 22,
+        "priceEuro": 10000,
+        "horsepower": 200,
+        "salesVolume": 22,
+        "popCultureScore": 30,
+        "technicalInnovation": 50,
+        "launchYear": 1953
+      },
+      {
+        "name": "Ferrari 375 MM / Plus",
+        "productionRun": 19,
+        "priceEuro": 17000,
+        "horsepower": 340,
+        "salesVolume": 19,
+        "popCultureScore": 45,
+        "technicalInnovation": 70,
+        "launchYear": 1953
+      },
+      {
+        "name": "Ferrari 500 Mondial / TR",
+        "productionRun": 49,
+        "priceEuro": 8500,
+        "horsepower": 190,
+        "salesVolume": 49,
+        "popCultureScore": 40,
+        "technicalInnovation": 60,
+        "launchYear": 1954
+      },
+      {
+        "name": "Ferrari 121 LM",
+        "productionRun": 4,
+        "priceEuro": 20000,
+        "horsepower": 330,
+        "salesVolume": 4,
+        "popCultureScore": 35,
+        "technicalInnovation": 55,
+        "launchYear": 1955
+      },
+      {
+        "name": "Ferrari 410 S",
+        "productionRun": 3,
+        "priceEuro": 20000,
+        "horsepower": 380,
+        "salesVolume": 3,
+        "popCultureScore": 40,
+        "technicalInnovation": 65,
+        "launchYear": 1955
+      },
+      {
+        "name": "Ferrari 250 GT (Boano, Ellena, Pinin Farina)",
+        "productionRun": 700,
+        "priceEuro": 10000,
+        "horsepower": 240,
+        "salesVolume": 700,
+        "popCultureScore": 55,
+        "technicalInnovation": 50,
+        "launchYear": 1956
+      },
+      {
+        "name": "Ferrari 250 GT Tour de France",
+        "productionRun": 77,
+        "priceEuro": 11000,
+        "horsepower": 260,
+        "salesVolume": 77,
+        "popCultureScore": 70,
+        "technicalInnovation": 70,
+        "launchYear": 1956
+      },
+      {
+        "name": "Ferrari 290 MM / 290 S",
+        "productionRun": 5,
+        "priceEuro": 20000,
+        "horsepower": 320,
+        "salesVolume": 5,
+        "popCultureScore": 45,
+        "technicalInnovation": 65,
+        "launchYear": 1956
+      },
+      {
+        "name": "Ferrari 400 / 410 Superamerica",
+        "productionRun": 82,
+        "priceEuro": 18000,
+        "horsepower": 340,
+        "salesVolume": 82,
+        "popCultureScore": 45,
+        "technicalInnovation": 55,
+        "launchYear": 1956
+      },
+      {
+        "name": "Ferrari 250 GT California Spyder",
+        "productionRun": 105,
+        "priceEuro": 15000,
+        "horsepower": 260,
+        "salesVolume": 105,
+        "popCultureScore": 95,
+        "technicalInnovation": 65,
+        "launchYear": 1957
+      },
+      {
+        "name": "Ferrari 315 S / 335 S",
+        "productionRun": 6,
+        "priceEuro": 25000,
+        "horsepower": 390,
+        "salesVolume": 6,
+        "popCultureScore": 70,
+        "technicalInnovation": 75,
+        "launchYear": 1957
+      },
+      {
+        "name": "Ferrari 250 GT SWB",
+        "productionRun": 176,
+        "priceEuro": 12500,
+        "horsepower": 280,
+        "salesVolume": 176,
+        "popCultureScore": 85,
+        "technicalInnovation": 75,
+        "launchYear": 1959
+      },
+      {
+        "name": "Ferrari 250 GTO",
+        "productionRun": 39,
+        "priceEuro": 18000,
+        "horsepower": 300,
+        "salesVolume": 39,
+        "popCultureScore": 99,
+        "technicalInnovation": 90,
+        "launchYear": 1962
+      },
+      {
+        "name": "Ferrari 250 GT Breadvan",
+        "productionRun": 1,
+        "priceEuro": 20000,
+        "horsepower": 300,
+        "salesVolume": 1,
+        "popCultureScore": 70,
+        "technicalInnovation": 70,
+        "launchYear": 1962
+      },
+      {
+        "name": "Ferrari 250 P",
+        "productionRun": 4,
+        "priceEuro": 20000,
+        "horsepower": 310,
+        "salesVolume": 4,
+        "popCultureScore": 60,
+        "technicalInnovation": 75,
+        "launchYear": 1963
+      },
+      {
+        "name": "Ferrari 250 LM",
+        "productionRun": 32,
+        "priceEuro": 15000,
+        "horsepower": 320,
+        "salesVolume": 32,
+        "popCultureScore": 85,
+        "technicalInnovation": 70,
+        "launchYear": 1963
+      },
+      {
+        "name": "Ferrari 500 Superfast",
+        "productionRun": 36,
+        "priceEuro": 25000,
+        "horsepower": 400,
+        "salesVolume": 36,
+        "popCultureScore": 55,
+        "technicalInnovation": 60,
+        "launchYear": 1964
+      },
+      {
+        "name": "Ferrari 275 P / 330 P",
+        "productionRun": 6,
+        "priceEuro": 25000,
+        "horsepower": 390,
+        "salesVolume": 6,
+        "popCultureScore": 60,
+        "technicalInnovation": 75,
+        "launchYear": 1964
+      },
+      {
+        "name": "Ferrari 206 S Dino",
+        "productionRun": 18,
+        "priceEuro": 10000,
+        "horsepower": 220,
+        "salesVolume": 18,
+        "popCultureScore": 55,
+        "technicalInnovation": 70,
+        "launchYear": 1966
+      },
+      {
+        "name": "Ferrari 330 P3 / 412 P",
+        "productionRun": 6,
+        "priceEuro": 40000,
+        "horsepower": 420,
+        "salesVolume": 6,
+        "popCultureScore": 85,
+        "technicalInnovation": 85,
+        "launchYear": 1966
+      },
+      {
+        "name": "Ferrari 330 GTC / GTS",
+        "productionRun": 700,
+        "priceEuro": 15000,
+        "horsepower": 300,
+        "salesVolume": 700,
+        "popCultureScore": 60,
+        "technicalInnovation": 50,
+        "launchYear": 1966
+      },
+      {
+        "name": "Ferrari 365 California",
+        "productionRun": 14,
+        "priceEuro": 25000,
+        "horsepower": 320,
+        "salesVolume": 14,
+        "popCultureScore": 70,
+        "technicalInnovation": 55,
+        "launchYear": 1966
+      },
+      {
+        "name": "Ferrari 275 GTB/4 NART Spider",
+        "productionRun": 10,
+        "priceEuro": 20000,
+        "horsepower": 300,
+        "salesVolume": 10,
+        "popCultureScore": 75,
+        "technicalInnovation": 60,
+        "launchYear": 1967
+      },
+      {
+        "name": "Ferrari Dino 206 / 246 GT",
+        "productionRun": 3913,
+        "priceEuro": 9000,
+        "horsepower": 195,
+        "salesVolume": 3913,
+        "popCultureScore": 85,
+        "technicalInnovation": 75,
+        "launchYear": 1967
+      },
+      {
+        "name": "Ferrari 612 Can-Am",
+        "productionRun": 1,
+        "priceEuro": 50000,
+        "horsepower": 620,
+        "salesVolume": 1,
+        "popCultureScore": 50,
+        "technicalInnovation": 85,
+        "launchYear": 1968
+      },
+      {
+        "name": "Ferrari 365 GTC / GTS",
+        "productionRun": 170,
+        "priceEuro": 20000,
+        "horsepower": 320,
+        "salesVolume": 170,
+        "popCultureScore": 55,
+        "technicalInnovation": 50,
+        "launchYear": 1968
+      },
+      {
+        "name": "Ferrari 312 P / 312 PB",
+        "productionRun": 14,
+        "priceEuro": 40000,
+        "horsepower": 440,
+        "salesVolume": 14,
+        "popCultureScore": 55,
+        "technicalInnovation": 80,
+        "launchYear": 1969
+      },
+      {
+        "name": "Ferrari 512 S / 512 M",
+        "productionRun": 28,
+        "priceEuro": 40000,
+        "horsepower": 550,
+        "salesVolume": 28,
+        "popCultureScore": 90,
+        "technicalInnovation": 85,
+        "launchYear": 1969
+      },
+      {
+        "name": "Ferrari 365 GTS/4 Daytona Spider",
+        "productionRun": 121,
+        "priceEuro": 33000,
+        "horsepower": 352,
+        "salesVolume": 121,
+        "popCultureScore": 85,
+        "technicalInnovation": 40,
+        "launchYear": 1969
+      },
+      {
+        "name": "Ferrari 365 GTC/4",
+        "productionRun": 500,
+        "priceEuro": 28000,
+        "horsepower": 340,
+        "salesVolume": 500,
+        "popCultureScore": 35,
+        "technicalInnovation": 40,
+        "launchYear": 1971
+      },
+      {
+        "name": "Ferrari 365 GTB/4 Competizione",
+        "productionRun": 15,
+        "priceEuro": 60000,
+        "horsepower": 400,
+        "salesVolume": 15,
+        "popCultureScore": 60,
+        "technicalInnovation": 55,
+        "launchYear": 1971
+      },
+      {
+        "name": "Ferrari 365 GT4 2+2 / 400 / 400i / 412",
+        "productionRun": 2900,
+        "priceEuro": 30000,
+        "horsepower": 340,
+        "salesVolume": 2900,
+        "popCultureScore": 30,
+        "technicalInnovation": 30,
+        "launchYear": 1972
+      },
+      {
+        "name": "Ferrari 208 GT4",
+        "productionRun": 840,
+        "priceEuro": 17000,
+        "horsepower": 170,
+        "salesVolume": 840,
+        "popCultureScore": 35,
+        "technicalInnovation": 40,
+        "launchYear": 1975
+      },
+      {
+        "name": "Ferrari 308 GTB Gruppo 4",
+        "productionRun": 25,
+        "priceEuro": 30000,
+        "horsepower": 290,
+        "salesVolume": 25,
+        "popCultureScore": 55,
+        "technicalInnovation": 55,
+        "launchYear": 1978
+      },
+      {
+        "name": "Ferrari 512 BB LM",
+        "productionRun": 25,
+        "priceEuro": 60000,
+        "horsepower": 480,
+        "salesVolume": 25,
+        "popCultureScore": 55,
+        "technicalInnovation": 60,
+        "launchYear": 1978
+      },
+      {
+        "name": "Ferrari 208 GTB / GTS Turbo",
+        "productionRun": 1300,
+        "priceEuro": 40000,
+        "horsepower": 220,
+        "salesVolume": 1300,
+        "popCultureScore": 40,
+        "technicalInnovation": 50,
+        "launchYear": 1980
+      },
+      {
+        "name": "Ferrari Testarossa Spider Agnelli",
+        "productionRun": 1,
+        "priceEuro": 500000,
+        "horsepower": 390,
+        "salesVolume": 1,
+        "popCultureScore": 60,
+        "technicalInnovation": 40,
+        "launchYear": 1986
+      },
+      {
+        "name": "Ferrari 288 GTO Evoluzione",
+        "productionRun": 6,
+        "priceEuro": 400000,
+        "horsepower": 650,
+        "salesVolume": 6,
+        "popCultureScore": 70,
+        "technicalInnovation": 95,
+        "launchYear": 1986
+      },
+      {
+        "name": "Ferrari Mondial T",
+        "productionRun": 1200,
+        "priceEuro": 80000,
+        "horsepower": 300,
+        "salesVolume": 1200,
+        "popCultureScore": 40,
+        "technicalInnovation": 40,
+        "launchYear": 1989
+      },
+      {
+        "name": "Ferrari F40 LM / Competizione / GTE",
+        "productionRun": 30,
+        "priceEuro": 500000,
+        "horsepower": 720,
+        "salesVolume": 30,
+        "popCultureScore": 85,
+        "technicalInnovation": 90,
+        "launchYear": 1989
+      },
+      {
+        "name": "Ferrari Mythos",
+        "productionRun": 1,
+        "priceEuro": 800000,
+        "horsepower": 390,
+        "salesVolume": 1,
+        "popCultureScore": 40,
+        "technicalInnovation": 60,
+        "launchYear": 1989
+      },
+      {
+        "name": "Ferrari 333 SP",
+        "productionRun": 40,
+        "priceEuro": 450000,
+        "horsepower": 650,
+        "salesVolume": 40,
+        "popCultureScore": 70,
+        "technicalInnovation": 85,
+        "launchYear": 1994
+      },
+      {
+        "name": "Ferrari FZ93 Zagato",
+        "productionRun": 1,
+        "priceEuro": 500000,
+        "horsepower": 428,
+        "salesVolume": 1,
+        "popCultureScore": 25,
+        "technicalInnovation": 45,
+        "launchYear": 1993
+      },
+      {
+        "name": "Ferrari F50 GT",
+        "productionRun": 3,
+        "priceEuro": 1200000,
+        "horsepower": 750,
+        "salesVolume": 3,
+        "popCultureScore": 65,
+        "technicalInnovation": 90,
+        "launchYear": 1996
+      },
+      {
+        "name": "Ferrari 456 GT Venice",
+        "productionRun": 4,
+        "priceEuro": 300000,
+        "horsepower": 442,
+        "salesVolume": 4,
+        "popCultureScore": 30,
+        "technicalInnovation": 40,
+        "launchYear": 1996
+      },
+      {
+        "name": "Ferrari 550 Barchetta Pininfarina",
+        "productionRun": 448,
+        "priceEuro": 250000,
+        "horsepower": 485,
+        "salesVolume": 448,
+        "popCultureScore": 60,
+        "technicalInnovation": 50,
+        "launchYear": 2000
+      },
+      {
+        "name": "Ferrari 360 Modena GT / N-GT",
+        "productionRun": 100,
+        "priceEuro": 200000,
+        "horsepower": 450,
+        "salesVolume": 100,
+        "popCultureScore": 55,
+        "technicalInnovation": 60,
+        "launchYear": 2000
+      },
+      {
+        "name": "Ferrari 360 Challenge Stradale",
+        "productionRun": 1288,
+        "priceEuro": 140000,
+        "horsepower": 425,
+        "salesVolume": 1288,
+        "popCultureScore": 75,
+        "technicalInnovation": 70,
+        "launchYear": 2003
+      },
+      {
+        "name": "Ferrari 575 GTC",
+        "productionRun": 12,
+        "priceEuro": 300000,
+        "horsepower": 600,
+        "salesVolume": 12,
+        "popCultureScore": 40,
+        "technicalInnovation": 70,
+        "launchYear": 2003
+      },
+      {
+        "name": "Ferrari 575 Superamerica",
+        "productionRun": 559,
+        "priceEuro": 250000,
+        "horsepower": 515,
+        "salesVolume": 559,
+        "popCultureScore": 50,
+        "technicalInnovation": 70,
+        "launchYear": 2005
+      },
+      {
+        "name": "Ferrari 575 GTZ Zagato",
+        "productionRun": 1,
+        "priceEuro": 1000000,
+        "horsepower": 515,
+        "salesVolume": 1,
+        "popCultureScore": 40,
+        "technicalInnovation": 45,
+        "launchYear": 2006
+      },
+      {
+        "name": "Ferrari F430 GT3 / GTC",
+        "productionRun": 100,
+        "priceEuro": 250000,
+        "horsepower": 540,
+        "salesVolume": 100,
+        "popCultureScore": 55,
+        "technicalInnovation": 70,
+        "launchYear": 2006
+      },
+      {
+        "name": "Ferrari F430 Scuderia / Scuderia 16M",
+        "productionRun": 1500,
+        "priceEuro": 200000,
+        "horsepower": 510,
+        "salesVolume": 1500,
+        "popCultureScore": 75,
+        "technicalInnovation": 85,
+        "launchYear": 2007
+      },
+      {
+        "name": "Ferrari P540 Superfast Aperta",
+        "productionRun": 1,
+        "priceEuro": 1500000,
+        "horsepower": 620,
+        "salesVolume": 1,
+        "popCultureScore": 40,
+        "technicalInnovation": 55,
+        "launchYear": 2009
+      },
+      {
+        "name": "Ferrari 599XX",
+        "productionRun": 29,
+        "priceEuro": 1500000,
+        "horsepower": 700,
+        "salesVolume": 29,
+        "popCultureScore": 70,
+        "technicalInnovation": 95,
+        "launchYear": 2009
+      },
+      {
+        "name": "Ferrari 599 SA Aperta",
+        "productionRun": 80,
+        "priceEuro": 500000,
+        "horsepower": 670,
+        "salesVolume": 80,
+        "popCultureScore": 55,
+        "technicalInnovation": 85,
+        "launchYear": 2010
+      },
+      {
+        "name": "Ferrari 458 Italia GT3",
+        "productionRun": 100,
+        "priceEuro": 400000,
+        "horsepower": 550,
+        "salesVolume": 100,
+        "popCultureScore": 55,
+        "technicalInnovation": 75,
+        "launchYear": 2011
+      },
+      {
+        "name": "Ferrari SP12 EC",
+        "productionRun": 1,
+        "priceEuro": 3000000,
+        "horsepower": 570,
+        "salesVolume": 1,
+        "popCultureScore": 40,
+        "technicalInnovation": 55,
+        "launchYear": 2012
+      },
+      {
+        "name": "Ferrari 458 Speciale / Speciale A",
+        "productionRun": 3499,
+        "priceEuro": 250000,
+        "horsepower": 605,
+        "salesVolume": 3499,
+        "popCultureScore": 75,
+        "technicalInnovation": 85,
+        "launchYear": 2013
+      },
+      {
+        "name": "Ferrari F12 TRS",
+        "productionRun": 3,
+        "priceEuro": 3500000,
+        "horsepower": 730,
+        "salesVolume": 3,
+        "popCultureScore": 45,
+        "technicalInnovation": 60,
+        "launchYear": 2014
+      },
+      {
+        "name": "Ferrari F60 America",
+        "productionRun": 10,
+        "priceEuro": 2500000,
+        "horsepower": 740,
+        "salesVolume": 10,
+        "popCultureScore": 45,
+        "technicalInnovation": 55,
+        "launchYear": 2014
+      },
+      {
+        "name": "Ferrari SP FFX",
+        "productionRun": 1,
+        "priceEuro": 3000000,
+        "horsepower": 800,
+        "salesVolume": 1,
+        "popCultureScore": 35,
+        "technicalInnovation": 70,
+        "launchYear": 2014
+      },
+      {
+        "name": "Ferrari F12tdf",
+        "productionRun": 799,
+        "priceEuro": 490000,
+        "horsepower": 780,
+        "salesVolume": 799,
+        "popCultureScore": 80,
+        "technicalInnovation": 90,
+        "launchYear": 2015
+      },
+      {
+        "name": "Ferrari FXX-K / FXX-K Evo",
+        "productionRun": 40,
+        "priceEuro": 2700000,
+        "horsepower": 1036,
+        "salesVolume": 40,
+        "popCultureScore": 80,
+        "technicalInnovation": 97,
+        "launchYear": 2015
+      },
+      {
+        "name": "Ferrari GTC4Lusso / Lusso T",
+        "productionRun": 3500,
+        "priceEuro": 300000,
+        "horsepower": 690,
+        "salesVolume": 3500,
+        "popCultureScore": 50,
+        "technicalInnovation": 70,
+        "launchYear": 2016
+      },
+      {
+        "name": "Ferrari LaFerrari Aperta",
+        "productionRun": 209,
+        "priceEuro": 2200000,
+        "horsepower": 963,
+        "salesVolume": 209,
+        "popCultureScore": 85,
+        "technicalInnovation": 95,
+        "launchYear": 2016
+      },
+      {
+        "name": "Ferrari 458 MM Speciale",
+        "productionRun": 1,
+        "priceEuro": 1500000,
+        "horsepower": 605,
+        "salesVolume": 1,
+        "popCultureScore": 40,
+        "technicalInnovation": 55,
+        "launchYear": 2016
+      },
+      {
+        "name": "Ferrari 488 GT3 / GTE / Challenge",
+        "productionRun": 300,
+        "priceEuro": 450000,
+        "horsepower": 600,
+        "salesVolume": 300,
+        "popCultureScore": 55,
+        "technicalInnovation": 75,
+        "launchYear": 2016
+      },
+      {
+        "name": "Ferrari SP38 Deborah",
+        "productionRun": 1,
+        "priceEuro": 3000000,
+        "horsepower": 720,
+        "salesVolume": 1,
+        "popCultureScore": 45,
+        "technicalInnovation": 60,
+        "launchYear": 2018
+      },
+      {
+        "name": "Ferrari 488 Pista / Pista Spider",
+        "productionRun": 3000,
+        "priceEuro": 300000,
+        "horsepower": 720,
+        "salesVolume": 3000,
+        "popCultureScore": 80,
+        "technicalInnovation": 85,
+        "launchYear": 2018
+      },
+      {
+        "name": "Ferrari Omologata",
+        "productionRun": 1,
+        "priceEuro": 3500000,
+        "horsepower": 800,
+        "salesVolume": 1,
+        "popCultureScore": 40,
+        "technicalInnovation": 60,
+        "launchYear": 2020
+      },
+      {
+        "name": "Ferrari SP48 Unica",
+        "productionRun": 1,
+        "priceEuro": 3000000,
+        "horsepower": 720,
+        "salesVolume": 1,
+        "popCultureScore": 35,
+        "technicalInnovation": 55,
+        "launchYear": 2020
+      },
+      {
+        "name": "Ferrari SP51",
+        "productionRun": 1,
+        "priceEuro": 3500000,
+        "horsepower": 789,
+        "salesVolume": 1,
+        "popCultureScore": 35,
+        "technicalInnovation": 55,
+        "launchYear": 2021
+      },
+      {
+        "name": "Ferrari 812 Competizione / Competizione A",
+        "productionRun": 1598,
+        "priceEuro": 550000,
+        "horsepower": 830,
+        "salesVolume": 1598,
+        "popCultureScore": 75,
+        "technicalInnovation": 85,
+        "launchYear": 2021
+      },
+      {
+        "name": "Ferrari BR20",
+        "productionRun": 1,
+        "priceEuro": 4000000,
+        "horsepower": 789,
+        "salesVolume": 1,
+        "popCultureScore": 35,
+        "technicalInnovation": 55,
+        "launchYear": 2022
+      },
+      {
+        "name": "Ferrari SP3JC",
+        "productionRun": 1,
+        "priceEuro": 3500000,
+        "horsepower": 720,
+        "salesVolume": 1,
+        "popCultureScore": 35,
+        "technicalInnovation": 50,
+        "launchYear": 2022
+      },
+      {
+        "name": "Ferrari 296 GT3",
+        "productionRun": 150,
+        "priceEuro": 500000,
+        "horsepower": 600,
+        "salesVolume": 150,
+        "popCultureScore": 50,
+        "technicalInnovation": 80,
+        "launchYear": 2022
+      },
+      {
+        "name": "Ferrari KC23",
+        "productionRun": 1,
+        "priceEuro": 4000000,
+        "horsepower": 600,
+        "salesVolume": 1,
+        "popCultureScore": 40,
+        "technicalInnovation": 65,
+        "launchYear": 2023
+      },
+      {
+        "name": "Ferrari 296 Speciale / Speciale A",
+        "productionRun": 1500,
+        "priceEuro": 400000,
+        "horsepower": 880,
+        "salesVolume": 1500,
+        "popCultureScore": 65,
+        "technicalInnovation": 85,
+        "launchYear": 2024
+      },
+      {
+        "name": "Ferrari Amalfi",
+        "productionRun": 2000,
+        "priceEuro": 240000,
+        "horsepower": 640,
+        "salesVolume": 2000,
+        "popCultureScore": 40,
+        "technicalInnovation": 65,
+        "launchYear": 2025
       }
     ]
   },
@@ -1023,13 +1863,13 @@
       },
       {
         "name": "Lamborghini Fenomeno",
-        "productionRun": 1,
-        "priceEuro": 1000000.0,
-        "horsepower": 500,
-        "salesVolume": 1,
+        "productionRun": 29,
+        "priceEuro": 3500000.0,
+        "horsepower": 1080,
+        "salesVolume": 29,
         "popCultureScore": 80,
-        "technicalInnovation": 60,
-        "launchYear": 2015
+        "technicalInnovation": 80,
+        "launchYear": 2025
       },
       {
         "name": "Bertone Genesis",
