@@ -1890,6 +1890,776 @@
         "popCultureScore": 80,
         "technicalInnovation": 60,
         "launchYear": 2019
+      },
+      {
+        "name": "Lamborghini 350 GTS",
+        "productionRun": 1,
+        "priceEuro": 800000,
+        "horsepower": 270,
+        "salesVolume": 1,
+        "popCultureScore": 30,
+        "technicalInnovation": 30,
+        "launchYear": 1965
+      },
+      {
+        "name": "Lamborghini 3500 GTZ",
+        "productionRun": 1,
+        "priceEuro": 600000,
+        "horsepower": 280,
+        "salesVolume": 1,
+        "popCultureScore": 30,
+        "technicalInnovation": 30,
+        "launchYear": 1965
+      },
+      {
+        "name": "Lamborghini Miura P400",
+        "productionRun": 275,
+        "priceEuro": 20000,
+        "horsepower": 350,
+        "salesVolume": 275,
+        "popCultureScore": 85,
+        "technicalInnovation": 85,
+        "launchYear": 1966
+      },
+      {
+        "name": "Lamborghini Miura Roadster",
+        "productionRun": 1,
+        "priceEuro": 1000000,
+        "horsepower": 350,
+        "salesVolume": 1,
+        "popCultureScore": 60,
+        "technicalInnovation": 50,
+        "launchYear": 1968
+      },
+      {
+        "name": "Lamborghini Miura P400 S",
+        "productionRun": 338,
+        "priceEuro": 22000,
+        "horsepower": 370,
+        "salesVolume": 338,
+        "popCultureScore": 85,
+        "technicalInnovation": 80,
+        "launchYear": 1969
+      },
+      {
+        "name": "Lamborghini Islero S",
+        "productionRun": 100,
+        "priceEuro": 20000,
+        "horsepower": 350,
+        "salesVolume": 100,
+        "popCultureScore": 25,
+        "technicalInnovation": 40,
+        "launchYear": 1969
+      },
+      {
+        "name": "Lamborghini Miura Jota",
+        "productionRun": 1,
+        "priceEuro": 1500000,
+        "horsepower": 440,
+        "salesVolume": 1,
+        "popCultureScore": 80,
+        "technicalInnovation": 85,
+        "launchYear": 1970
+      },
+      {
+        "name": "Lamborghini Espada S2",
+        "productionRun": 575,
+        "priceEuro": 22000,
+        "horsepower": 350,
+        "salesVolume": 575,
+        "popCultureScore": 30,
+        "technicalInnovation": 35,
+        "launchYear": 1970
+      },
+      {
+        "name": "Lamborghini Miura P400 SV",
+        "productionRun": 150,
+        "priceEuro": 25000,
+        "horsepower": 385,
+        "salesVolume": 150,
+        "popCultureScore": 90,
+        "technicalInnovation": 80,
+        "launchYear": 1971
+      },
+      {
+        "name": "Lamborghini Countach LP500",
+        "productionRun": 1,
+        "priceEuro": 2000000,
+        "horsepower": 440,
+        "salesVolume": 1,
+        "popCultureScore": 85,
+        "technicalInnovation": 95,
+        "launchYear": 1971
+      },
+      {
+        "name": "Lamborghini Espada S3",
+        "productionRun": 456,
+        "priceEuro": 24000,
+        "horsepower": 350,
+        "salesVolume": 456,
+        "popCultureScore": 30,
+        "technicalInnovation": 35,
+        "launchYear": 1972
+      },
+      {
+        "name": "Lamborghini Urraco P250",
+        "productionRun": 520,
+        "priceEuro": 25000,
+        "horsepower": 220,
+        "salesVolume": 520,
+        "popCultureScore": 25,
+        "technicalInnovation": 60,
+        "launchYear": 1972
+      },
+      {
+        "name": "Lamborghini Jarama S",
+        "productionRun": 150,
+        "priceEuro": 22000,
+        "horsepower": 365,
+        "salesVolume": 150,
+        "popCultureScore": 25,
+        "technicalInnovation": 35,
+        "launchYear": 1973
+      },
+      {
+        "name": "Lamborghini Countach LP400",
+        "productionRun": 150,
+        "priceEuro": 100000,
+        "horsepower": 375,
+        "salesVolume": 150,
+        "popCultureScore": 90,
+        "technicalInnovation": 85,
+        "launchYear": 1974
+      },
+      {
+        "name": "Lamborghini Urraco P300",
+        "productionRun": 190,
+        "priceEuro": 27000,
+        "horsepower": 250,
+        "salesVolume": 190,
+        "popCultureScore": 25,
+        "technicalInnovation": 55,
+        "launchYear": 1974
+      },
+      {
+        "name": "Lamborghini Urraco Rally",
+        "productionRun": 1,
+        "priceEuro": 500000,
+        "horsepower": 250,
+        "salesVolume": 1,
+        "popCultureScore": 25,
+        "technicalInnovation": 50,
+        "launchYear": 1974
+      },
+      {
+        "name": "Lamborghini Urraco P200",
+        "productionRun": 66,
+        "priceEuro": 22000,
+        "horsepower": 182,
+        "salesVolume": 66,
+        "popCultureScore": 20,
+        "technicalInnovation": 45,
+        "launchYear": 1975
+      },
+      {
+        "name": "Lamborghini Countach LP400 S",
+        "productionRun": 237,
+        "priceEuro": 100000,
+        "horsepower": 375,
+        "salesVolume": 237,
+        "popCultureScore": 88,
+        "technicalInnovation": 80,
+        "launchYear": 1978
+      },
+      {
+        "name": "Lamborghini Faena",
+        "productionRun": 1,
+        "priceEuro": 500000,
+        "horsepower": 350,
+        "salesVolume": 1,
+        "popCultureScore": 20,
+        "technicalInnovation": 40,
+        "launchYear": 1978
+      },
+      {
+        "name": "Lamborghini Countach LP500 S",
+        "productionRun": 321,
+        "priceEuro": 110000,
+        "horsepower": 375,
+        "salesVolume": 321,
+        "popCultureScore": 88,
+        "technicalInnovation": 75,
+        "launchYear": 1982
+      },
+      {
+        "name": "Lamborghini Countach 5000 QV",
+        "productionRun": 610,
+        "priceEuro": 120000,
+        "horsepower": 455,
+        "salesVolume": 610,
+        "popCultureScore": 90,
+        "technicalInnovation": 70,
+        "launchYear": 1985
+      },
+      {
+        "name": "Lamborghini Countach Evoluzione",
+        "productionRun": 1,
+        "priceEuro": 1500000,
+        "horsepower": 490,
+        "salesVolume": 1,
+        "popCultureScore": 70,
+        "technicalInnovation": 90,
+        "launchYear": 1987
+      },
+      {
+        "name": "Lamborghini Countach 25th Anniversary",
+        "productionRun": 657,
+        "priceEuro": 150000,
+        "horsepower": 455,
+        "salesVolume": 657,
+        "popCultureScore": 85,
+        "technicalInnovation": 60,
+        "launchYear": 1988
+      },
+      {
+        "name": "Lamborghini LM004",
+        "productionRun": 1,
+        "priceEuro": 400000,
+        "horsepower": 420,
+        "salesVolume": 1,
+        "popCultureScore": 25,
+        "technicalInnovation": 40,
+        "launchYear": 1982
+      },
+      {
+        "name": "Lamborghini Countach QVX",
+        "productionRun": 1,
+        "priceEuro": 800000,
+        "horsepower": 490,
+        "salesVolume": 1,
+        "popCultureScore": 50,
+        "technicalInnovation": 80,
+        "launchYear": 1985
+      },
+      {
+        "name": "Lamborghini Diablo VT",
+        "productionRun": 400,
+        "priceEuro": 200000,
+        "horsepower": 492,
+        "salesVolume": 400,
+        "popCultureScore": 80,
+        "technicalInnovation": 75,
+        "launchYear": 1993
+      },
+      {
+        "name": "Lamborghini Diablo SE30",
+        "productionRun": 150,
+        "priceEuro": 250000,
+        "horsepower": 523,
+        "salesVolume": 150,
+        "popCultureScore": 85,
+        "technicalInnovation": 80,
+        "launchYear": 1993
+      },
+      {
+        "name": "Lamborghini Diablo SV",
+        "productionRun": 337,
+        "priceEuro": 215000,
+        "horsepower": 510,
+        "salesVolume": 337,
+        "popCultureScore": 85,
+        "technicalInnovation": 65,
+        "launchYear": 1995
+      },
+      {
+        "name": "Lamborghini Diablo VT Roadster",
+        "productionRun": 200,
+        "priceEuro": 250000,
+        "horsepower": 492,
+        "salesVolume": 200,
+        "popCultureScore": 80,
+        "technicalInnovation": 70,
+        "launchYear": 1995
+      },
+      {
+        "name": "Lamborghini Diablo SV-R",
+        "productionRun": 28,
+        "priceEuro": 300000,
+        "horsepower": 540,
+        "salesVolume": 28,
+        "popCultureScore": 75,
+        "technicalInnovation": 80,
+        "launchYear": 1996
+      },
+      {
+        "name": "Lamborghini Acosta",
+        "productionRun": 1,
+        "priceEuro": 500000,
+        "horsepower": 492,
+        "salesVolume": 1,
+        "popCultureScore": 20,
+        "technicalInnovation": 40,
+        "launchYear": 1996
+      },
+      {
+        "name": "Lamborghini Pregunta",
+        "productionRun": 1,
+        "priceEuro": 600000,
+        "horsepower": 530,
+        "salesVolume": 1,
+        "popCultureScore": 30,
+        "technicalInnovation": 60,
+        "launchYear": 1998
+      },
+      {
+        "name": "Lamborghini Diablo GT",
+        "productionRun": 80,
+        "priceEuro": 285000,
+        "horsepower": 575,
+        "salesVolume": 80,
+        "popCultureScore": 80,
+        "technicalInnovation": 80,
+        "launchYear": 1999
+      },
+      {
+        "name": "Lamborghini Diablo GTR",
+        "productionRun": 30,
+        "priceEuro": 300000,
+        "horsepower": 590,
+        "salesVolume": 30,
+        "popCultureScore": 75,
+        "technicalInnovation": 85,
+        "launchYear": 1999
+      },
+      {
+        "name": "Lamborghini Canto",
+        "productionRun": 1,
+        "priceEuro": 300000,
+        "horsepower": 150,
+        "salesVolume": 1,
+        "popCultureScore": 15,
+        "technicalInnovation": 40,
+        "launchYear": 1999
+      },
+      {
+        "name": "Lamborghini Diablo 6.0 VT",
+        "productionRun": 1000,
+        "priceEuro": 250000,
+        "horsepower": 550,
+        "salesVolume": 1000,
+        "popCultureScore": 75,
+        "technicalInnovation": 65,
+        "launchYear": 2000
+      },
+      {
+        "name": "Lamborghini Diablo 6.0 SE",
+        "productionRun": 42,
+        "priceEuro": 300000,
+        "horsepower": 575,
+        "salesVolume": 42,
+        "popCultureScore": 75,
+        "technicalInnovation": 65,
+        "launchYear": 2001
+      },
+      {
+        "name": "Lamborghini Murciélago Roadster",
+        "productionRun": 1049,
+        "priceEuro": 280000,
+        "horsepower": 580,
+        "salesVolume": 1049,
+        "popCultureScore": 75,
+        "technicalInnovation": 80,
+        "launchYear": 2004
+      },
+      {
+        "name": "Lamborghini Murciélago R-GT",
+        "productionRun": 10,
+        "priceEuro": 400000,
+        "horsepower": 640,
+        "salesVolume": 10,
+        "popCultureScore": 70,
+        "technicalInnovation": 85,
+        "launchYear": 2004
+      },
+      {
+        "name": "Lamborghini Gallardo Spyder",
+        "productionRun": 2500,
+        "priceEuro": 170000,
+        "horsepower": 520,
+        "salesVolume": 2500,
+        "popCultureScore": 75,
+        "technicalInnovation": 65,
+        "launchYear": 2005
+      },
+      {
+        "name": "Lamborghini Concept S",
+        "productionRun": 1,
+        "priceEuro": 500000,
+        "horsepower": 520,
+        "salesVolume": 1,
+        "popCultureScore": 35,
+        "technicalInnovation": 60,
+        "launchYear": 2005
+      },
+      {
+        "name": "Lamborghini Murciélago LP 640",
+        "productionRun": 2000,
+        "priceEuro": 280000,
+        "horsepower": 640,
+        "salesVolume": 2000,
+        "popCultureScore": 80,
+        "technicalInnovation": 75,
+        "launchYear": 2006
+      },
+      {
+        "name": "Lamborghini Gallardo Superleggera",
+        "productionRun": 1500,
+        "priceEuro": 190000,
+        "horsepower": 530,
+        "salesVolume": 1500,
+        "popCultureScore": 80,
+        "technicalInnovation": 80,
+        "launchYear": 2007
+      },
+      {
+        "name": "Lamborghini Gallardo LP 560-4",
+        "productionRun": 6500,
+        "priceEuro": 185000,
+        "horsepower": 560,
+        "salesVolume": 6500,
+        "popCultureScore": 80,
+        "technicalInnovation": 75,
+        "launchYear": 2008
+      },
+      {
+        "name": "Lamborghini Murciélago LP 670-4 SuperVeloce",
+        "productionRun": 350,
+        "priceEuro": 320000,
+        "horsepower": 670,
+        "salesVolume": 350,
+        "popCultureScore": 85,
+        "technicalInnovation": 85,
+        "launchYear": 2009
+      },
+      {
+        "name": "Lamborghini Gallardo LP 550-2 Valentino Balboni",
+        "productionRun": 250,
+        "priceEuro": 190000,
+        "horsepower": 550,
+        "salesVolume": 250,
+        "popCultureScore": 75,
+        "technicalInnovation": 60,
+        "launchYear": 2009
+      },
+      {
+        "name": "Lamborghini Gallardo LP 570-4 Superleggera",
+        "productionRun": 1000,
+        "priceEuro": 210000,
+        "horsepower": 570,
+        "salesVolume": 1000,
+        "popCultureScore": 80,
+        "technicalInnovation": 80,
+        "launchYear": 2010
+      },
+      {
+        "name": "Lamborghini Gallardo LP 570-4 Performante",
+        "productionRun": 400,
+        "priceEuro": 215000,
+        "horsepower": 570,
+        "salesVolume": 400,
+        "popCultureScore": 75,
+        "technicalInnovation": 75,
+        "launchYear": 2010
+      },
+      {
+        "name": "Lamborghini Aventador Roadster",
+        "productionRun": 1500,
+        "priceEuro": 380000,
+        "horsepower": 700,
+        "salesVolume": 1500,
+        "popCultureScore": 80,
+        "technicalInnovation": 85,
+        "launchYear": 2013
+      },
+      {
+        "name": "Lamborghini Aventador LP 750-4 SuperVeloce",
+        "productionRun": 600,
+        "priceEuro": 400000,
+        "horsepower": 750,
+        "salesVolume": 600,
+        "popCultureScore": 85,
+        "technicalInnovation": 85,
+        "launchYear": 2015
+      },
+      {
+        "name": "Lamborghini Aventador S",
+        "productionRun": 3000,
+        "priceEuro": 380000,
+        "horsepower": 740,
+        "salesVolume": 3000,
+        "popCultureScore": 80,
+        "technicalInnovation": 85,
+        "launchYear": 2017
+      },
+      {
+        "name": "Lamborghini Aventador SVJ",
+        "productionRun": 900,
+        "priceEuro": 450000,
+        "horsepower": 770,
+        "salesVolume": 900,
+        "popCultureScore": 90,
+        "technicalInnovation": 92,
+        "launchYear": 2018
+      },
+      {
+        "name": "Lamborghini Aventador SVJ 63",
+        "productionRun": 63,
+        "priceEuro": 520000,
+        "horsepower": 770,
+        "salesVolume": 63,
+        "popCultureScore": 80,
+        "technicalInnovation": 92,
+        "launchYear": 2018
+      },
+      {
+        "name": "Lamborghini Aventador Ultimae",
+        "productionRun": 600,
+        "priceEuro": 500000,
+        "horsepower": 780,
+        "salesVolume": 600,
+        "popCultureScore": 85,
+        "technicalInnovation": 80,
+        "launchYear": 2021
+      },
+      {
+        "name": "Lamborghini Aventador J",
+        "productionRun": 1,
+        "priceEuro": 2500000,
+        "horsepower": 700,
+        "salesVolume": 1,
+        "popCultureScore": 65,
+        "technicalInnovation": 80,
+        "launchYear": 2012
+      },
+      {
+        "name": "Lamborghini Huracán LP 610-4",
+        "productionRun": 15000,
+        "priceEuro": 200000,
+        "horsepower": 610,
+        "salesVolume": 15000,
+        "popCultureScore": 80,
+        "technicalInnovation": 75,
+        "launchYear": 2014
+      },
+      {
+        "name": "Lamborghini Huracán Spyder",
+        "productionRun": 5000,
+        "priceEuro": 220000,
+        "horsepower": 610,
+        "salesVolume": 5000,
+        "popCultureScore": 75,
+        "technicalInnovation": 70,
+        "launchYear": 2015
+      },
+      {
+        "name": "Lamborghini Huracán LP 580-2",
+        "productionRun": 3500,
+        "priceEuro": 185000,
+        "horsepower": 580,
+        "salesVolume": 3500,
+        "popCultureScore": 70,
+        "technicalInnovation": 60,
+        "launchYear": 2015
+      },
+      {
+        "name": "Lamborghini Huracán GT3",
+        "productionRun": 150,
+        "priceEuro": 400000,
+        "horsepower": 600,
+        "salesVolume": 150,
+        "popCultureScore": 70,
+        "technicalInnovation": 85,
+        "launchYear": 2015
+      },
+      {
+        "name": "Lamborghini Huracán Performante",
+        "productionRun": 3000,
+        "priceEuro": 250000,
+        "horsepower": 640,
+        "salesVolume": 3000,
+        "popCultureScore": 90,
+        "technicalInnovation": 90,
+        "launchYear": 2017
+      },
+      {
+        "name": "Lamborghini Huracán EVO",
+        "productionRun": 7000,
+        "priceEuro": 215000,
+        "horsepower": 640,
+        "salesVolume": 7000,
+        "popCultureScore": 80,
+        "technicalInnovation": 80,
+        "launchYear": 2019
+      },
+      {
+        "name": "Lamborghini SC18 Alston",
+        "productionRun": 1,
+        "priceEuro": 2000000,
+        "horsepower": 770,
+        "salesVolume": 1,
+        "popCultureScore": 45,
+        "technicalInnovation": 75,
+        "launchYear": 2018
+      },
+      {
+        "name": "Lamborghini Aventador Miura Homage",
+        "productionRun": 6,
+        "priceEuro": 600000,
+        "horsepower": 740,
+        "salesVolume": 6,
+        "popCultureScore": 70,
+        "technicalInnovation": 50,
+        "launchYear": 2016
+      },
+      {
+        "name": "Lamborghini Huracán EVO Spyder",
+        "productionRun": 3500,
+        "priceEuro": 230000,
+        "horsepower": 640,
+        "salesVolume": 3500,
+        "popCultureScore": 75,
+        "technicalInnovation": 80,
+        "launchYear": 2019
+      },
+      {
+        "name": "Lamborghini Huracán EVO RWD",
+        "productionRun": 2500,
+        "priceEuro": 190000,
+        "horsepower": 610,
+        "salesVolume": 2500,
+        "popCultureScore": 75,
+        "technicalInnovation": 70,
+        "launchYear": 2020
+      },
+      {
+        "name": "Lamborghini Huracán STO",
+        "productionRun": 1500,
+        "priceEuro": 280000,
+        "horsepower": 640,
+        "salesVolume": 1500,
+        "popCultureScore": 90,
+        "technicalInnovation": 90,
+        "launchYear": 2020
+      },
+      {
+        "name": "Lamborghini Sián Roadster",
+        "productionRun": 19,
+        "priceEuro": 3500000,
+        "horsepower": 819,
+        "salesVolume": 19,
+        "popCultureScore": 70,
+        "technicalInnovation": 90,
+        "launchYear": 2020
+      },
+      {
+        "name": "Lamborghini SC20",
+        "productionRun": 1,
+        "priceEuro": 2500000,
+        "horsepower": 770,
+        "salesVolume": 1,
+        "popCultureScore": 45,
+        "technicalInnovation": 70,
+        "launchYear": 2020
+      },
+      {
+        "name": "Lamborghini Huracán Super Trofeo EVO2",
+        "productionRun": 100,
+        "priceEuro": 350000,
+        "horsepower": 620,
+        "salesVolume": 100,
+        "popCultureScore": 55,
+        "technicalInnovation": 80,
+        "launchYear": 2021
+      },
+      {
+        "name": "Lamborghini Huracán Tecnica",
+        "productionRun": 2500,
+        "priceEuro": 240000,
+        "horsepower": 640,
+        "salesVolume": 2500,
+        "popCultureScore": 70,
+        "technicalInnovation": 75,
+        "launchYear": 2022
+      },
+      {
+        "name": "Lamborghini Huracán Sterrato",
+        "productionRun": 1499,
+        "priceEuro": 270000,
+        "horsepower": 610,
+        "salesVolume": 1499,
+        "popCultureScore": 90,
+        "technicalInnovation": 85,
+        "launchYear": 2022
+      },
+      {
+        "name": "Lamborghini Huracán GT3 EVO2",
+        "productionRun": 100,
+        "priceEuro": 450000,
+        "horsepower": 640,
+        "salesVolume": 100,
+        "popCultureScore": 65,
+        "technicalInnovation": 85,
+        "launchYear": 2022
+      },
+      {
+        "name": "Lamborghini Urus Performante",
+        "productionRun": 5000,
+        "priceEuro": 260000,
+        "horsepower": 666,
+        "salesVolume": 5000,
+        "popCultureScore": 65,
+        "technicalInnovation": 75,
+        "launchYear": 2022
+      },
+      {
+        "name": "Lamborghini Invencible",
+        "productionRun": 1,
+        "priceEuro": 3000000,
+        "horsepower": 1015,
+        "salesVolume": 1,
+        "popCultureScore": 55,
+        "technicalInnovation": 80,
+        "launchYear": 2023
+      },
+      {
+        "name": "Lamborghini Autentica",
+        "productionRun": 1,
+        "priceEuro": 3000000,
+        "horsepower": 770,
+        "salesVolume": 1,
+        "popCultureScore": 55,
+        "technicalInnovation": 60,
+        "launchYear": 2023
+      },
+      {
+        "name": "Lamborghini Urus SE",
+        "productionRun": 5000,
+        "priceEuro": 250000,
+        "horsepower": 789,
+        "salesVolume": 5000,
+        "popCultureScore": 60,
+        "technicalInnovation": 85,
+        "launchYear": 2024
+      },
+      {
+        "name": "Lamborghini SC63",
+        "productionRun": 4,
+        "priceEuro": 3000000,
+        "horsepower": 680,
+        "salesVolume": 4,
+        "popCultureScore": 60,
+        "technicalInnovation": 92,
+        "launchYear": 2024
       }
     ]
   },
