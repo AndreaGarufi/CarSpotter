@@ -5,6 +5,7 @@ import 'package:flutter/foundation.dart';
 import 'package:isar_community/isar.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:http/http.dart' as http;
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/brand.dart';
 import '../models/car_model.dart';
@@ -12,6 +13,7 @@ import '../models/user_spot.dart';
 import 'rarity_controller.dart';
 
 class DbService {
+  static const _manualIconBadgesAppliedKey = 'manualIconBadgesApplied';
   static Isar? _isar;
 
   static Isar get isar {
@@ -32,30 +34,37 @@ class DbService {
       UserSpotSchema,
     ], directory: dir.path);
 
-    // Se il database è vuoto, leggiamo il JSON e lo popoliamo!
-    await _seedInitialData();
+    await _initializeCatalog();
   }
 
   // ==========================================
   // INIEZIONE DATI E CALCOLO ALGORITMICO PRO
   // ==========================================
-  static Future<void> _seedInitialData() async {
-    final count = await isar.brands.count();
-    if (count > 0) return; // Database già popolato
-
-    debugPrint("🌱 Avvio iniezione PRO dal file JSON...");
-
+  static Future<void> _initializeCatalog() async {
     try {
+      final hasCatalog = await isar.brands.count() > 0;
+      final prefs = await SharedPreferences.getInstance();
+      if (hasCatalog && prefs.getBool(_manualIconBadgesAppliedKey) == true) {
+        return;
+      }
+
       final String response = await rootBundle.loadString(
         'assets/data/cars_database.json',
       );
       final data = await json.decode(response) as Map<String, dynamic>;
 
+      if (hasCatalog) {
+        await _updateStoredIconBadges(data);
+        await prefs.setBool(_manualIconBadgesAppliedKey, true);
+        return;
+      }
+
+      debugPrint("🌱 Avvio iniezione PRO dal file JSON...");
+
       await isar.writeTxn(() async {
         for (var brandName in data.keys) {
           final brandInfo = data[brandName] as Map<String, dynamic>;
           final brandScore = brandInfo["brandScore"] as int;
-          final brandHeritage = brandInfo["brandHeritage"] as int;
 
           final brand = Brand()..name = brandName;
           await isar.brands.put(brand);
@@ -76,13 +85,7 @@ class DbService {
               ),
             );
 
-            final isIcon = RarityController.checkIfIcon(
-              brandHeritage: brandHeritage,
-              popCultureScore: m["popCultureScore"] as int,
-              technicalInnovation: m["technicalInnovation"] as int,
-              launchYear: m["launchYear"] as int,
-              isIconOverride: m["isIconOverride"] as bool?,
-            );
+            final isIcon = m["isIcon"] == true;
 
             int baseScore;
             switch (rarityTier) {
@@ -119,10 +122,33 @@ class DbService {
           }
         }
       });
+      await prefs.setBool(_manualIconBadgesAppliedKey, true);
       debugPrint("✅ Catalogo PRO generato con successo dai calcoli!");
     } catch (e) {
       debugPrint("❌ Errore durante la lettura o il calcolo del JSON: $e");
     }
+  }
+
+  static Future<void> _updateStoredIconBadges(Map<String, dynamic> data) async {
+    final badgesByName = <String, bool>{};
+    for (final brand in data.values) {
+      for (final model in brand["models"] as List<dynamic>) {
+        badgesByName[model["name"] as String] = model["isIcon"] == true;
+      }
+    }
+
+    await isar.writeTxn(() async {
+      final updatedModels = <CarModel>[];
+      for (final model in await isar.carModels.where().findAll()) {
+        final isIcon = badgesByName[model.name];
+        if (isIcon == null || model.isIcon == isIcon) continue;
+        model
+          ..isIcon = isIcon
+          ..iconScore = isIcon ? 90 : 50;
+        updatedModels.add(model);
+      }
+      await isar.carModels.putAll(updatedModels);
+    });
   }
 
   // --- UTILITY PER RECUPERARE DATI ---
@@ -292,7 +318,6 @@ class DbService {
           final brandInfo = data[brandName] as Map<String, dynamic>;
 
           final brandScore = brandInfo["brandScore"] as int;
-          final brandHeritage = brandInfo["brandHeritage"] as int;
 
           var brand = await isar.brands
               .filter()
@@ -325,14 +350,6 @@ class DbService {
               ),
             );
 
-            final isIcon = RarityController.checkIfIcon(
-              brandHeritage: brandHeritage,
-              popCultureScore: m["popCultureScore"] as int,
-              technicalInnovation: m["technicalInnovation"] as int,
-              launchYear: m["launchYear"] as int,
-              isIconOverride: m["isIconOverride"] as bool?,
-            );
-
             int baseScore;
 
             switch (rarityTier) {
@@ -357,6 +374,9 @@ class DbService {
                 .filter()
                 .nameEqualTo(carName)
                 .findFirst();
+
+            // Un catalogo remoto precedente può non contenere il badge.
+            final isIcon = m["isIcon"] as bool? ?? existingCar?.isIcon ?? false;
 
             if (existingCar == null) {
               final newCar = CarModel()

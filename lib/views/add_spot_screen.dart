@@ -6,6 +6,7 @@ import 'package:latlong2/latlong.dart';
 import '../controllers/db_service.dart';
 import '../models/brand.dart';
 import '../models/car_model.dart';
+import 'brand_search_delegate.dart';
 
 class AddSpotScreen extends StatefulWidget {
   final String imagePath;
@@ -61,17 +62,18 @@ class _AddSpotScreenState extends State<AddSpotScreen> {
   }
 
   // Filtra i modelli a catalogo quando si sceglie una Marca (Filtro a cascata)
-  void _onBrandSelected(Brand? brand) {
+  Future<void> _chooseBrand() async {
+    final brand = await showSearch<Brand?>(
+      context: context,
+      delegate: BrandSearchDelegate(_availableBrands, _selectedBrand),
+    );
+    if (!mounted || brand == null || brand.id == _selectedBrand?.id) return;
     setState(() {
       _selectedBrand = brand;
-      _selectedCarModel = null; // Resetta il modello se cambi marca
-      if (brand != null) {
-        _filteredModels = _allModels
-            .where((m) => m.brand.value?.id == brand.id)
-            .toList();
-      } else {
-        _filteredModels = [];
-      }
+      _selectedCarModel = null;
+      _filteredModels = _allModels
+          .where((model) => model.brand.value?.id == brand.id)
+          .toList();
     });
   }
 
@@ -298,7 +300,7 @@ class _AddSpotScreenState extends State<AddSpotScreen> {
           onPressed: () => Navigator.of(context).pop(),
         ),
         title: const Text(
-          "Nuovo Spot Pro 🏎️",
+          "Nuovo Spot 🏎️",
           style: TextStyle(
             color: Color(0xFF1A1A1A),
             fontWeight: FontWeight.w900,
@@ -341,35 +343,37 @@ class _AddSpotScreenState extends State<AddSpotScreen> {
               ),
             ),
             const SizedBox(height: 8),
-            DropdownButtonFormField<Brand>(
-              initialValue: _selectedBrand,
-              decoration: InputDecoration(
-                hintText: "Scegli la casa automobilistica...",
-                prefixIcon: const Icon(
-                  Icons.branding_watermark,
-                  color: Color(0xFF10B981),
-                ),
-                filled: true,
-                fillColor: Colors.white,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  borderSide: BorderSide(
-                    color: _showError && _selectedBrand == null
-                        ? Colors.red
-                        : Colors.grey.shade300,
+            Semantics(
+              button: true,
+              child: InkWell(
+                onTap: _availableBrands.isEmpty ? null : _chooseBrand,
+                borderRadius: BorderRadius.circular(16),
+                child: InputDecorator(
+                  isEmpty: _selectedBrand == null,
+                  decoration: InputDecoration(
+                    hintText: "Scegli la casa automobilistica...",
+                    prefixIcon: const Icon(
+                      Icons.branding_watermark,
+                      color: Color(0xFF10B981),
+                    ),
+                    suffixIcon: const Icon(Icons.arrow_drop_down),
+                    filled: true,
+                    fillColor: Colors.white,
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(16),
+                      borderSide: BorderSide(
+                        color: _showError && _selectedBrand == null
+                            ? Colors.red
+                            : Colors.grey.shade300,
+                      ),
+                    ),
+                  ),
+                  child: Text(
+                    _selectedBrand?.name ?? '',
+                    style: const TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
-              items: _availableBrands.map((b) {
-                return DropdownMenuItem(
-                  value: b,
-                  child: Text(
-                    b.name,
-                    style: const TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                );
-              }).toList(),
-              onChanged: _onBrandSelected,
             ),
             const SizedBox(height: 18),
 
@@ -388,6 +392,7 @@ class _AddSpotScreenState extends State<AddSpotScreen> {
               child: Opacity(
                 opacity: _selectedBrand == null ? 0.5 : 1.0,
                 child: Autocomplete<CarModel>(
+                  key: ValueKey(_selectedBrand?.id),
                   displayStringForOption: (CarModel option) => option.name,
                   optionsBuilder: (TextEditingValue textEditingValue) {
                     if (textEditingValue.text.isEmpty) return _filteredModels;

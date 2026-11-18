@@ -3,7 +3,7 @@ import '../models/car_model.dart';
 
 class RarityController {
   // ==========================================
-  // 1. CALCOLO RARITÀ (Da Comune a Leggendario)
+  // CALCOLO RARITÀ (Da Comune a Leggendario)
   // ==========================================
   static RarityTier calculateRarity({
     required int brandScore,
@@ -62,46 +62,5 @@ class RarityController {
       default:
         return null;
     }
-  }
-
-  // ==========================================
-  // 2. CALCOLO ICONA (Il fuoco 🔥)
-  // ==========================================
-  static bool checkIfIcon({
-    required int brandHeritage,
-    required int popCultureScore,
-    required int technicalInnovation,
-    required int launchYear,
-    bool? isIconOverride,
-  }) {
-    // Un giudizio editoriale esplicito prevale sempre sul calcolo. Serve per
-    // modelli recenti o per casi storici che una formula non può descrivere
-    // completamente (es. hypercar e versioni particolarmente rappresentative).
-    if (isIconOverride != null) return isIconOverride;
-
-    int currentYear = DateTime.now().year;
-    int legacyYears = currentYear - launchYear;
-    if (legacyYears < 0) legacyYears = 0;
-
-    // L'anzianità è soltanto un piccolo bonus: essere vecchia non rende un
-    // modello iconico. Il massimo si raggiunge dopo 40 anni.
-    double legacyScore = (min(legacyYears, 40) / 40 * 100);
-
-    // I pesi sommano al 100%. Cultura e importanza tecnica sono del modello;
-    // lo storico del marchio non può, da solo, promuovere tutta la sua gamma.
-    double iconScore =
-        (popCultureScore * 0.50) +
-        (technicalInnovation * 0.25) +
-        (legacyScore * 0.15) +
-        (brandHeritage * 0.10);
-
-    // Servono un impatto culturale molto alto e una prova forte, tecnica o
-    // storica. Evita falsi positivi come una berlina moderna di un marchio
-    // prestigioso o una sportiva semplicemente longeva.
-    final hasStrongCulturalImpact = popCultureScore >= 85;
-    final hasDefiningEvidence =
-        technicalInnovation >= 90 || legacyYears >= 30;
-
-    return iconScore >= 85 && hasStrongCulturalImpact && hasDefiningEvidence;
   }
 }
