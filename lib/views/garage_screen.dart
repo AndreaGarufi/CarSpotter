@@ -10,7 +10,9 @@ import 'system_navigation_bar.dart';
 enum RaritySort { none, asc, desc }
 
 class GarageScreen extends StatefulWidget {
-  const GarageScreen({super.key});
+  const GarageScreen({super.key, this.initialBrand});
+
+  final Brand? initialBrand;
 
   @override
   State<GarageScreen> createState() => _GarageScreenState();
@@ -35,6 +37,7 @@ class _GarageScreenState extends State<GarageScreen> {
   @override
   void initState() {
     super.initState();
+    _selectedBrand = widget.initialBrand;
     // Seleziona un'immagine casuale da vintage1 a vintage6
     int randomImg = math.Random().nextInt(6) + 1;
     _headerImage = 'assets/images/vintage$randomImg.jpg';

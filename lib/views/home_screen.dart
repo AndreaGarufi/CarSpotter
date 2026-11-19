@@ -10,6 +10,7 @@ import 'add_spot_screen.dart';
 import 'garage_screen.dart';
 import 'catalog_screen.dart';
 import 'spot_map_section.dart';
+import 'spot_origins_screen.dart';
 import 'system_navigation_bar.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -145,6 +146,13 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
+  Future<void> _openSpotOrigins() async {
+    await Navigator.of(context).push<void>(
+      MaterialPageRoute(builder: (_) => SpotOriginsScreen(spots: _spots)),
+    );
+    if (mounted) await _loadData();
+  }
+
   void _onQuickSpotPressed() {
     showModalBottomSheet(
       context: context,
@@ -273,6 +281,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             child: _buildStatCard(
                               title: "I Tuoi Spot",
                               value: _totalSpots.toString(),
+                              onTap: _openSpotOrigins,
                               assetPath: 'assets/images/home_your_spot.png',
                               fallbackIcon: Icons.directions_car_filled,
                               gradientColors: [
@@ -418,20 +427,11 @@ class _HomeScreenState extends State<HomeScreen> {
     String? assetPath,
     bool useMarqueeTitle = false,
     required List<Color> gradientColors,
+    VoidCallback? onTap,
   }) {
-    return Container(
+    const radius = BorderRadius.all(Radius.circular(22));
+    final content = Padding(
       padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(22),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withValues(alpha: 0.04),
-            blurRadius: 14,
-            offset: const Offset(0, 6),
-          ),
-        ],
-      ),
       child: Row(
         children: [
           Container(
@@ -464,13 +464,25 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  value,
-                  style: const TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w900,
-                    color: Color(0xFF1A1A1A),
-                  ),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        value,
+                        style: const TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w900,
+                          color: Color(0xFF1A1A1A),
+                        ),
+                      ),
+                    ),
+                    if (onTap != null)
+                      const Icon(
+                        Icons.chevron_right,
+                        color: Color(0xFF10B981),
+                        size: 17,
+                      ),
+                  ],
                 ),
                 useMarqueeTitle
                     ? _MarqueeText(text: title)
@@ -489,6 +501,30 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
+    );
+    return DecoratedBox(
+      decoration: const BoxDecoration(
+        color: Colors.white,
+        borderRadius: radius,
+        boxShadow: [
+          BoxShadow(
+            color: Color(0x0A000000),
+            blurRadius: 14,
+            offset: Offset(0, 6),
+          ),
+        ],
+      ),
+      child: onTap == null
+          ? content
+          : Material(
+              color: Colors.transparent,
+              borderRadius: radius,
+              child: InkWell(
+                onTap: onTap,
+                borderRadius: radius,
+                child: content,
+              ),
+            ),
     );
   }
 

@@ -1,0 +1,13 @@
+{
+  "CN": ["BYD"],
+  "CZ": ["Skoda", "Škoda"],
+  "DE": ["Audi", "BMW", "Mercedes-Benz", "Porsche", "Volkswagen"],
+  "ES": ["Cupra", "Seat"],
+  "FR": ["Alpine", "Bugatti", "Citroen", "Citroën", "DS Automobiles", "Peugeot", "Renault"],
+  "GB": ["Aston Martin", "Bentley", "Caterham", "Jaguar", "Land Rover", "Lotus", "McLaren", "Mini", "Rolls-Royce"],
+  "HR": ["Rimac"],
+  "IT": ["Abarth", "Alfa Romeo", "Dallara", "Ferrari", "Fiat", "Lamborghini", "Lancia", "Maserati", "Pagani"],
+  "JP": ["Honda", "Lexus", "Mazda", "Mitsubishi", "Nissan", "Subaru", "Suzuki", "Toyota"],
+  "SE": ["Koenigsegg"],
+  "US": ["Cadillac", "Chevrolet", "Chrysler", "Dodge", "Ford", "Hennessey", "Jeep", "Tesla"]
+}

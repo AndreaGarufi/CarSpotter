@@ -42,6 +42,8 @@ dev_dependencies:
 # Unica sezione flutter alla fine del file:
 flutter:
   uses-material-design: true
+  shaders:
+    - shaders/spot_globe.frag
   assets:
     # Immagini visualizzate dall'app. Il logo del launcher è usato in fase di build.
     - assets/images/car_left.png
@@ -74,6 +76,7 @@ flutter:
     - assets/images/vintage6.jpg
     - assets/data/
     - assets/maps/natural_earth_tiles.bin.gz
+    - assets/maps/natural_earth_globe.bin.gz
 
 flutter_launcher_icons:
   android: "ic_launcher"

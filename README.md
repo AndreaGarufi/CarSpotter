@@ -141,6 +141,8 @@ La Mappa degli spot nella Home usa una base geografica mondiale inclusa nell’a
 
 I nomi di comuni, paesi e frazioni italiane sono selezionati dall’estratto italiano di GeoNames e compaiono in base al livello di zoom. [© GeoNames](https://www.geonames.org/export/), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
+Dal riquadro **I tuoi spot** puoi aprire il globo offline **Origine degli spot**. I Paesi si colorano secondo l’origine dei marchi che hai avvistato. Toccando un Paese vedi i marchi e puoi aprire il Garage con il filtro già impostato. [Confini nazionali Natural Earth](https://www.naturalearthdata.com/downloads/50m-cultural-vectors/)
+
 Le mappe di inserimento e dettaglio usano dati rilasciati con licenza ODbL. [© OpenStreetMap contributors](https://www.openstreetmap.org/copyright)
 
 ### Librerie di terze parti
