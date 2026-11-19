@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 import 'dart:math' as math;
+import 'package:flutter/foundation.dart' show listEquals;
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../controllers/db_service.dart';
@@ -12,6 +13,7 @@ import 'catalog_screen.dart';
 import 'spot_map_section.dart';
 import 'spot_origins_screen.dart';
 import 'system_navigation_bar.dart';
+import 'topographic_background.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -21,6 +23,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  static const _firstFavoritePage = 1024;
   // Lista predefinita degli sfondi estetici per l'Header
   final List<String> _headerImages = [
     'assets/images/photo_header1.jpg',
@@ -61,7 +64,11 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     super.initState();
     _selectedImage = _headerImages[math.Random().nextInt(_headerImages.length)];
-    _pageController = PageController(viewportFraction: 0.70, initialPage: 0);
+    _pageController = PageController(
+      viewportFraction: 0.70,
+      initialPage: _firstFavoritePage,
+      keepPage: false,
+    );
     _loadData();
 
     // Timer di 8 secondi per alternare la visualizzazione tra Leggendari e Icon
@@ -75,11 +82,12 @@ class _HomeScreenState extends State<HomeScreen> {
 
     // Timer di 4 secondi per l'autoscorrimento automatico del Carosello Preferiti
     _carouselTimer = Timer.periodic(const Duration(seconds: 4), (timer) {
-      if (mounted && _favoriteSpots.length > 1 && _pageController.hasClients) {
-        int nextPage = (_pageController.page?.round() ?? 0) + 1;
-        if (nextPage >= _favoriteSpots.length) {
-          nextPage = 0; // Torna alla prima auto quando raggiunge la fine
-        }
+      if (mounted &&
+          _favoriteSpots.length > 1 &&
+          _pageController.hasClients &&
+          !_pageController.position.isScrollingNotifier.value) {
+        final nextPage =
+            (_pageController.page?.round() ?? _firstFavoritePage) + 1;
         _pageController.animateToPage(
           nextPage,
           duration: const Duration(milliseconds: 700),
@@ -128,6 +136,11 @@ class _HomeScreenState extends State<HomeScreen> {
       final stats = await DbService.getHomeStats();
 
       if (mounted && revision == _loadRevision) {
+        final favoritesChanged = !listEquals(
+          _favoriteSpots.map((spot) => spot.id).toList(),
+          stats.favorites.map((spot) => spot.id).toList(),
+        );
+        if (favoritesChanged) _resetFavoritePage();
         setState(() {
           _totalModels = stats.totalModels;
           _totalSpots = stats.totalSpots;
@@ -144,6 +157,36 @@ class _HomeScreenState extends State<HomeScreen> {
         setState(() => _isLoading = false);
       }
     }
+  }
+
+  void _resetFavoritePage() {
+    if (_pageController.hasClients) {
+      _pageController.jumpToPage(_firstFavoritePage);
+    }
+  }
+
+  int _favoriteIndex(int page) =>
+      (page - _firstFavoritePage) % _favoriteSpots.length;
+
+  bool _recenterFavoritePages(ScrollEndNotification notification) {
+    if (notification.depth != 0 || _favoriteSpots.length < 2) return false;
+    final page = _pageController.page?.round();
+    final upperPage =
+        _firstFavoritePage +
+        math.max(_firstFavoritePage, _favoriteSpots.length);
+    if (page != null && (page < _firstFavoritePage ~/ 2 || page > upperPage)) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted ||
+            !_pageController.hasClients ||
+            _favoriteSpots.length < 2 ||
+            _pageController.position.isScrollingNotifier.value ||
+            _pageController.page?.round() != page) {
+          return;
+        }
+        _pageController.jumpToPage(_firstFavoritePage + _favoriteIndex(page));
+      });
+    }
+    return false;
   }
 
   Future<void> _openSpotOrigins() async {
@@ -253,8 +296,7 @@ class _HomeScreenState extends State<HomeScreen> {
         : 0.0;
     final String completionText = "${completionRate.toStringAsFixed(1)}%";
 
-    return Scaffold(
-      backgroundColor: const Color(0xFFEEEEE4),
+    return TopographicScaffold(
       body: _isLoading
           ? const Center(
               child: CircularProgressIndicator(color: Color(0xFF10B981)),
@@ -343,31 +385,25 @@ class _HomeScreenState extends State<HomeScreen> {
                         children: [
                           const Expanded(
                             child: Text(
-                              "Carosello delle auto preferite ❤️",
+                              "Carosello delle auto preferite",
                               style: TextStyle(
-                                fontSize: 19,
+                                fontSize: 18,
                                 fontWeight: FontWeight.w900,
                                 color: Color(0xFF1A1A1A),
                                 letterSpacing: -0.5,
                               ),
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
                             ),
                           ),
-                          TextButton(
-                            onPressed: () {
-                              // Se il carosello è attivo, lo riporta alla prima posizione prima di aggiornare i dati
-                              if (_pageController.hasClients) {
-                                _pageController.jumpToPage(0);
-                              }
-                              _loadData();
-                            },
-                            child: const Text(
-                              "Aggiorna",
-                              style: TextStyle(
-                                color: Color(0xFF10B981),
-                                fontWeight: FontWeight.bold,
-                              ),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 4),
+                            child: IconButton(
+                              tooltip: 'Aggiorna preferiti',
+                              color: const Color(0xFF10B981),
+                              icon: const Icon(Icons.refresh),
+                              onPressed: () {
+                                _resetFavoritePage();
+                                _loadData();
+                              },
                             ),
                           ),
                         ],
@@ -800,52 +836,66 @@ class _HomeScreenState extends State<HomeScreen> {
       );
     }
 
+    if (_favoriteSpots.length == 1) {
+      return SizedBox(
+        height: 210,
+        child: FractionallySizedBox(
+          widthFactor: _pageController.viewportFraction,
+          child: _buildFavoriteCard(_buildFavoritePhoto(_favoriteSpots.single)),
+        ),
+      );
+    }
+
     return SizedBox(
       height: 210,
-      child: PageView.builder(
-        controller: _pageController,
-        physics: const BouncingScrollPhysics(),
-        itemCount: _favoriteSpots.length,
-        itemBuilder: (context, index) => AnimatedBuilder(
-          animation: _pageController,
-          child: _buildFavoritePhoto(_favoriteSpots[index]),
-          builder: (context, child) {
-            final page = _pageController.position.haveDimensions
-                ? _pageController.page
-                : null;
-            final value = page == null
-                ? (index == 0 ? 1.0 : 0.70)
-                : (1 - ((page - index).abs() * 0.30)).clamp(0.0, 1.0);
-            final opacity = value.clamp(0.40, 1.0);
-            return Center(
-              child: Transform.scale(
-                scale: Curves.easeOut.transform(value),
-                child: Opacity(
-                  opacity: opacity,
-                  child: Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 8),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFF1E293B),
-                      borderRadius: BorderRadius.circular(24),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withValues(alpha: 0.15 * opacity),
-                          blurRadius: 16,
-                          offset: const Offset(0, 8),
-                        ),
-                      ],
-                    ),
-                    clipBehavior: Clip.antiAlias,
-                    child: child,
+      child: NotificationListener<ScrollEndNotification>(
+        onNotification: _recenterFavoritePages,
+        child: PageView.builder(
+          controller: _pageController,
+          physics: const BouncingScrollPhysics(),
+          itemBuilder: (context, index) => AnimatedBuilder(
+            animation: _pageController,
+            child: _buildFavoritePhoto(_favoriteSpots[_favoriteIndex(index)]),
+            builder: (context, child) {
+              final page = _pageController.position.haveDimensions
+                  ? _pageController.page
+                  : null;
+              final value = page == null
+                  ? (index == _firstFavoritePage ? 1.0 : 0.70)
+                  : (1 - ((page - index).abs() * 0.30)).clamp(0.0, 1.0);
+              final opacity = value.clamp(0.40, 1.0);
+              return Center(
+                child: Transform.scale(
+                  scale: Curves.easeOut.transform(value),
+                  child: Opacity(
+                    opacity: opacity,
+                    child: _buildFavoriteCard(child, opacity: opacity),
                   ),
                 ),
-              ),
-            );
-          },
+              );
+            },
+          ),
         ),
       ),
     );
   }
+
+  Widget _buildFavoriteCard(Widget? child, {double opacity = 1}) => Container(
+    margin: const EdgeInsets.symmetric(horizontal: 8),
+    decoration: BoxDecoration(
+      color: const Color(0xFF1E293B),
+      borderRadius: BorderRadius.circular(24),
+      boxShadow: [
+        BoxShadow(
+          color: Colors.black.withValues(alpha: 0.15 * opacity),
+          blurRadius: 16,
+          offset: const Offset(0, 8),
+        ),
+      ],
+    ),
+    clipBehavior: Clip.antiAlias,
+    child: child,
+  );
 
   Widget _buildFavoritePhoto(UserSpot spot) {
     final carName = spot.carModel.value?.name ?? "Supercar ❤️";

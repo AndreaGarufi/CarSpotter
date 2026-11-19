@@ -25,4 +25,5 @@ class UserSpot {
       false; // <-- Tolto "late" e inizializzato a false per sicurezza
   bool isFavorite =
       false; // <-- Tolto "late" e inizializzato a false per sicurezza
+  DateTime? favoriteAddedAt;
 }

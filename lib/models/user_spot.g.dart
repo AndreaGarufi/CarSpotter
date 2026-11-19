@@ -27,34 +27,39 @@ const UserSpotSchema = CollectionSchema(
       name: r'dateCaptured',
       type: IsarType.dateTime,
     ),
-    r'imagePath': PropertySchema(
+    r'favoriteAddedAt': PropertySchema(
       id: 2,
+      name: r'favoriteAddedAt',
+      type: IsarType.dateTime,
+    ),
+    r'imagePath': PropertySchema(
+      id: 3,
       name: r'imagePath',
       type: IsarType.string,
     ),
     r'isFavorite': PropertySchema(
-      id: 3,
+      id: 4,
       name: r'isFavorite',
       type: IsarType.bool,
     ),
-    r'isRacing': PropertySchema(id: 4, name: r'isRacing', type: IsarType.bool),
+    r'isRacing': PropertySchema(id: 5, name: r'isRacing', type: IsarType.bool),
     r'latitude': PropertySchema(
-      id: 5,
+      id: 6,
       name: r'latitude',
       type: IsarType.double,
     ),
     r'locationName': PropertySchema(
-      id: 6,
+      id: 7,
       name: r'locationName',
       type: IsarType.string,
     ),
     r'longitude': PropertySchema(
-      id: 7,
+      id: 8,
       name: r'longitude',
       type: IsarType.double,
     ),
-    r'notes': PropertySchema(id: 8, name: r'notes', type: IsarType.string),
-    r'year': PropertySchema(id: 9, name: r'year', type: IsarType.long),
+    r'notes': PropertySchema(id: 9, name: r'notes', type: IsarType.string),
+    r'year': PropertySchema(id: 10, name: r'year', type: IsarType.long),
   },
 
   estimateSize: _userSpotEstimateSize,
@@ -115,14 +120,15 @@ void _userSpotSerialize(
 ) {
   writer.writeString(offsets[0], object.customColor);
   writer.writeDateTime(offsets[1], object.dateCaptured);
-  writer.writeString(offsets[2], object.imagePath);
-  writer.writeBool(offsets[3], object.isFavorite);
-  writer.writeBool(offsets[4], object.isRacing);
-  writer.writeDouble(offsets[5], object.latitude);
-  writer.writeString(offsets[6], object.locationName);
-  writer.writeDouble(offsets[7], object.longitude);
-  writer.writeString(offsets[8], object.notes);
-  writer.writeLong(offsets[9], object.year);
+  writer.writeDateTime(offsets[2], object.favoriteAddedAt);
+  writer.writeString(offsets[3], object.imagePath);
+  writer.writeBool(offsets[4], object.isFavorite);
+  writer.writeBool(offsets[5], object.isRacing);
+  writer.writeDouble(offsets[6], object.latitude);
+  writer.writeString(offsets[7], object.locationName);
+  writer.writeDouble(offsets[8], object.longitude);
+  writer.writeString(offsets[9], object.notes);
+  writer.writeLong(offsets[10], object.year);
 }
 
 UserSpot _userSpotDeserialize(
@@ -134,15 +140,16 @@ UserSpot _userSpotDeserialize(
   final object = UserSpot();
   object.customColor = reader.readStringOrNull(offsets[0]);
   object.dateCaptured = reader.readDateTime(offsets[1]);
+  object.favoriteAddedAt = reader.readDateTimeOrNull(offsets[2]);
   object.id = id;
-  object.imagePath = reader.readString(offsets[2]);
-  object.isFavorite = reader.readBool(offsets[3]);
-  object.isRacing = reader.readBool(offsets[4]);
-  object.latitude = reader.readDoubleOrNull(offsets[5]);
-  object.locationName = reader.readStringOrNull(offsets[6]);
-  object.longitude = reader.readDoubleOrNull(offsets[7]);
-  object.notes = reader.readStringOrNull(offsets[8]);
-  object.year = reader.readLongOrNull(offsets[9]);
+  object.imagePath = reader.readString(offsets[3]);
+  object.isFavorite = reader.readBool(offsets[4]);
+  object.isRacing = reader.readBool(offsets[5]);
+  object.latitude = reader.readDoubleOrNull(offsets[6]);
+  object.locationName = reader.readStringOrNull(offsets[7]);
+  object.longitude = reader.readDoubleOrNull(offsets[8]);
+  object.notes = reader.readStringOrNull(offsets[9]);
+  object.year = reader.readLongOrNull(offsets[10]);
   return object;
 }
 
@@ -158,20 +165,22 @@ P _userSpotDeserializeProp<P>(
     case 1:
       return (reader.readDateTime(offset)) as P;
     case 2:
-      return (reader.readString(offset)) as P;
+      return (reader.readDateTimeOrNull(offset)) as P;
     case 3:
-      return (reader.readBool(offset)) as P;
+      return (reader.readString(offset)) as P;
     case 4:
       return (reader.readBool(offset)) as P;
     case 5:
-      return (reader.readDoubleOrNull(offset)) as P;
+      return (reader.readBool(offset)) as P;
     case 6:
-      return (reader.readStringOrNull(offset)) as P;
-    case 7:
       return (reader.readDoubleOrNull(offset)) as P;
-    case 8:
+    case 7:
       return (reader.readStringOrNull(offset)) as P;
+    case 8:
+      return (reader.readDoubleOrNull(offset)) as P;
     case 9:
+      return (reader.readStringOrNull(offset)) as P;
+    case 10:
       return (reader.readLongOrNull(offset)) as P;
     default:
       throw IsarError('Unknown property with id $propertyId');
@@ -484,6 +493,79 @@ extension UserSpotQueryFilter
       return query.addFilterCondition(
         FilterCondition.between(
           property: r'dateCaptured',
+          lower: lower,
+          includeLower: includeLower,
+          upper: upper,
+          includeUpper: includeUpper,
+        ),
+      );
+    });
+  }
+
+  QueryBuilder<UserSpot, UserSpot, QAfterFilterCondition>
+  favoriteAddedAtIsNull() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(
+        const FilterCondition.isNull(property: r'favoriteAddedAt'),
+      );
+    });
+  }
+
+  QueryBuilder<UserSpot, UserSpot, QAfterFilterCondition>
+  favoriteAddedAtIsNotNull() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(
+        const FilterCondition.isNotNull(property: r'favoriteAddedAt'),
+      );
+    });
+  }
+
+  QueryBuilder<UserSpot, UserSpot, QAfterFilterCondition>
+  favoriteAddedAtEqualTo(DateTime? value) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(
+        FilterCondition.equalTo(property: r'favoriteAddedAt', value: value),
+      );
+    });
+  }
+
+  QueryBuilder<UserSpot, UserSpot, QAfterFilterCondition>
+  favoriteAddedAtGreaterThan(DateTime? value, {bool include = false}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(
+        FilterCondition.greaterThan(
+          include: include,
+          property: r'favoriteAddedAt',
+          value: value,
+        ),
+      );
+    });
+  }
+
+  QueryBuilder<UserSpot, UserSpot, QAfterFilterCondition>
+  favoriteAddedAtLessThan(DateTime? value, {bool include = false}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(
+        FilterCondition.lessThan(
+          include: include,
+          property: r'favoriteAddedAt',
+          value: value,
+        ),
+      );
+    });
+  }
+
+  QueryBuilder<UserSpot, UserSpot, QAfterFilterCondition>
+  favoriteAddedAtBetween(
+    DateTime? lower,
+    DateTime? upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(
+        FilterCondition.between(
+          property: r'favoriteAddedAt',
           lower: lower,
           includeLower: includeLower,
           upper: upper,
@@ -1344,6 +1426,18 @@ extension UserSpotQuerySortBy on QueryBuilder<UserSpot, UserSpot, QSortBy> {
     });
   }
 
+  QueryBuilder<UserSpot, UserSpot, QAfterSortBy> sortByFavoriteAddedAt() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'favoriteAddedAt', Sort.asc);
+    });
+  }
+
+  QueryBuilder<UserSpot, UserSpot, QAfterSortBy> sortByFavoriteAddedAtDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'favoriteAddedAt', Sort.desc);
+    });
+  }
+
   QueryBuilder<UserSpot, UserSpot, QAfterSortBy> sortByImagePath() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'imagePath', Sort.asc);
@@ -1464,6 +1558,18 @@ extension UserSpotQuerySortThenBy
   QueryBuilder<UserSpot, UserSpot, QAfterSortBy> thenByDateCapturedDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'dateCaptured', Sort.desc);
+    });
+  }
+
+  QueryBuilder<UserSpot, UserSpot, QAfterSortBy> thenByFavoriteAddedAt() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'favoriteAddedAt', Sort.asc);
+    });
+  }
+
+  QueryBuilder<UserSpot, UserSpot, QAfterSortBy> thenByFavoriteAddedAtDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'favoriteAddedAt', Sort.desc);
     });
   }
 
@@ -1592,6 +1698,12 @@ extension UserSpotQueryWhereDistinct
     });
   }
 
+  QueryBuilder<UserSpot, UserSpot, QDistinct> distinctByFavoriteAddedAt() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addDistinctBy(r'favoriteAddedAt');
+    });
+  }
+
   QueryBuilder<UserSpot, UserSpot, QDistinct> distinctByImagePath({
     bool caseSensitive = true,
   }) {
@@ -1664,6 +1776,13 @@ extension UserSpotQueryProperty
   QueryBuilder<UserSpot, DateTime, QQueryOperations> dateCapturedProperty() {
     return QueryBuilder.apply(this, (query) {
       return query.addPropertyName(r'dateCaptured');
+    });
+  }
+
+  QueryBuilder<UserSpot, DateTime?, QQueryOperations>
+  favoriteAddedAtProperty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addPropertyName(r'favoriteAddedAt');
     });
   }
 

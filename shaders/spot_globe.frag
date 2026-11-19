@@ -34,5 +34,7 @@ void main() {
   vec3 surface = texture(uAtlas, pixel / (vec2(3.0, 2.0) * tileSize)).rgb;
 
   float light = clamp(dot(vec3(p, depth), vec3(-0.38, -0.47, 0.79)), 0.0, 1.0);
-  fragColor = vec4(surface * mix(vec3(0.70, 0.74, 0.72), vec3(1.04), light), 1.0);
+  vec3 shaded = surface * mix(vec3(0.77, 0.73, 0.66), vec3(1.04), light);
+  float rim = 1.0 - smoothstep(0.0, 0.09, depth);
+  fragColor = vec4(mix(shaded, vec3(0.52, 0.46, 0.37), 0.65 * rim), 1.0);
 }

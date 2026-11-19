@@ -130,6 +130,8 @@ Non tutte le auto sono uguali! Un algoritmo ponderato analizza le specifiche tec
 CarSpotter è un progetto **personale, senza scopo di lucro**, sviluppato per studio e passione verso il mondo automobilistico. **Non è affiliato, sponsorizzato né approvato** da nessuna casa automobilistica citata. Marchi, loghi e nomi delle vetture appartengono ai rispettivi proprietari e costruttori e sono usati solo a scopo identificativo.
 
 ### Dati del catalogo
+I loghi del catalogo e del globo sono inclusi nell’app come WebP. [VehicleSpecs](https://github.com/vehiclespecs/brand-logos/tree/3f0929e70e0a9a2a502063edc4b3e5c0146cba74), [Cupra](https://github.com/filippofilip95/car-logos-dataset/blob/e334a4d2e8742108ba164c629dff5636576d3808/logos/optimized/cupra.png), [Dallara](https://www.dallara.it/), [Formula 1](https://www.formula1.com/).
+
 I valori del catalogo (potenza, prezzo, produzione, punteggi di rarità, iconicità e prestigio) sono **stime indicative**, in parte soggettive, e possono contenere imprecisioni. Non vanno intesi come dati ufficiali o come valutazione economica dei veicoli.
 
 ### Privacy e dati personali

@@ -52,6 +52,7 @@ class BackupService {
           'notes': spot.notes,
           'isRacing': spot.isRacing,
           'isFavorite': spot.isFavorite,
+          'favoriteAddedAt': spot.favoriteAddedAt?.toIso8601String(),
         });
       }
       final manifest = {
@@ -185,7 +186,10 @@ class BackupService {
           ..year = item['year'] as int?
           ..notes = item['notes'] as String?
           ..isRacing = item['isRacing'] as bool? ?? false
-          ..isFavorite = item['isFavorite'] as bool? ?? false;
+          ..isFavorite = item['isFavorite'] as bool? ?? false
+          ..favoriteAddedAt = DateTime.tryParse(
+            item['favoriteAddedAt'] as String? ?? '',
+          );
         await DbService.isar.writeTxn(() async {
           final name = item['model'] as String;
           var model = await DbService.isar.carModels.get(modelIds[name]!);

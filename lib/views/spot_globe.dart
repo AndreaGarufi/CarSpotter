@@ -48,13 +48,13 @@ class GlobeGeometry {
   Future<ui.Image> _createTexture(Set<String> unlocked) async {
     // Each country has a fill and a border color. Ocean pixels use index zero.
     final palette = Uint32List((countries.length + 1) * 2);
-    palette[0] = palette[1] = 0xFFD4D9D6;
+    palette[0] = palette[1] = 0xFFD9E8F8;
     for (var i = 0; i < countries.length; i++) {
       final active = unlocked.contains(countries[i].code);
       final index = 2 * (i + 1);
       // rgba8888 bytes in little-endian order.
-      palette[index] = active ? 0xFF85C721 : 0xFFF6F8F8;
-      palette[index + 1] = active ? 0xFF66964C : 0xFFC0CCC2;
+      palette[index] = active ? 0xFF3D6730 : 0xFFD0D2D8;
+      palette[index + 1] = active ? 0xFF34502B : 0xFF8E99A4;
     }
     final pixels = await compute(_paintAtlas, (
       ids: _countryIds,

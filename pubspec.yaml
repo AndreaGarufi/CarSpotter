@@ -74,6 +74,7 @@ flutter:
     - assets/images/vintage4.jpg
     - assets/images/vintage5.jpg
     - assets/images/vintage6.jpg
+    - assets/images/brand_logos/
     - assets/data/
     - assets/maps/natural_earth_tiles.bin.gz
     - assets/maps/natural_earth_globe.bin.gz

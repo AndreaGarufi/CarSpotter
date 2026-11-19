@@ -8,6 +8,7 @@ import 'package:latlong2/latlong.dart';
 import '../models/user_spot.dart';
 import 'offline_spot_basemap.dart';
 import 'spot_detail_screen.dart';
+import 'system_navigation_bar.dart';
 
 const _title = 'Mappa degli spot';
 const _spotGreen = Color(0xFF10B981);
@@ -140,8 +141,14 @@ class _SpotsMapState extends State<_SpotsMap> {
     await Navigator.of(context).push<void>(
       MaterialPageRoute(
         builder: (context) => Scaffold(
+          extendBody: true,
+          backgroundColor: spotMapWater,
+          bottomNavigationBar: const SystemNavigationBar(),
           appBar: AppBar(
-            title: const Text(_title),
+            title: const Text(
+              _title,
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
             backgroundColor: Colors.white,
           ),
           body: _SpotsMap(

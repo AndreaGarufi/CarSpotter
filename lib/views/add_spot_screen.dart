@@ -7,6 +7,7 @@ import '../controllers/spot_location_service.dart';
 import '../models/brand.dart';
 import '../models/car_model.dart';
 import 'brand_search_delegate.dart';
+import 'topographic_background.dart';
 
 class AddSpotScreen extends StatefulWidget {
   final String imagePath;
@@ -273,8 +274,7 @@ class _AddSpotScreenState extends State<AddSpotScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color(0xFFEEEEE4),
+    return TopographicScaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,

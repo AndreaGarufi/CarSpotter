@@ -6,6 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'home_screen.dart'; //file della home
 import '../controllers/backup_service.dart';
 import '../controllers/db_service.dart';
+import 'topographic_background.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
@@ -620,8 +621,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
         ? "Pronto a spottare, $_username?"
         : "Snap, tag, and organize cars quickly.";
 
-    return Scaffold(
-      backgroundColor: const Color(0xFFEEEEE4),
+    return TopographicScaffold(
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),

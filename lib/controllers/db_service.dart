@@ -196,6 +196,14 @@ class DbService {
       if (model.isIcon) iconic++;
       if (model.rarityTier == RarityTier.legendary) legendary++;
     }
+    favorites.sort((a, b) {
+      final addedA = a.favoriteAddedAt;
+      final addedB = b.favoriteAddedAt;
+      if (addedA == null) return addedB == null ? a.id.compareTo(b.id) : -1;
+      if (addedB == null) return 1;
+      final order = addedA.compareTo(addedB);
+      return order == 0 ? a.id.compareTo(b.id) : order;
+    });
     return (
       totalModels: totalModels,
       totalSpots: spots.length,
@@ -243,11 +251,13 @@ class DbService {
       originalImagePath,
     ).copy('${appDir.path}/$fileName');
 
+    final capturedAt = DateTime.now();
     final newSpot = UserSpot()
       ..imagePath = savedFile.path
-      ..dateCaptured = DateTime.now()
+      ..dateCaptured = capturedAt
       ..notes = notes?.trim()
       ..isFavorite = isFavorite
+      ..favoriteAddedAt = isFavorite ? capturedAt : null
       ..isRacing = isRacing
       ..customColor = color?.trim()
       ..year = year
@@ -264,6 +274,14 @@ class DbService {
 
   static Future<void> updateSpot(UserSpot spot) async {
     await isar.writeTxn(() async {
+      if (spot.isFavorite) {
+        final saved = await isar.userSpots.get(spot.id);
+        spot.favoriteAddedAt = saved?.isFavorite == true
+            ? saved?.favoriteAddedAt
+            : DateTime.now();
+      } else {
+        spot.favoriteAddedAt = null;
+      }
       await isar.userSpots.put(spot);
     });
   }
@@ -334,12 +352,13 @@ class DbService {
           }
 
           final brandId = brand.id;
-          final modelIds = (await isar.carModels
-                  .filter()
-                  .brand((q) => q.idEqualTo(brandId))
-                  .idProperty()
-                  .findAll())
-              .toSet();
+          final modelIds =
+              (await isar.carModels
+                      .filter()
+                      .brand((q) => q.idEqualTo(brandId))
+                      .idProperty()
+                      .findAll())
+                  .toSet();
 
           for (final entry in brandInfo['models']) {
             final name = entry['name'] as String;

@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 import '../controllers/db_service.dart';
 import '../models/user_spot.dart';
 import '../models/brand.dart';
+import 'brand_search_delegate.dart';
 import 'spot_detail_screen.dart';
-import 'system_navigation_bar.dart';
+import 'topographic_background.dart';
 
 enum RaritySort { none, asc, desc }
 
@@ -85,59 +86,105 @@ class _GarageScreenState extends State<GarageScreen> {
   }
 
   void _showBrandPicker() {
-    showModalBottomSheet(
+    final brands = brandsInAlphabeticalOrder(_allBrands);
+    var search = '';
+    showModalBottomSheet<void>(
       context: context,
+      isScrollControlled: true,
+      useSafeArea: true,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
       ),
-      builder: (context) => SafeArea(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Text(
-                "Filtra per Marca",
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-              ),
-            ),
-            ListTile(
-              title: const Text(
-                "Tutte le marche",
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-              trailing: _selectedBrand == null
-                  ? const Icon(Icons.check, color: Color(0xFF10B981))
-                  : null,
-              onTap: () {
-                setState(() => _selectedBrand = null);
-                _applyFilters();
-                Navigator.pop(context);
-              },
-            ),
-            const Divider(height: 1),
-            Expanded(
-              child: ListView.builder(
-                itemCount: _allBrands.length,
-                itemBuilder: (context, index) {
-                  final brand = _allBrands[index];
-                  return ListTile(
-                    title: Text(brand.name),
-                    trailing: _selectedBrand?.id == brand.id
-                        ? const Icon(Icons.check, color: Color(0xFF10B981))
-                        : null,
-                    onTap: () {
-                      setState(() => _selectedBrand = brand);
-                      _applyFilters();
-                      Navigator.pop(context);
-                    },
+      builder: (context) {
+        final keyboardHeight = MediaQuery.viewInsetsOf(context).bottom;
+        void selectBrand(Brand? brand) {
+          setState(() => _selectedBrand = brand);
+          _applyFilters();
+          Navigator.pop(context);
+        }
+
+        return Padding(
+          padding: EdgeInsets.only(bottom: keyboardHeight),
+          child: FractionallySizedBox(
+            heightFactor: keyboardHeight > 0 ? 1 : 0.8,
+            child: SafeArea(
+              child: StatefulBuilder(
+                builder: (context, updateSearch) {
+                  final matches = matchingBrands(brands, search);
+                  return Column(
+                    children: [
+                      const Padding(
+                        padding: EdgeInsets.all(16),
+                        child: Text(
+                          'Filtra per marca',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: TextField(
+                          onChanged: (value) =>
+                              updateSearch(() => search = value),
+                          decoration: const InputDecoration(
+                            labelText: 'Cerca marca',
+                            prefixIcon: Icon(Icons.search),
+                            border: OutlineInputBorder(),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: ListView.builder(
+                          key: ValueKey(search),
+                          itemCount: matches.isEmpty ? 2 : matches.length + 1,
+                          itemBuilder: (context, index) {
+                            if (index == 0) {
+                              return ListTile(
+                                title: const Text(
+                                  'Tutte le marche',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                                selected: _selectedBrand == null,
+                                trailing: _selectedBrand == null
+                                    ? const Icon(
+                                        Icons.check,
+                                        color: Color(0xFF10B981),
+                                      )
+                                    : null,
+                                onTap: () => selectBrand(null),
+                              );
+                            }
+                            if (matches.isEmpty) {
+                              return const ListTile(
+                                title: Text('Nessuna marca trovata'),
+                              );
+                            }
+                            final brand = matches[index - 1];
+                            final selected = _selectedBrand?.id == brand.id;
+                            return ListTile(
+                              title: Text(brand.name),
+                              selected: selected,
+                              trailing: selected
+                                  ? const Icon(
+                                      Icons.check,
+                                      color: Color(0xFF10B981),
+                                    )
+                                  : null,
+                              onTap: () => selectBrand(brand),
+                            );
+                          },
+                        ),
+                      ),
+                    ],
                   );
                 },
               ),
             ),
-          ],
-        ),
-      ),
+          ),
+        );
+      },
     );
   }
 
@@ -232,9 +279,7 @@ class _GarageScreenState extends State<GarageScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color(0xFFEEEEE4),
-      bottomNavigationBar: const SystemNavigationBar(),
+    return TopographicScaffold(
       body: _isLoading
           ? const Center(
               child: CircularProgressIndicator(color: Color(0xFF10B981)),

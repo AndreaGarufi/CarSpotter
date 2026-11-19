@@ -4,6 +4,7 @@ import 'package:car_spotter/views/offline_spot_basemap.dart';
 import 'package:car_spotter/views/spot_detail_screen.dart';
 import 'package:car_spotter/views/spot_map_section.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:latlong2/latlong.dart';
@@ -172,6 +173,8 @@ void main() {
   testWidgets('Mantiene centro e zoom tra riquadro e schermo intero', (
     tester,
   ) async {
+    tester.view.padding = const FakeViewPadding(bottom: 48);
+    addTearDown(tester.view.resetPadding);
     await _showMap(tester, [
       _spot(1, 'Audi R8'),
       _spot(2, 'Ferrari F40', latitude: 37.0768),
@@ -182,6 +185,12 @@ void main() {
 
     await tester.tap(find.byTooltip('Apri a schermo intero'));
     await tester.pumpAndSettle();
+    final title = tester.widget<Text>(find.text('Mappa degli spot'));
+    expect(title.style?.fontWeight, FontWeight.bold);
+    expect(
+      SystemChrome.latestStyle?.systemNavigationBarContrastEnforced,
+      isFalse,
+    );
     final expanded = _mapController(tester);
     expect(expanded.camera.center, center);
     expect(expanded.camera.zoom, zoom);

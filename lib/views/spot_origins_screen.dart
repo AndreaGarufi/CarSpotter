@@ -7,9 +7,10 @@ import 'package:flutter/services.dart';
 import '../controllers/db_service.dart';
 import '../models/brand.dart';
 import '../models/user_spot.dart';
+import 'brand_logo.dart';
 import 'garage_screen.dart';
 import 'spot_globe.dart';
-import 'system_navigation_bar.dart';
+import 'topographic_background.dart';
 
 typedef _Origins = ({
   GlobeGeometry geometry,
@@ -41,9 +42,14 @@ class SpotOriginsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Origine degli spot')),
-      bottomNavigationBar: const SystemNavigationBar(),
+    return TopographicScaffold(
+      appBar: AppBar(
+        backgroundColor: TopographicBackground.paper,
+        title: const Text(
+          'Origine degli spot',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+      ),
       body: FutureBuilder<_Origins>(
         future: _assets,
         builder: (context, snapshot) {
@@ -312,9 +318,11 @@ class _CountryPanel extends StatelessWidget {
                 return InkWell(
                   onTap: () => onBrandTap(item.brand),
                   child: Padding(
-                    padding: const EdgeInsets.fromLTRB(12, 14, 8, 14),
+                    padding: const EdgeInsets.fromLTRB(12, 10, 8, 10),
                     child: Row(
                       children: [
+                        BrandLogo(item.brand.name),
+                        const SizedBox(width: 10),
                         Expanded(
                           child: Text(
                             item.brand.name,

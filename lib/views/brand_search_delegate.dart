@@ -2,10 +2,20 @@ import 'package:flutter/material.dart';
 
 import '../models/brand.dart';
 
+List<Brand> brandsInAlphabeticalOrder(List<Brand> brands) =>
+    [...brands]
+      ..sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
+
+List<Brand> matchingBrands(List<Brand> brands, String query) {
+  final search = query.trim().toLowerCase();
+  return brands
+      .where((brand) => brand.name.toLowerCase().contains(search))
+      .toList();
+}
+
 class BrandSearchDelegate extends SearchDelegate<Brand?> {
   BrandSearchDelegate(List<Brand> brands, this.selectedBrand)
-    : brands = [...brands]
-        ..sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase())),
+    : brands = brandsInAlphabeticalOrder(brands),
       super(searchFieldLabel: 'Cerca marca');
 
   final List<Brand> brands;
@@ -36,9 +46,7 @@ class BrandSearchDelegate extends SearchDelegate<Brand?> {
 
   Widget _buildBrandList() {
     final search = query.trim().toLowerCase();
-    final matches = brands
-        .where((brand) => brand.name.toLowerCase().contains(search))
-        .toList();
+    final matches = matchingBrands(brands, search);
     if (matches.isEmpty) {
       return const Center(child: Text('Nessuna marca trovata'));
     }

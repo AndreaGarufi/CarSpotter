@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import '../controllers/db_service.dart';
 import '../models/brand.dart';
 import '../models/car_model.dart';
-import 'system_navigation_bar.dart';
+import 'brand_logo.dart';
+import 'topographic_background.dart';
 
 typedef _CatalogGroup = ({Brand brand, List<CarModel> models});
 
@@ -108,9 +109,7 @@ class _CatalogScreenState extends State<CatalogScreen> {
     // Calcoliamo l'altezza esatta per far prendere alla foto il 50% dello schermo
     final screenHeight = MediaQuery.of(context).size.height;
 
-    return Scaffold(
-      backgroundColor: const Color(0xFFEEEEE4),
-      bottomNavigationBar: const SystemNavigationBar(),
+    return TopographicScaffold(
       body: _isLoading
           ? const Center(
               child: CircularProgressIndicator(color: Color(0xFF10B981)),
@@ -264,17 +263,14 @@ class _CatalogScreenState extends State<CatalogScreen> {
                             child: ExpansionTile(
                               initiallyExpanded: _searchQuery.isNotEmpty,
                               leading: Container(
-                                padding: const EdgeInsets.all(8),
+                                padding: const EdgeInsets.all(5),
                                 decoration: BoxDecoration(
                                   color: const Color(
                                     0xFF1A1A1A,
                                   ).withValues(alpha: 0.05),
                                   borderRadius: BorderRadius.circular(10),
                                 ),
-                                child: const Icon(
-                                  Icons.directions_car,
-                                  color: Color(0xFF1A1A1A),
-                                ),
+                                child: BrandLogo(brand.name),
                               ),
                               title: Text(
                                 brand.name,

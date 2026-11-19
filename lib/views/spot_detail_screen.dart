@@ -6,6 +6,7 @@ import '../controllers/db_service.dart';
 import '../controllers/spot_location_service.dart';
 import '../models/user_spot.dart';
 import '../models/car_model.dart'; // <-- Aggiunto per usare RarityTier
+import 'topographic_background.dart';
 
 class SpotDetailScreen extends StatefulWidget {
   final UserSpot spot;
@@ -283,8 +284,7 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
   Widget build(BuildContext context) {
     final model = widget.spot.carModel.value;
 
-    return Scaffold(
-      backgroundColor: const Color(0xFFEEEEE4),
+    return TopographicScaffold(
       body: CustomScrollView(
         physics: const BouncingScrollPhysics(),
         slivers: [
