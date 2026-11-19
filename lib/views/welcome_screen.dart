@@ -18,13 +18,13 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     with TickerProviderStateMixin {
   late AnimationController _idleController;
   late AnimationController _exitController;
-  late Animation<double> _exitLeftCarAnimation;
-  late Animation<double> _exitRightCarAnimation;
+  late Animation<Offset> _exitLeftCarAnimation;
+  late Animation<Offset> _exitRightCarAnimation;
   late Animation<double> _fadeElementsAnimation;
 
   // Controller e Timer per la lucentezza del pulsante
   late AnimationController _shineController;
-  late Animation<double> _shineAnimation;
+  late Animation<Offset> _shineAnimation;
   Timer? _shineTimer;
 
   bool _isExiting = false;
@@ -50,13 +50,18 @@ class _WelcomeScreenState extends State<WelcomeScreen>
       duration: const Duration(milliseconds: 700),
     );
 
-    _exitLeftCarAnimation = Tween<double>(begin: 0.0, end: -2.0).animate(
-      CurvedAnimation(parent: _exitController, curve: Curves.easeInOutCubic),
+    final carExit = CurvedAnimation(
+      parent: _exitController,
+      curve: Curves.easeInOutCubic,
     );
-
-    _exitRightCarAnimation = Tween<double>(begin: 0.0, end: 2.0).animate(
-      CurvedAnimation(parent: _exitController, curve: Curves.easeInOutCubic),
-    );
+    _exitLeftCarAnimation = Tween(
+      begin: Offset.zero,
+      end: const Offset(-2, 0),
+    ).animate(carExit);
+    _exitRightCarAnimation = Tween(
+      begin: Offset.zero,
+      end: const Offset(2, 0),
+    ).animate(carExit);
 
     _fadeElementsAnimation = Tween<double>(begin: 1.0, end: 0.0).animate(
       CurvedAnimation(
@@ -71,9 +76,10 @@ class _WelcomeScreenState extends State<WelcomeScreen>
       duration: const Duration(milliseconds: 1000),
     );
 
-    _shineAnimation = Tween<double>(begin: -1.5, end: 2.5).animate(
-      CurvedAnimation(parent: _shineController, curve: Curves.easeInOut),
-    );
+    _shineAnimation = Tween(
+      begin: const Offset(-1.5, 0),
+      end: const Offset(2.5, 0),
+    ).animate(CurvedAnimation(parent: _shineController, curve: Curves.easeInOut));
 
     // =========================================================================
     // 👇 QUI IMPOSTI OGNI QUANTI SECONDI PARTE LA LUCENTEZZA DEL PULSANTE 👇
@@ -690,74 +696,49 @@ class _WelcomeScreenState extends State<WelcomeScreen>
 
                       // Area Centrale Grafica
                       Expanded(
-                        child: AnimatedBuilder(
-                          animation: Listenable.merge([
-                            _idleController,
-                            _exitController,
-                          ]),
-                          builder: (context, child) {
-                            return Stack(
-                              alignment: Alignment.center,
-                              children: [
-                                // Sfondo geometrico origami continuo a ciclo infinito
-                                FadeTransition(
-                                  opacity: _fadeElementsAnimation,
-                                  child: CustomPaint(
-                                    size: Size.infinite,
-                                    painter: _GeometricOrigamiPainter(
-                                      animationValue: _idleController.value,
-                                    ),
+                        child: Stack(
+                          alignment: Alignment.center,
+                          children: [
+                            FadeTransition(
+                              opacity: _fadeElementsAnimation,
+                              child: RepaintBoundary(
+                                child: CustomPaint(
+                                  size: Size.infinite,
+                                  painter: _GeometricOrigamiPainter(_idleController),
+                                ),
+                              ),
+                            ),
+                            SlideTransition(
+                              position: _exitLeftCarAnimation,
+                              child: Align(
+                                alignment: const Alignment(-0.80, 0.22),
+                                child: SizedBox(
+                                  width: 145,
+                                  child: Image.asset(
+                                    'assets/images/car_left.png',
+                                    fit: BoxFit.contain,
+                                    errorBuilder: (context, error, stackTrace) =>
+                                        _buildFallbackCarBox("car_left"),
                                   ),
                                 ),
-
-                                // Auto Sinistra - ferma finché non si clicca
-                                FractionalTranslation(
-                                  translation: Offset(
-                                    _exitLeftCarAnimation.value,
-                                    0,
-                                  ),
-                                  child: Align(
-                                    alignment: const Alignment(-0.80, 0.22),
-                                    child: SizedBox(
-                                      width: 145,
-                                      child: Image.asset(
-                                        'assets/images/car_left.png',
-                                        fit: BoxFit.contain,
-                                        errorBuilder:
-                                            (context, error, stackTrace) =>
-                                                _buildFallbackCarBox(
-                                                  "car_left",
-                                                ),
-                                      ),
-                                    ),
+                              ),
+                            ),
+                            SlideTransition(
+                              position: _exitRightCarAnimation,
+                              child: Align(
+                                alignment: const Alignment(0.80, 0.26),
+                                child: SizedBox(
+                                  width: 145,
+                                  child: Image.asset(
+                                    'assets/images/car_right.png',
+                                    fit: BoxFit.contain,
+                                    errorBuilder: (context, error, stackTrace) =>
+                                        _buildFallbackCarBox("car_right"),
                                   ),
                                 ),
-
-                                // Auto Destra - ferma finché non si clicca
-                                FractionalTranslation(
-                                  translation: Offset(
-                                    _exitRightCarAnimation.value,
-                                    0,
-                                  ),
-                                  child: Align(
-                                    alignment: const Alignment(0.80, 0.26),
-                                    child: SizedBox(
-                                      width: 145,
-                                      child: Image.asset(
-                                        'assets/images/car_right.png',
-                                        fit: BoxFit.contain,
-                                        errorBuilder:
-                                            (context, error, stackTrace) =>
-                                                _buildFallbackCarBox(
-                                                  "car_right",
-                                                ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            );
-                          },
+                              ),
+                            ),
+                          ],
                         ),
                       ),
 
@@ -815,37 +796,23 @@ class _WelcomeScreenState extends State<WelcomeScreen>
 
                                 // Effetto Shimmer / Fascio di luce diagonale
                                 Positioned.fill(
-                                  child: AnimatedBuilder(
-                                    animation: _shineAnimation,
-                                    builder: (context, child) {
-                                      return FractionalTranslation(
-                                        translation: Offset(
-                                          _shineAnimation.value,
-                                          0,
-                                        ),
-                                        child: Transform.rotate(
-                                          angle: 0.35,
-                                          child: Container(
-                                            width: 60,
-                                            decoration: BoxDecoration(
-                                              gradient: LinearGradient(
-                                                colors: [
-                                                  Colors.white.withValues(
-                                                    alpha: 0.0,
-                                                  ),
-                                                  Colors.white.withValues(
-                                                    alpha: 0.35,
-                                                  ),
-                                                  Colors.white.withValues(
-                                                    alpha: 0.0,
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
+                                  child: SlideTransition(
+                                    position: _shineAnimation,
+                                    child: Transform.rotate(
+                                      angle: 0.35,
+                                      child: Container(
+                                        width: 60,
+                                        decoration: BoxDecoration(
+                                          gradient: LinearGradient(
+                                            colors: [
+                                              Colors.white.withValues(alpha: 0.0),
+                                              Colors.white.withValues(alpha: 0.35),
+                                              Colors.white.withValues(alpha: 0.0),
+                                            ],
                                           ),
                                         ),
-                                      );
-                                    },
+                                      ),
+                                    ),
                                   ),
                                 ),
                               ],
@@ -904,9 +871,9 @@ class _WelcomeScreenState extends State<WelcomeScreen>
 // qualche sfaccettatura in più per dare più profondità, e piccoli
 // riflessi luminosi sui bordi superiori in stile "vetro/cristallo".
 class _GeometricOrigamiPainter extends CustomPainter {
-  final double animationValue;
+  final Animation<double> animation;
 
-  _GeometricOrigamiPainter({required this.animationValue});
+  _GeometricOrigamiPainter(this.animation) : super(repaint: animation);
 
   // Riempimento sfumato invece che a tinta piatta: dà profondità e un
   // aspetto più "vetroso" ad ogni faccetta senza cambiarne il colore base.
@@ -934,7 +901,7 @@ class _GeometricOrigamiPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final center = Offset(size.width / 2, size.height / 2);
     // Convertiamo il valore dell'animazione da 0..1 ad angoli da 0 a 2*PI radianti
-    final angle = animationValue * math.pi * 2;
+    final angle = animation.value * math.pi * 2;
 
     // Movimenti orbitali fluidi e continui basati su seni e coseni sfasati
     // (identici nello spirito all'originale, così il loop resta perfetto)
@@ -1222,6 +1189,6 @@ class _GeometricOrigamiPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _GeometricOrigamiPainter oldDelegate) {
-    return oldDelegate.animationValue != animationValue;
+    return oldDelegate.animation != animation;
   }
 }

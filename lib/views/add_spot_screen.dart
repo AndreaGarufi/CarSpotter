@@ -20,8 +20,7 @@ class AddSpotScreen extends StatefulWidget {
 class _AddSpotScreenState extends State<AddSpotScreen> {
   // Liste dati dal Database Isar
   List<Brand> _availableBrands = [];
-  List<CarModel> _allModels = [];
-  List<CarModel> _filteredModels = [];
+  Future<List<CarModel>> _modelsForBrand = Future.value(const []);
 
   // Selezioni obbligatorie
   Brand? _selectedBrand;
@@ -52,11 +51,9 @@ class _AddSpotScreenState extends State<AddSpotScreen> {
 
   Future<void> _loadInitialData() async {
     final brands = await DbService.getAllBrands();
-    final models = await DbService.getAllCarModels();
     if (mounted) {
       setState(() {
         _availableBrands = brands;
-        _allModels = models;
       });
     }
   }
@@ -71,9 +68,7 @@ class _AddSpotScreenState extends State<AddSpotScreen> {
     setState(() {
       _selectedBrand = brand;
       _selectedCarModel = null;
-      _filteredModels = _allModels
-          .where((model) => model.brand.value?.id == brand.id)
-          .toList();
+      _modelsForBrand = DbService.getModelsForBrand(brand.id);
     });
   }
 
@@ -394,12 +389,12 @@ class _AddSpotScreenState extends State<AddSpotScreen> {
                 child: Autocomplete<CarModel>(
                   key: ValueKey(_selectedBrand?.id),
                   displayStringForOption: (CarModel option) => option.name,
-                  optionsBuilder: (TextEditingValue textEditingValue) {
-                    if (textEditingValue.text.isEmpty) return _filteredModels;
-                    return _filteredModels.where(
-                      (option) => option.name.toLowerCase().contains(
-                        textEditingValue.text.toLowerCase(),
-                      ),
+                  optionsBuilder: (TextEditingValue textEditingValue) async {
+                    final models = await _modelsForBrand;
+                    final query = textEditingValue.text.toLowerCase();
+                    if (query.isEmpty) return models;
+                    return models.where(
+                      (option) => option.name.toLowerCase().contains(query),
                     );
                   },
                   onSelected: (selection) => setState(() {

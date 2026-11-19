@@ -11,9 +11,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # Icone stile iOS
-  cupertino_icons: ^1.0.8
-
   # Database locale
   isar_community: ^3.3.2
   isar_community_flutter_libs: ^3.3.2
@@ -28,7 +25,6 @@ dependencies:
   flutter_map: ^8.3.1
   latlong2: ^0.10.1
   archive: ^4.0.9
-  share_plus: ^13.2.0
   file_picker: ^13.1.0
   path: ^1.9.1
   http: ^1.6.0
@@ -47,7 +43,35 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/images/
+    # Immagini visualizzate dall'app. Il logo del launcher è usato in fase di build.
+    - assets/images/car_left.png
+    - assets/images/car_right.png
+    - assets/images/home_database.png
+    - assets/images/home_your_spot.png
+    - assets/images/photo_header1.jpg
+    - assets/images/photo_header2.jpg
+    - assets/images/photo_header3.jpg
+    - assets/images/photo_header4.jpg
+    - assets/images/photo_header5.jpg
+    - assets/images/photo_header6.jpg
+    - assets/images/photo_header7.jpg
+    - assets/images/photo_header8.jpg
+    - assets/images/photo_header9.jpg
+    - assets/images/photo_header10.jpg
+    - assets/images/journal_catalog1.jpg
+    - assets/images/journal_catalog2.jpg
+    - assets/images/journal_catalog3.jpg
+    - assets/images/journal_catalog4.jpg
+    - assets/images/journal_catalog5.jpg
+    - assets/images/journal_catalog6.jpg
+    - assets/images/journal_catalog7.jpg
+    - assets/images/journal_catalog8.jpg
+    - assets/images/vintage1.jpg
+    - assets/images/vintage2.jpg
+    - assets/images/vintage3.jpg
+    - assets/images/vintage4.jpg
+    - assets/images/vintage5.jpg
+    - assets/images/vintage6.jpg
     - assets/data/
 
 flutter_launcher_icons:

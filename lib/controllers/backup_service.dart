@@ -27,7 +27,7 @@ class BackupService {
   static Future<BackupResult> exportBackup() async {
     try {
       final spots = await DbService.getAllSpots();
-      final archive = Archive();
+      final photos = <String, File>{};
       final records = <Map<String, dynamic>>[];
       for (final spot in spots) {
         await spot.carModel.load();
@@ -38,13 +38,7 @@ class BackupService {
           throw StateError('Foto mancante: ${spot.imagePath}');
         }
         final photoPath = 'photos/${p.basename(spot.imagePath)}';
-        archive.addFile(
-          ArchiveFile(
-            photoPath,
-            await image.length(),
-            await image.readAsBytes(),
-          ),
-        );
+        photos[photoPath] = image;
         records.add({
           'photo': photoPath,
           'model': model?.name,
@@ -67,11 +61,16 @@ class BackupService {
         'spotCount': records.length,
         'photoCount': records.length,
       };
-      archive.addFile(
-        ArchiveFile(_manifest, 0, utf8.encode(jsonEncode(manifest))),
-      );
-      archive.addFile(ArchiveFile(_spots, 0, utf8.encode(jsonEncode(records))));
-      final bytes = ZipEncoder().encode(archive);
+      final output = OutputMemoryStream();
+      final encoder = ZipEncoder()..startEncode(output);
+      for (final photo in photos.entries) {
+        final bytes = await photo.value.readAsBytes();
+        encoder.add(ArchiveFile.bytes(photo.key, bytes));
+      }
+      encoder.add(ArchiveFile.string(_manifest, jsonEncode(manifest)));
+      encoder.add(ArchiveFile.string(_spots, jsonEncode(records)));
+      encoder.endEncode();
+      final bytes = output.getBytes();
       if (bytes.isEmpty) throw StateError('ZIP non creato');
       final verification = ZipDecoder().decodeBytes(bytes);
       if (verification.findFile(_manifest) == null ||
@@ -86,7 +85,7 @@ class BackupService {
       final target = await FilePicker.saveFile(
         dialogTitle: 'Salva backup CarSpotter',
         fileName: 'CarSpotter_Backup_$stamp.zip',
-        bytes: Uint8List.fromList(bytes),
+        bytes: bytes,
         mimeType: 'application/zip',
         type: FileType.custom,
         allowedExtensions: const ['zip'],
@@ -141,28 +140,26 @@ class BackupService {
 
       // Controllo completo prima di scrivere qualsiasi dato: un backup che
       // punta a un modello assente non deve produrre uno spot orfano.
+      final modelIds = <String, int>{};
       for (final item in records) {
-        final model = await DbService.isar.carModels
+        final name = item['model'] as String;
+        if (modelIds.containsKey(name)) continue;
+        final id = await DbService.isar.carModels
             .filter()
-            .nameEqualTo(item['model'] as String)
+            .nameEqualTo(name)
+            .idProperty()
             .findFirst();
-        if (model == null) {
+        if (id == null) {
           throw const FormatException(
             'Catalogo incompleto: sincronizzalo prima di importare',
           );
         }
+        modelIds[name] = id;
       }
 
       final appDir = await getApplicationDocumentsDirectory();
       var imported = 0;
       for (final item in records) {
-        final model = await DbService.isar.carModels
-            .filter()
-            .nameEqualTo(item['model'] as String)
-            .findFirst();
-        if (model == null) {
-          throw StateError('Modello verificato ma non disponibile');
-        }
         final source = archive.findFile(item['photo'] as String)!;
         final destination = File(
           p.join(
@@ -170,8 +167,11 @@ class BackupService {
             'spot_import_${DateTime.now().microsecondsSinceEpoch}_$imported.jpg',
           ),
         );
-        await destination.writeAsBytes(source.content, flush: true);
         restoredPhotos.add(destination);
+        // Legge una foto alla volta senza conservarla decompressa nell'archivio.
+        final content = source.rawContent?.getStream();
+        if (content == null) throw const FormatException('Foto vuota');
+        await destination.writeAsBytes(content.toUint8List(), flush: true);
         if (await destination.length() == 0) {
           throw const FormatException('Foto vuota');
         }
@@ -187,6 +187,19 @@ class BackupService {
           ..isRacing = item['isRacing'] as bool? ?? false
           ..isFavorite = item['isFavorite'] as bool? ?? false;
         await DbService.isar.writeTxn(() async {
+          final name = item['model'] as String;
+          var model = await DbService.isar.carModels.get(modelIds[name]!);
+          if (model == null || model.name != name) {
+            // Il catalogo potrebbe essere stato sincronizzato durante il ripristino.
+            model = await DbService.isar.carModels
+                .filter()
+                .nameEqualTo(name)
+                .findFirst();
+            if (model == null) {
+              throw StateError('Modello verificato ma non disponibile');
+            }
+            modelIds[name] = model.id;
+          }
           await DbService.isar.userSpots.put(spot);
           spot.carModel.value = model;
           await spot.carModel.save();

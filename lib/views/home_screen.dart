@@ -123,21 +123,16 @@ class _HomeScreenState extends State<HomeScreen> {
       }
 
       // Interroghiamo il database reale
-      final modelsCount = await DbService.getTotalCarModelsCount();
-      final spotsCount = await DbService.getTotalUserSpotsCount();
-      final uniqueModelsCount = await DbService.getUniqueSpottedModelsCount();
-      final legendaryCount = await DbService.getLegendarySpotsCount();
-      final iconCount = await DbService.getIconicSpotsCount();
-      final favorites = await DbService.getFavoriteSpots();
+      final stats = await DbService.getHomeStats();
 
       if (mounted) {
         setState(() {
-          _totalModels = modelsCount;
-          _totalSpots = spotsCount;
-          _uniqueSpottedModels = uniqueModelsCount;
-          _legendarySpots = legendaryCount;
-          _iconSpots = iconCount;
-          _favoriteSpots = favorites;
+          _totalModels = stats.totalModels;
+          _totalSpots = stats.totalSpots;
+          _uniqueSpottedModels = stats.uniqueModels;
+          _legendarySpots = stats.legendarySpots;
+          _iconSpots = stats.iconicSpots;
+          _favoriteSpots = stats.favorites;
           _isLoading = false;
         });
       }
@@ -766,114 +761,104 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return SizedBox(
       height: 210,
-      child: AnimatedBuilder(
-        animation: _pageController,
-        builder: (context, child) {
-          return PageView.builder(
-            controller: _pageController,
-            physics: const BouncingScrollPhysics(),
-            itemCount: _favoriteSpots.length,
-            itemBuilder: (context, index) {
-              double value = 1.0;
-              if (_pageController.position.haveDimensions) {
-                value = _pageController.page! - index;
-                value = (1 - (value.abs() * 0.30)).clamp(0.0, 1.0);
-              } else {
-                value = (index == 0) ? 1.0 : 0.70;
-              }
-
-              final double scale = Curves.easeOut.transform(value);
-              final double opacity = value.clamp(0.40, 1.0);
-
-              final spot = _favoriteSpots[index];
-              final String carName = spot.carModel.value?.name ?? "Supercar ❤️";
-
-              return Center(
-                child: Transform.scale(
-                  scale: scale,
-                  child: Opacity(
-                    opacity: opacity,
-                    child: Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 8),
-                      decoration: BoxDecoration(
-                        color: const Color(0xFF1E293B),
-                        borderRadius: BorderRadius.circular(24),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withValues(
-                              alpha: 0.15 * opacity,
-                            ),
-                            blurRadius: 16,
-                            offset: const Offset(0, 8),
-                          ),
-                        ],
-                      ),
-                      clipBehavior: Clip.antiAlias,
-                      child: Stack(
-                        fit: StackFit.expand,
-                        children: [
-                          // 1. FOTO AUTO REALE SALVATA SUL DISPOSITIVO
-                          spot.imagePath.isNotEmpty
-                              ? Image.file(
-                                  File(spot.imagePath),
-                                  fit: BoxFit.cover,
-                                  errorBuilder: (context, error, stackTrace) =>
-                                      _buildFallbackCarIcon(),
-                                )
-                              : _buildFallbackCarIcon(),
-
-                          // 2. GRADIENTE SCURO PROTETTIVO PER LEGGIBILITÀ DEL TESTO
-                          Positioned(
-                            bottom: 0,
-                            left: 0,
-                            right: 0,
-                            child: Container(
-                              padding: const EdgeInsets.all(16),
-                              decoration: BoxDecoration(
-                                gradient: LinearGradient(
-                                  colors: [
-                                    Colors.black.withValues(alpha: 0.85),
-                                    Colors.transparent,
-                                  ],
-                                  begin: Alignment.bottomCenter,
-                                  end: Alignment.topCenter,
-                                ),
-                              ),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Expanded(
-                                    child: Text(
-                                      carName,
-                                      style: const TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 16,
-                                      ),
-                                      maxLines: 1,
-                                      overflow: TextOverflow.ellipsis,
-                                    ),
-                                  ),
-                                  const Icon(
-                                    Icons.favorite,
-                                    color: Color(0xFF10B981),
-                                    size: 20,
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
+      child: PageView.builder(
+        controller: _pageController,
+        physics: const BouncingScrollPhysics(),
+        itemCount: _favoriteSpots.length,
+        itemBuilder: (context, index) => AnimatedBuilder(
+          animation: _pageController,
+          child: _buildFavoritePhoto(_favoriteSpots[index]),
+          builder: (context, child) {
+            final page = _pageController.position.haveDimensions
+                ? _pageController.page
+                : null;
+            final value = page == null
+                ? (index == 0 ? 1.0 : 0.70)
+                : (1 - ((page - index).abs() * 0.30)).clamp(0.0, 1.0);
+            final opacity = value.clamp(0.40, 1.0);
+            return Center(
+              child: Transform.scale(
+                scale: Curves.easeOut.transform(value),
+                child: Opacity(
+                  opacity: opacity,
+                  child: Container(
+                    margin: const EdgeInsets.symmetric(horizontal: 8),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF1E293B),
+                      borderRadius: BorderRadius.circular(24),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withValues(alpha: 0.15 * opacity),
+                          blurRadius: 16,
+                          offset: const Offset(0, 8),
+                        ),
+                      ],
                     ),
+                    clipBehavior: Clip.antiAlias,
+                    child: child,
                   ),
                 ),
-              );
-            },
-          );
-        },
+              ),
+            );
+          },
+        ),
       ),
+    );
+  }
+
+  Widget _buildFavoritePhoto(UserSpot spot) {
+    final carName = spot.carModel.value?.name ?? "Supercar ❤️";
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        // 1. FOTO AUTO REALE SALVATA SUL DISPOSITIVO
+        spot.imagePath.isNotEmpty
+            ? Image.file(
+                File(spot.imagePath),
+                fit: BoxFit.cover,
+                errorBuilder: (context, error, stackTrace) =>
+                    _buildFallbackCarIcon(),
+              )
+            : _buildFallbackCarIcon(),
+
+        // 2. GRADIENTE SCURO PROTETTIVO PER LEGGIBILITÀ DEL TESTO
+        Positioned(
+          bottom: 0,
+          left: 0,
+          right: 0,
+          child: Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Colors.black.withValues(alpha: 0.85),
+                  Colors.transparent,
+                ],
+                begin: Alignment.bottomCenter,
+                end: Alignment.topCenter,
+              ),
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Expanded(
+                  child: Text(
+                    carName,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+                const Icon(Icons.favorite, color: Color(0xFF10B981), size: 20),
+              ],
+            ),
+          ),
+        ),
+      ],
     );
   }
 

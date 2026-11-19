@@ -12,6 +12,15 @@ import '../models/car_model.dart';
 import '../models/user_spot.dart';
 import 'rarity_controller.dart';
 
+typedef HomeStats = ({
+  int totalModels,
+  int totalSpots,
+  int uniqueModels,
+  int legendarySpots,
+  int iconicSpots,
+  List<UserSpot> favorites,
+});
+
 class DbService {
   static const _manualIconBadgesAppliedKey = 'manualIconBadgesApplied';
   static Isar? _isar;
@@ -50,8 +59,9 @@ class DbService {
 
       final String response = await rootBundle.loadString(
         'assets/data/cars_database.json',
+        cache: false,
       );
-      final data = await json.decode(response) as Map<String, dynamic>;
+      final data = json.decode(response) as Map<String, dynamic>;
 
       if (hasCatalog) {
         await _updateStoredIconBadges(data);
@@ -69,56 +79,16 @@ class DbService {
           final brand = Brand()..name = brandName;
           await isar.brands.put(brand);
 
-          final modelsData = brandInfo["models"] as List<dynamic>;
-          for (var item in modelsData) {
-            final m = item as Map<String, dynamic>;
-
-            final rarityTier = RarityController.calculateRarity(
-              brandScore: brandScore,
-              productionRun: m["productionRun"] as int,
-              priceEuro: (m["priceEuro"] as num).toDouble(),
-              horsepower: m["horsepower"] as int,
-              popCultureScore: m["popCultureScore"] as int,
-              technicalInnovation: m["technicalInnovation"] as int,
-              rarityOverride: RarityController.rarityTierFromOverride(
-                m["rarityOverride"] as String?,
-              ),
-            );
-
-            final isIcon = m["isIcon"] == true;
-
-            int baseScore;
-            switch (rarityTier) {
-              case RarityTier.legendary:
-                baseScore = 95;
-                break;
-              case RarityTier.epic:
-                baseScore = 85;
-                break;
-              case RarityTier.rare:
-                baseScore = 70;
-                break;
-              case RarityTier.uncommon:
-                baseScore = 50;
-                break;
-              case RarityTier.common:
-                baseScore = 30;
-                break;
-            }
-
-            final carModel = CarModel()
-              ..name = m["name"] as String
-              ..isIcon = isIcon
-              ..baseRarityScore = baseScore
-              ..rarityTier = rarityTier
-              ..iconScore = isIcon ? 90 : 50
-              ..engineHp = m["horsepower"] as int
-              ..productionRun = m["productionRun"] as int
-              ..launchYear = m["launchYear"] as int;
-
-            carModel.brand.value = brand;
-            await isar.carModels.put(carModel);
-            await carModel.brand.save();
+          final models = <CarModel>[];
+          for (final entry in brandInfo["models"]) {
+            final model = CarModel();
+            _applyCatalogEntry(model, entry, brandScore);
+            models.add(model);
+          }
+          await isar.carModels.putAll(models);
+          for (final model in models) {
+            model.brand.value = brand;
+            await model.brand.save();
           }
         }
       });
@@ -127,6 +97,60 @@ class DbService {
     } catch (e) {
       debugPrint("❌ Errore durante la lettura o il calcolo del JSON: $e");
     }
+  }
+
+  // Restituisce true solo se occorre scrivere i dati del modello.
+  static bool _applyCatalogEntry(
+    CarModel model,
+    Map<String, dynamic> entry,
+    int brandScore,
+  ) {
+    final name = entry['name'] as String;
+    final production = entry['productionRun'] as int;
+    final horsepower = entry['horsepower'] as int;
+    final year = entry['launchYear'] as int;
+    final tier = RarityController.calculateRarity(
+      brandScore: brandScore,
+      productionRun: production,
+      priceEuro: (entry['priceEuro'] as num).toDouble(),
+      horsepower: horsepower,
+      popCultureScore: entry['popCultureScore'] as int,
+      technicalInnovation: entry['technicalInnovation'] as int,
+      rarityOverride: RarityController.rarityTierFromOverride(
+        entry['rarityOverride'] as String?,
+      ),
+    );
+    final baseScore = switch (tier) {
+      RarityTier.common => 30,
+      RarityTier.uncommon => 50,
+      RarityTier.rare => 70,
+      RarityTier.epic => 85,
+      RarityTier.legendary => 95,
+    };
+    final existing = model.id != Isar.autoIncrement;
+    final isIcon = entry['isIcon'] as bool? ?? (existing && model.isIcon);
+    final iconScore = isIcon ? 90 : 50;
+    if (existing &&
+        model.name == name &&
+        model.productionRun == production &&
+        model.engineHp == horsepower &&
+        model.launchYear == year &&
+        model.rarityTier == tier &&
+        model.baseRarityScore == baseScore &&
+        model.isIcon == isIcon &&
+        model.iconScore == iconScore) {
+      return false;
+    }
+    model
+      ..name = name
+      ..productionRun = production
+      ..engineHp = horsepower
+      ..launchYear = year
+      ..rarityTier = tier
+      ..baseRarityScore = baseScore
+      ..isIcon = isIcon
+      ..iconScore = iconScore;
+    return true;
   }
 
   static Future<void> _updateStoredIconBadges(Map<String, dynamic> data) async {
@@ -156,42 +180,37 @@ class DbService {
     return await isar.userSpots.where().findAll();
   }
 
-  static Future<List<UserSpot>> getFavoriteSpots() async {
-    return await isar.userSpots.filter().isFavoriteEqualTo(true).findAll();
-  }
-
-  static Future<int> getTotalCarModelsCount() async {
-    return await isar.carModels.count();
-  }
-
-  static Future<int> getTotalUserSpotsCount() async {
-    return await isar.userSpots.count();
-  }
-
-  static Future<int> getUniqueSpottedModelsCount() async {
-    final spots = await isar.userSpots.where().findAll();
-    final uniqueModelIds = spots
-        .map((s) => s.carModel.value?.id)
-        .whereType<int>()
-        .toSet();
-    return uniqueModelIds.length;
-  }
-
-  static Future<int> getLegendarySpotsCount() async {
-    final spots = await isar.userSpots.where().findAll();
-    return spots.where((spot) {
+  static Future<HomeStats> getHomeStats() async {
+    final totalModels = await isar.carModels.count();
+    final spots = await getAllSpots();
+    final seen = <int>{};
+    final favorites = <UserSpot>[];
+    var iconic = 0;
+    var legendary = 0;
+    for (final spot in spots) {
+      if (spot.isFavorite) favorites.add(spot);
       final model = spot.carModel.value;
-      return model != null && model.rarityTier == RarityTier.legendary;
-    }).length;
-  }
-
-  static Future<int> getIconicSpotsCount() async {
-    final spots = await isar.userSpots.where().findAll();
-    return spots.where((s) => s.carModel.value?.isIcon == true).length;
+      if (model == null) continue;
+      seen.add(model.id);
+      if (model.isIcon) iconic++;
+      if (model.rarityTier == RarityTier.legendary) legendary++;
+    }
+    return (
+      totalModels: totalModels,
+      totalSpots: spots.length,
+      uniqueModels: seen.length,
+      legendarySpots: legendary,
+      iconicSpots: iconic,
+      favorites: favorites,
+    );
   }
 
   static Future<List<CarModel>> getAllCarModels() async {
     return await isar.carModels.where().findAll();
+  }
+
+  static Future<List<CarModel>> getModelsForBrand(int brandId) {
+    return isar.carModels.filter().brand((q) => q.idEqualTo(brandId)).findAll();
   }
 
   static Future<List<Brand>> getAllBrands() async {
@@ -286,131 +305,55 @@ class DbService {
       }
 
       final String jsonString = utf8.decode(response.bodyBytes);
-      final data = await json.decode(jsonString) as Map<String, dynamic>;
+      final data = json.decode(jsonString) as Map<String, dynamic>;
 
       int addedCars = 0;
       int updatedCars = 0;
       int deletedCars = 0;
       int deletedBrands = 0;
 
-      // Lista di controllo del contenuto JSON
-      final jsonBrands = <String>{};
       final jsonCars = <String>{};
-
-      for (var brandName in data.keys) {
-        jsonBrands.add(brandName);
-
-        final brandInfo = data[brandName] as Map<String, dynamic>;
-        final modelsData = brandInfo["models"] as List<dynamic>;
-
-        for (var item in modelsData) {
-          final m = item as Map<String, dynamic>;
-          jsonCars.add(m["name"] as String);
-        }
-      }
-
       await isar.writeTxn(() async {
-        // ==========================
-        // AGGIUNTA / UPDATE DATI
-        // ==========================
+        final existingModels = await isar.carModels.where().findAll();
+        final byName = <String, CarModel>{};
+        for (final model in existingModels) {
+          byName.putIfAbsent(model.name, () => model);
+        }
 
-        for (var brandName in data.keys) {
-          final brandInfo = data[brandName] as Map<String, dynamic>;
-
-          final brandScore = brandInfo["brandScore"] as int;
-
-          var brand = await isar.brands
-              .filter()
-              .nameEqualTo(brandName)
-              .findFirst();
-
+        for (final brandEntry in data.entries) {
+          final brandName = brandEntry.key;
+          final brandInfo = brandEntry.value as Map<String, dynamic>;
+          final brandScore = brandInfo['brandScore'] as int;
+          var brand = await isar.brands.getByName(brandName);
           if (brand == null) {
             brand = Brand()..name = brandName;
             await isar.brands.put(brand);
-
             debugPrint("🟢 Nuova marca aggiunta: $brandName");
           }
 
-          final modelsData = brandInfo["models"] as List<dynamic>;
+          final brandId = brand.id;
+          final modelIds = (await isar.carModels
+                  .filter()
+                  .brand((q) => q.idEqualTo(brandId))
+                  .idProperty()
+                  .findAll())
+              .toSet();
 
-          for (var item in modelsData) {
-            final m = item as Map<String, dynamic>;
-
-            final carName = m["name"] as String;
-
-            final rarityTier = RarityController.calculateRarity(
-              brandScore: brandScore,
-              productionRun: m["productionRun"] as int,
-              priceEuro: (m["priceEuro"] as num).toDouble(),
-              horsepower: m["horsepower"] as int,
-              popCultureScore: m["popCultureScore"] as int,
-              technicalInnovation: m["technicalInnovation"] as int,
-              rarityOverride: RarityController.rarityTierFromOverride(
-                m["rarityOverride"] as String?,
-              ),
-            );
-
-            int baseScore;
-
-            switch (rarityTier) {
-              case RarityTier.legendary:
-                baseScore = 95;
-                break;
-              case RarityTier.epic:
-                baseScore = 85;
-                break;
-              case RarityTier.rare:
-                baseScore = 70;
-                break;
-              case RarityTier.uncommon:
-                baseScore = 50;
-                break;
-              case RarityTier.common:
-                baseScore = 30;
-                break;
+          for (final entry in brandInfo['models']) {
+            final name = entry['name'] as String;
+            jsonCars.add(name);
+            final model = byName.putIfAbsent(name, CarModel.new);
+            final isNew = model.id == Isar.autoIncrement;
+            final changed = _applyCatalogEntry(model, entry, brandScore);
+            if (changed) await isar.carModels.put(model);
+            final moved = modelIds.add(model.id);
+            if (moved) {
+              model.brand.value = brand;
+              await model.brand.save();
             }
-
-            var existingCar = await isar.carModels
-                .filter()
-                .nameEqualTo(carName)
-                .findFirst();
-
-            // Un catalogo remoto precedente può non contenere il badge.
-            final isIcon = m["isIcon"] as bool? ?? existingCar?.isIcon ?? false;
-
-            if (existingCar == null) {
-              final newCar = CarModel()
-                ..name = carName
-                ..isIcon = isIcon
-                ..baseRarityScore = baseScore
-                ..rarityTier = rarityTier
-                ..iconScore = isIcon ? 90 : 50
-                ..engineHp = m["horsepower"] as int
-                ..productionRun = m["productionRun"] as int
-                ..launchYear = m["launchYear"] as int;
-
-              newCar.brand.value = brand;
-
-              await isar.carModels.put(newCar);
-              await newCar.brand.save();
-
+            if (isNew) {
               addedCars++;
-            } else {
-              existingCar
-                ..name = carName
-                ..isIcon = isIcon
-                ..baseRarityScore = baseScore
-                ..rarityTier = rarityTier
-                ..iconScore = isIcon ? 90 : 50
-                ..engineHp = m["horsepower"] as int
-                ..productionRun = m["productionRun"] as int
-                ..launchYear = m["launchYear"] as int;
-
-              existingCar.brand.value = brand;
-
-              await isar.carModels.put(existingCar);
-              await existingCar.brand.save();
-
+            } else if (changed || moved) {
               updatedCars++;
             }
           }
@@ -420,16 +363,14 @@ class DbService {
         // ELIMINAZIONE MODELLI REMOVI
         // ==========================
 
-        final allCars = await isar.carModels.where().findAll();
-
-        for (var car in allCars) {
+        for (final car in existingModels) {
           if (!jsonCars.contains(car.name)) {
-            final spots = await isar.userSpots
+            final unused = await isar.userSpots
                 .filter()
                 .carModel((q) => q.idEqualTo(car.id))
-                .findAll();
+                .isEmpty();
 
-            if (spots.isEmpty) {
+            if (unused) {
               await isar.carModels.delete(car.id);
               deletedCars++;
 
@@ -449,13 +390,13 @@ class DbService {
         final allBrands = await isar.brands.where().findAll();
 
         for (var brand in allBrands) {
-          if (!jsonBrands.contains(brand.name)) {
-            final models = await isar.carModels
+          if (!data.containsKey(brand.name)) {
+            final unused = await isar.carModels
                 .filter()
                 .brand((q) => q.idEqualTo(brand.id))
-                .findAll();
+                .isEmpty();
 
-            if (models.isEmpty) {
+            if (unused) {
               await isar.brands.delete(brand.id);
               deletedBrands++;
 

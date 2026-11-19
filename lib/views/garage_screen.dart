@@ -54,19 +54,12 @@ class _GarageScreenState extends State<GarageScreen> {
   }
 
   void _applyFilters() {
-    List<UserSpot> temp = _allSpots.toList();
-
-    if (_filterIconic) {
-      temp = temp.where((s) => s.carModel.value?.isIcon == true).toList();
-    }
-    if (_filterRacing) {
-      temp = temp.where((s) => s.isRacing == true).toList();
-    }
-    if (_selectedBrand != null) {
-      temp = temp
-          .where((s) => s.carModel.value?.brand.value?.id == _selectedBrand!.id)
-          .toList();
-    }
+    final brandId = _selectedBrand?.id;
+    final temp = _allSpots.where((spot) {
+      if (_filterRacing && !spot.isRacing) return false;
+      if (_filterIconic && spot.carModel.value?.isIcon != true) return false;
+      return brandId == null || spot.carModel.value?.brand.value?.id == brandId;
+    }).toList();
 
     if (_raritySort == RaritySort.desc) {
       temp.sort(

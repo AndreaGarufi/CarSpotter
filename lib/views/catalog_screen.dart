@@ -4,6 +4,8 @@ import '../controllers/db_service.dart';
 import '../models/brand.dart';
 import '../models/car_model.dart';
 
+typedef _CatalogGroup = ({Brand brand, List<CarModel> models});
+
 class CatalogScreen extends StatefulWidget {
   const CatalogScreen({super.key});
 
@@ -12,8 +14,7 @@ class CatalogScreen extends StatefulWidget {
 }
 
 class _CatalogScreenState extends State<CatalogScreen> {
-  List<Brand> _allBrands = [];
-  List<CarModel> _allModels = [];
+  List<_CatalogGroup> _catalog = [];
   Set<int> _spottedModelIds = {};
 
   // Immagine header casuale
@@ -37,63 +38,72 @@ class _CatalogScreenState extends State<CatalogScreen> {
     final models = await DbService.getAllCarModels();
     final spottedIds = await DbService.getSpottedModelIds();
 
-    // Ordiniamo le marche in ordine alfabetico
-    brands.sort((a, b) => a.name.compareTo(b.name));
-
-    if (mounted) {
-      setState(() {
-        _allBrands = brands;
-        _allModels = models;
-        _spottedModelIds = spottedIds;
-        _isLoading = false;
-      });
+    if (!mounted) return;
+    final modelsByBrand = <int, List<CarModel>>{};
+    for (final model in models) {
+      final brandId = model.brand.value?.id;
+      if (brandId != null) (modelsByBrand[brandId] ??= []).add(model);
     }
+    brands.sort((a, b) => a.name.compareTo(b.name));
+    for (final group in modelsByBrand.values) {
+      group.sort((a, b) => a.name.compareTo(b.name));
+    }
+    setState(() {
+      _catalog = [
+        for (final brand in brands)
+          (brand: brand, models: modelsByBrand[brand.id] ?? const <CarModel>[]),
+      ];
+      _spottedModelIds = spottedIds;
+      _isLoading = false;
+    });
   }
 
-  // Filtra le marche e i modelli in base alla barra di ricerca
-  List<Brand> get _filteredBrands {
-    if (_searchQuery.isEmpty) return _allBrands;
-
+  List<_CatalogGroup> get _filteredCatalog {
+    if (_searchQuery.isEmpty) return _catalog;
     final query = _searchQuery.toLowerCase();
-
-    return _allBrands.where((brand) {
-      // Se il nome della marca contiene la ricerca, la mostriamo
-      if (brand.name.toLowerCase().contains(query)) return true;
-
-      // Altrimenti, controlliamo se almeno UN modello di questa marca contiene la ricerca
-      final brandModels = _allModels.where(
-        (m) => m.brand.value?.id == brand.id,
-      );
-      return brandModels.any(
-        (model) => model.name.toLowerCase().contains(query),
-      );
-    }).toList();
-  }
-
-  // Recupera i modelli di una specifica marca, applicando anche la ricerca se attiva
-  List<CarModel> _getModelsForBrand(Brand brand) {
-    var models = _allModels
-        .where((m) => m.brand.value?.id == brand.id)
-        .toList();
-
-    // Ordine alfabetico dei modelli
-    models.sort((a, b) => a.name.compareTo(b.name));
-
-    if (_searchQuery.isNotEmpty) {
-      final query = _searchQuery.toLowerCase();
-      // Se la marca non è stata cercata direttamente, filtriamo i modelli
-      if (!brand.name.toLowerCase().contains(query)) {
-        models = models
+    final matches = <_CatalogGroup>[];
+    for (final group in _catalog) {
+      if (group.brand.name.toLowerCase().contains(query)) {
+        matches.add(group);
+      } else {
+        final models = group.models
             .where((m) => m.name.toLowerCase().contains(query))
             .toList();
+        if (models.isNotEmpty) {
+          matches.add((brand: group.brand, models: models));
+        }
       }
     }
-    return models;
+    return matches;
+  }
+
+  Widget _buildModelTile(CarModel model) {
+    final isSpotted = _spottedModelIds.contains(model.id);
+
+    return ListTile(
+      contentPadding: const EdgeInsets.symmetric(horizontal: 24),
+      title: Text(
+        model.name,
+        style: TextStyle(
+          fontWeight: isSpotted ? FontWeight.bold : FontWeight.normal,
+          color: isSpotted ? const Color(0xFF1A1A1A) : Colors.grey.shade700,
+        ),
+      ),
+      subtitle: model.isIcon
+          ? const Text(
+              "🔥 Modello Iconico",
+              style: TextStyle(color: Color(0xFFEF4444), fontSize: 11),
+            )
+          : null,
+      trailing: isSpotted
+          ? const Icon(Icons.check_circle, color: Color(0xFF10B981))
+          : const Icon(Icons.radio_button_unchecked, color: Colors.grey),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    final filteredBrands = _filteredBrands;
+    final groups = _filteredCatalog;
     // Calcoliamo l'altezza esatta per far prendere alla foto il 50% dello schermo
     final screenHeight = MediaQuery.of(context).size.height;
 
@@ -208,7 +218,7 @@ class _CatalogScreenState extends State<CatalogScreen> {
                 ),
 
                 // 3. LA LISTA DELLE MARCHE (ESPANDIBILE)
-                if (filteredBrands.isEmpty)
+                if (groups.isEmpty)
                   const SliverFillRemaining(
                     hasScrollBody: false,
                     child: Center(
@@ -229,8 +239,8 @@ class _CatalogScreenState extends State<CatalogScreen> {
                     ),
                     sliver: SliverList(
                       delegate: SliverChildBuilderDelegate((context, index) {
-                        final brand = filteredBrands[index];
-                        final brandModels = _getModelsForBrand(brand);
+                        final brand = groups[index].brand;
+                        final brandModels = groups[index].models;
 
                         final spottedCount = brandModels
                             .where((m) => _spottedModelIds.contains(m.id))
@@ -287,50 +297,21 @@ class _CatalogScreenState extends State<CatalogScreen> {
                                       color: Color(0xFF10B981),
                                     )
                                   : const Icon(Icons.expand_more),
-                              children: brandModels.map((model) {
-                                final isSpotted = _spottedModelIds.contains(
-                                  model.id,
-                                );
-
-                                return ListTile(
-                                  contentPadding: const EdgeInsets.symmetric(
-                                    horizontal: 24,
+                              children: [
+                                Builder(
+                                  builder: (_) => Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      for (final model in brandModels)
+                                        _buildModelTile(model),
+                                    ],
                                   ),
-                                  title: Text(
-                                    model.name,
-                                    style: TextStyle(
-                                      fontWeight: isSpotted
-                                          ? FontWeight.bold
-                                          : FontWeight.normal,
-                                      color: isSpotted
-                                          ? const Color(0xFF1A1A1A)
-                                          : Colors.grey.shade700,
-                                    ),
-                                  ),
-                                  subtitle: model.isIcon
-                                      ? const Text(
-                                          "🔥 Modello Iconico",
-                                          style: TextStyle(
-                                            color: Color(0xFFEF4444),
-                                            fontSize: 11,
-                                          ),
-                                        )
-                                      : null,
-                                  trailing: isSpotted
-                                      ? const Icon(
-                                          Icons.check_circle,
-                                          color: Color(0xFF10B981),
-                                        )
-                                      : const Icon(
-                                          Icons.radio_button_unchecked,
-                                          color: Colors.grey,
-                                        ),
-                                );
-                              }).toList(),
+                                ),
+                              ],
                             ),
                           ),
                         );
-                      }, childCount: filteredBrands.length),
+                      }, childCount: groups.length),
                     ),
                   ),
 
