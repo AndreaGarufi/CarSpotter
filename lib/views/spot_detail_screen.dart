@@ -410,11 +410,10 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
 
                   const SizedBox(height: 24),
 
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(16),
-                    ),
+                  Material(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(16),
+                    clipBehavior: Clip.antiAlias,
                     child: Column(
                       children: [
                         SwitchListTile(

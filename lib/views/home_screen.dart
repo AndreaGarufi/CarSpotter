@@ -9,6 +9,7 @@ import 'package:image_picker/image_picker.dart';
 import 'add_spot_screen.dart';
 import 'garage_screen.dart';
 import 'catalog_screen.dart';
+import 'spot_map_section.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -42,7 +43,9 @@ class _HomeScreenState extends State<HomeScreen> {
   int _legendarySpots = 0;
   int _iconSpots = 0;
   List<UserSpot> _favoriteSpots = [];
+  List<UserSpot> _spots = [];
   bool _isLoading = true;
+  int _loadRevision = 0;
 
   // Indice della Bottom Navigation Bar
   final int _currentIndex = 0;
@@ -113,7 +116,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   // Caricamento reale e autentico al 100% dal database Isar
   Future<void> _loadData() async {
-    setState(() => _isLoading = true);
+    final revision = ++_loadRevision;
 
     try {
       final prefs = await SharedPreferences.getInstance();
@@ -125,7 +128,7 @@ class _HomeScreenState extends State<HomeScreen> {
       // Interroghiamo il database reale
       final stats = await DbService.getHomeStats();
 
-      if (mounted) {
+      if (mounted && revision == _loadRevision) {
         setState(() {
           _totalModels = stats.totalModels;
           _totalSpots = stats.totalSpots;
@@ -133,11 +136,12 @@ class _HomeScreenState extends State<HomeScreen> {
           _legendarySpots = stats.legendarySpots;
           _iconSpots = stats.iconicSpots;
           _favoriteSpots = stats.favorites;
+          _spots = stats.spots;
           _isLoading = false;
         });
       }
     } catch (e) {
-      if (mounted) {
+      if (mounted && revision == _loadRevision) {
         setState(() => _isLoading = false);
       }
     }
@@ -366,6 +370,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     const SizedBox(height: 12),
 
                     _buildFavoritesSection(),
+
+                    const SizedBox(height: 28),
+                    SpotMapSection(spots: _spots, onSpotChanged: _loadData),
 
                     const SizedBox(height: 100), // Spazio inferiore Bottom Bar
                   ],

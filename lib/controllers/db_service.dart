@@ -19,6 +19,7 @@ typedef HomeStats = ({
   int legendarySpots,
   int iconicSpots,
   List<UserSpot> favorites,
+  List<UserSpot> spots,
 });
 
 class DbService {
@@ -202,6 +203,7 @@ class DbService {
       legendarySpots: legendary,
       iconicSpots: iconic,
       favorites: favorites,
+      spots: spots,
     );
   }
 

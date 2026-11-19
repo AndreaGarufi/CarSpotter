@@ -73,6 +73,7 @@ flutter:
     - assets/images/vintage5.jpg
     - assets/images/vintage6.jpg
     - assets/data/
+    - assets/maps/natural_earth_tiles.bin.gz
 
 flutter_launcher_icons:
   android: "ic_launcher"

@@ -137,7 +137,11 @@ Foto, posizioni GPS e note restano **solo sul tuo dispositivo**: l'app non li in
 Quando fotografi un veicolo, rispetta la privacy altrui: evita di pubblicare foto con **targhe leggibili o persone riconoscibili** senza consenso.
 
 ### Mappe
-Le mappe usano dati © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, rilasciati con licenza ODbL.
+La Mappa degli spot nella Home usa una base geografica mondiale inclusa nell’app, con coste, confini, laghi, centri abitati e strade principali. I pin usano le coordinate degli spot salvati sul dispositivo. [Dati cartografici Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/)
+
+I nomi di comuni, paesi e frazioni italiane sono selezionati dall’estratto italiano di GeoNames e compaiono in base al livello di zoom. [© GeoNames](https://www.geonames.org/export/), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+Le mappe di inserimento e dettaglio usano dati rilasciati con licenza ODbL. [© OpenStreetMap contributors](https://www.openstreetmap.org/copyright)
 
 ### Librerie di terze parti
 L'app usa pacchetti open source (Flutter, Isar, flutter_map, geolocator, archive e altri), ciascuno soggetto alla propria licenza. L'elenco completo è consultabile nel file `pubspec.yaml`.
