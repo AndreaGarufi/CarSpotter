@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../controllers/db_service.dart';
 import '../models/brand.dart';
 import '../models/car_model.dart';
+import 'system_navigation_bar.dart';
 
 typedef _CatalogGroup = ({Brand brand, List<CarModel> models});
 
@@ -109,6 +110,7 @@ class _CatalogScreenState extends State<CatalogScreen> {
 
     return Scaffold(
       backgroundColor: const Color(0xFFEEEEE4),
+      bottomNavigationBar: const SystemNavigationBar(),
       body: _isLoading
           ? const Center(
               child: CircularProgressIndicator(color: Color(0xFF10B981)),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'controllers/db_service.dart';
 import 'views/welcome_screen.dart';
 
@@ -16,6 +17,12 @@ class CarSpotterApp extends StatelessWidget {
     return MaterialApp(
       title: 'CarSpotter',
       debugShowCheckedModeBanner: false,
+      builder: (context, child) => AnnotatedRegion<SystemUiOverlayStyle>(
+        value: const SystemUiOverlayStyle(
+          systemNavigationBarContrastEnforced: true,
+        ),
+        child: child!,
+      ),
       theme: ThemeData(
         useMaterial3: true, // <-- Corretto da useMaterialDesign a useMaterial3
         brightness: Brightness.light,

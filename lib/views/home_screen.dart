@@ -10,6 +10,7 @@ import 'add_spot_screen.dart';
 import 'garage_screen.dart';
 import 'catalog_screen.dart';
 import 'spot_map_section.dart';
+import 'system_navigation_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -46,9 +47,6 @@ class _HomeScreenState extends State<HomeScreen> {
   List<UserSpot> _spots = [];
   bool _isLoading = true;
   int _loadRevision = 0;
-
-  // Indice della Bottom Navigation Bar
-  final int _currentIndex = 0;
 
   // Controller per il carosello in rilievo
   late PageController _pageController;
@@ -869,101 +867,62 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  // Bottom Navigation Bar
   Widget _buildBottomAppBar() {
-    return BottomAppBar(
-      color: Colors.white,
-      elevation: 16,
-      shape: const CircularNotchedRectangle(),
-      notchMargin: 8,
-      child: SizedBox(
-        height: 60,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            InkWell(
-              onTap: () async {
-                await Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const GarageScreen()),
-                );
-                _loadData(); // 🔄 Ricarica automaticamente i dati (e i preferiti) appena torni indietro!
-              },
-              borderRadius: BorderRadius.circular(12),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 20,
-                  vertical: 6,
-                ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Icon(
-                      _currentIndex == 0
-                          ? Icons.directions_car
-                          : Icons.directions_car_outlined,
-                      color: _currentIndex == 0
-                          ? const Color(0xFF10B981)
-                          : Colors.grey,
-                    ),
-                    Text(
-                      "Garage",
-                      style: TextStyle(
-                        fontSize: 11,
-                        fontWeight: _currentIndex == 0
-                            ? FontWeight.bold
-                            : FontWeight.normal,
-                        color: _currentIndex == 0
-                            ? const Color(0xFF10B981)
-                            : Colors.grey,
-                      ),
-                    ),
-                  ],
-                ),
+    return SystemNavigationBar(
+      child: BottomAppBar(
+        color: Colors.white,
+        elevation: 16,
+        shape: const CircularNotchedRectangle(),
+        notchMargin: 8,
+        child: SizedBox(
+          height: 60,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              _buildBottomAction(
+                icon: Icons.directions_car,
+                label: 'Garage',
+                destination: const GarageScreen(),
               ),
-            ),
-            const SizedBox(width: 40),
-            InkWell(
-              onTap: () async {
-                await Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const CatalogScreen(),
-                  ),
-                );
-                _loadData(); // 🔄 Ricarica automaticamente anche dal Catalogo!
-              },
-              borderRadius: BorderRadius.circular(12),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 20,
-                  vertical: 6,
-                ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Icon(
-                      _currentIndex == 1
-                          ? Icons.bar_chart
-                          : Icons.bar_chart_outlined,
-                      color: _currentIndex == 1
-                          ? const Color(0xFF10B981)
-                          : Colors.grey,
-                    ),
-                    Text(
-                      "Catalogo",
-                      style: TextStyle(
-                        fontSize: 11,
-                        fontWeight: _currentIndex == 1
-                            ? FontWeight.bold
-                            : FontWeight.normal,
-                        color: _currentIndex == 1
-                            ? const Color(0xFF10B981)
-                            : Colors.grey,
-                      ),
-                    ),
-                  ],
-                ),
+              const SizedBox(width: 40),
+              _buildBottomAction(
+                icon: Icons.bar_chart_outlined,
+                label: 'Catalogo',
+                destination: const CatalogScreen(),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildBottomAction({
+    required IconData icon,
+    required String label,
+    required Widget destination,
+  }) {
+    const color = Color(0xFF10B981);
+    return InkWell(
+      onTap: () async {
+        await Navigator.of(
+          context,
+        ).push(MaterialPageRoute(builder: (_) => destination));
+        if (mounted) _loadData();
+      },
+      borderRadius: BorderRadius.circular(12),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 6),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(icon, color: color),
+            Text(
+              label,
+              style: const TextStyle(
+                fontSize: 11,
+                fontWeight: FontWeight.bold,
+                color: color,
               ),
             ),
           ],

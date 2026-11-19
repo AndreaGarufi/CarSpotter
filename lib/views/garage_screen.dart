@@ -5,6 +5,7 @@ import '../controllers/db_service.dart';
 import '../models/user_spot.dart';
 import '../models/brand.dart';
 import 'spot_detail_screen.dart';
+import 'system_navigation_bar.dart';
 
 enum RaritySort { none, asc, desc }
 
@@ -230,6 +231,7 @@ class _GarageScreenState extends State<GarageScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFEEEEE4),
+      bottomNavigationBar: const SystemNavigationBar(),
       body: _isLoading
           ? const Center(
               child: CircularProgressIndicator(color: Color(0xFF10B981)),
