@@ -1,9 +1,9 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 import '../controllers/db_service.dart';
+import '../controllers/spot_location_service.dart';
 import '../models/brand.dart';
 import '../models/car_model.dart';
 import 'brand_search_delegate.dart';
@@ -36,6 +36,7 @@ class _AddSpotScreenState extends State<AddSpotScreen> {
   double? _longitude;
   String _locationDisplay = "Nessuna posizione selezionata";
   bool _isLocating = false;
+  int _manualLocationRevision = 0;
 
   // Stato interruttori e caricamento
   bool _isFavorite = false;
@@ -74,45 +75,31 @@ class _AddSpotScreenState extends State<AddSpotScreen> {
 
   // 1. OTTIENI POSIZIONE DA ANTENNA GPS DEL TELEFONO
   Future<void> _getCurrentLocation() async {
+    if (_isLocating) return;
+    final manualLocationRevision = _manualLocationRevision;
     setState(() => _isLocating = true);
     try {
-      LocationPermission permission = await Geolocator.checkPermission();
-      if (permission == LocationPermission.denied) {
-        permission = await Geolocator.requestPermission();
-        if (permission == LocationPermission.denied) {
-          _showSnackBar("⚠️ Permessi di posizione negati.", Colors.orange);
-          setState(() => _isLocating = false);
-          return;
-        }
-      }
-
-      Position position = await Geolocator.getCurrentPosition(
-        locationSettings: const LocationSettings(
-          accuracy: LocationAccuracy.high,
-        ),
+      final position = await SpotLocationService.getCurrentPosition();
+      if (!mounted || manualLocationRevision != _manualLocationRevision) return;
+      setState(() {
+        _latitude = position.latitude;
+        _longitude = position.longitude;
+        _locationDisplay =
+            "GPS: ${position.latitude.toStringAsFixed(4)}, ${position.longitude.toStringAsFixed(4)}";
+      });
+      _showSnackBar(
+        "📍 Posizione GPS acquisita con successo!",
+        const Color(0xFF10B981),
       );
-
-      if (mounted) {
-        setState(() {
-          _latitude = position.latitude;
-          _longitude = position.longitude;
-          _locationDisplay =
-              "GPS: ${_latitude!.toStringAsFixed(4)}, ${_longitude!.toStringAsFixed(4)}";
-          _isLocating = false;
-        });
+    } on SpotLocationFailure catch (failure) {
+      if (mounted && manualLocationRevision == _manualLocationRevision) {
         _showSnackBar(
-          "📍 Posizione GPS acquisita con successo!",
-          const Color(0xFF10B981),
+          failure.message,
+          failure == SpotLocationFailure.unavailable ? Colors.red : Colors.orange,
         );
       }
-    } catch (e) {
-      if (mounted) {
-        setState(() => _isLocating = false);
-        _showSnackBar(
-          "❌ Errore GPS: assicurati che la posizione sia attiva.",
-          Colors.red,
-        );
-      }
+    } finally {
+      if (mounted) setState(() => _isLocating = false);
     }
   }
 
@@ -204,6 +191,7 @@ class _AddSpotScreenState extends State<AddSpotScreen> {
                 ),
                 onPressed: () {
                   setState(() {
+                    _manualLocationRevision++;
                     _latitude = center.latitude;
                     _longitude = center.longitude;
                     _locationDisplay =

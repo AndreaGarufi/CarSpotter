@@ -1,9 +1,9 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 import '../controllers/db_service.dart';
+import '../controllers/spot_location_service.dart';
 import '../models/user_spot.dart';
 import '../models/car_model.dart'; // <-- Aggiunto per usare RarityTier
 
@@ -30,6 +30,7 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
   double? _longitude;
   String? _locationName;
   bool _isLocating = false;
+  int _manualLocationRevision = 0;
 
   @override
   void initState() {
@@ -111,39 +112,28 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
 
   // 1. OTTIENI POSIZIONE DA ANTENNA GPS
   Future<void> _getCurrentLocation() async {
+    if (_isLocating) return;
+    final manualLocationRevision = _manualLocationRevision;
     setState(() => _isLocating = true);
     try {
-      LocationPermission permission = await Geolocator.checkPermission();
-      if (permission == LocationPermission.denied) {
-        permission = await Geolocator.requestPermission();
-        if (permission == LocationPermission.denied) {
-          _showSnackBar("⚠️ Permessi negati.", Colors.orange);
-          setState(() => _isLocating = false);
-          return;
-        }
+      final position = await SpotLocationService.getCurrentPosition();
+      if (!mounted || manualLocationRevision != _manualLocationRevision) return;
+      setState(() {
+        _latitude = position.latitude;
+        _longitude = position.longitude;
+        _locationName =
+            "GPS: ${position.latitude.toStringAsFixed(4)}, ${position.longitude.toStringAsFixed(4)}";
+      });
+      _showSnackBar("📍 Posizione aggiornata!", const Color(0xFF10B981));
+    } on SpotLocationFailure catch (failure) {
+      if (mounted && manualLocationRevision == _manualLocationRevision) {
+        _showSnackBar(
+          failure.message,
+          failure == SpotLocationFailure.unavailable ? Colors.red : Colors.orange,
+        );
       }
-
-      Position position = await Geolocator.getCurrentPosition(
-        locationSettings: const LocationSettings(
-          accuracy: LocationAccuracy.high,
-        ),
-      );
-
-      if (mounted) {
-        setState(() {
-          _latitude = position.latitude;
-          _longitude = position.longitude;
-          _locationName =
-              "GPS: ${_latitude!.toStringAsFixed(4)}, ${_longitude!.toStringAsFixed(4)}";
-          _isLocating = false;
-        });
-        _showSnackBar("📍 Posizione aggiornata!", const Color(0xFF10B981));
-      }
-    } catch (e) {
-      if (mounted) {
-        setState(() => _isLocating = false);
-        _showSnackBar("❌ Errore GPS", Colors.red);
-      }
+    } finally {
+      if (mounted) setState(() => _isLocating = false);
     }
   }
 
@@ -224,6 +214,7 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                 ),
                 onPressed: () {
                   setState(() {
+                    _manualLocationRevision++;
                     _latitude = center.latitude;
                     _longitude = center.longitude;
                     _locationName =
@@ -474,6 +465,7 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                     clipBehavior: Clip.antiAlias,
                     child: _latitude != null && _longitude != null
                         ? FlutterMap(
+                            key: ValueKey((_latitude, _longitude)),
                             options: MapOptions(
                               initialCenter: LatLng(_latitude!, _longitude!),
                               initialZoom: 15.0,
