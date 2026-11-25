@@ -1,12 +1,14 @@
 # CarSpotter
 
+> CarSpotter was entirely vibe-coded, except for the core architecture and the ideas behind the app.
+
 <p align="center">
   <img src="assets/images/carSpotterIcon.png" alt="CarSpotter Logo" width="120" style="border-radius: 20%;" />
 </p>
 
 <p align="center">
-  <strong>L'applicazione definitiva per gli appassionati di car spotting.</strong><br>
-  Cattura, cataloga e scopri la rarità di ogni vettura avvistata per strada — 100% offline e local-first.
+  <strong>The ultimate app for car spotting enthusiasts.</strong><br>
+  Capture and catalog the cars you spot on the road, and discover how rare they are. 100% offline and local-first.
 </p>
 
 <p align="center">
@@ -15,142 +17,151 @@
   <img src="https://img.shields.io/badge/Database-Isar-orange?style=for-the-badge" alt="Isar Database" />
   <img src="https://img.shields.io/badge/Architecture-Local--First-brightgreen?style=for-the-badge" alt="Local First" />
   <img src="https://img.shields.io/badge/Platform-Android-lightgrey?style=for-the-badge" alt="Platforms" />
-</p>
 
 ---
 
-## 📖 Panoramica
+## 📖 Overview
 
-**CarSpotter** trasforma la passione per le automobili in un'esperienza di collezionismo interattiva e gamificata, ispirata al concetto di "Pokédex" automobilistico. 
+**CarSpotter** turns your passion for cars into an interactive, gamified collecting experience inspired by the idea of an automotive Pokédex.
 
-Ogni volta che incontri una supercar, una leggenda da rally, una classica d'epoca o una rarità stradale, puoi immortalarla, registrarne la posizione GPS esatta e scoprirne all'istante il **livello di rarità** calcolato da un algoritmo matematico dedicato basato sui dati reali di produzione, potenza, prezzo ed eredità storica.
+When you come across a supercar, a rally legend, a vintage classic, or a rare road car, take a photo, save its exact GPS location, and instantly see its **rarity tier**. A dedicated algorithm calculates the tier using real-world data on production numbers, power, price, and historical significance.
 
-Tutti i dati e le foto restano memorizzati **esclusivamente sul tuo dispositivo** grazie a un'architettura **local-first** veloce, resiliente e rispettosa della privacy.
-
----
-
-## 📲 Download & Aggiornamento
-
-CarSpotter non è (ancora) pubblicata sul Play Store: si installa direttamente tramite il file **APK** allegato a ogni release.
-
-### Prima installazione
-
-1. Vai nella sezione **[Releases](../../releases)** di questa repository.
-2. Scarica l'ultimo file `.apk` dalla release più recente (sezione *Assets*).
-3. Apri il file dal tuo cellulare (dalle notifiche di download o dall'app *File*).
-4. Se richiesto, consenti al browser o al file manager di **installare app da fonti sconosciute**.
-5. Conferma l'installazione e apri CarSpotter. 🚗
-
-### ⚠️ "Questa app NON è dannosa"
-
-Durante l'installazione Android (o Play Protect) potrebbe mostrare un avviso che segnala l'app come non verificata o potenzialmente dannosa. **È normale e non significa che l'app sia pericolosa.**
-
-Succede perché l'app non viene distribuita tramite il Google Play Store: Android mostra questo avviso per qualsiasi APK scaricato fuori dallo store, dato che Google non ha potuto controllarlo né verificarne lo sviluppatore. Pubblicare sul Play Store richiede una registrazione a pagamento e un processo di revisione, che per un progetto personale e di passione come questo non è previsto.
-
-Il codice sorgente è pubblico in questa repository, quindi puoi verificare di persona cosa fa l'app. Se l'avviso compare, scegli **"Installa comunque"** (o **"Maggiori dettagli" → "Installa comunque"**).
-
-### 🔄 Aggiornare l'app
-
-1. Controlla nella sezione **[Releases](../../releases)** se è disponibile una versione più recente di quella installata.
-2. Scarica il nuovo `.apk`.
-3. Installalo **sopra la versione esistente**, senza disinstallare nulla: i tuoi avvistamenti e le tue foto vengono mantenuti.
-
-> 💡 **Consiglio:** prima di aggiornare, crea un **backup** dalla funzione di esportazione dell'app, così i tuoi dati sono al sicuro in ogni caso.
+The fast, resilient **local-first** architecture keeps all your data and photos **on your device** for privacy.
 
 ---
 
-## 🔃 Mantieni il Catalogo Aggiornato
+## 📲 Download and Update
 
-Il catalogo delle auto viene ampliato nel tempo con nuove marche e nuovi modelli. Per averlo sempre al passo, nelle **Impostazioni** dell'app trovi una sezione dedicata all'**aggiornamento del catalogo**.
+CarSpotter isn't on Google Play yet. Install it directly using the **APK** attached to each release.
 
-**👉 Ti consigliamo di premere quel tasto ogni tanto** (e in particolare dopo ogni nuova release), così potrai avvistare e registrare anche le ultime vetture aggiunte.
+### First installation
 
-1. Apri CarSpotter e vai nelle **Impostazioni**.
-2. Cerca la sezione **Aggiorna catalogo**.
-3. Premi il tasto di aggiornamento e attendi la conferma.
+1. Go to the **[Releases](../../releases)** section of this repository.
+2. Download the `.apk` file from the *Assets* section of the latest release.
+3. Open it on your phone from the download notification or the *Files* app.
+4. If prompted, allow your browser or file manager to **install apps from unknown sources**.
+5. Confirm the installation and open CarSpotter. 🚗
 
-> 💡 Gli avvistamenti che hai già registrato non vengono toccati: l'aggiornamento aggiunge solo i nuovi modelli al catalogo.
+### ⚠️ Android installation warning
 
----
+Android or Play Protect may flag the APK as unverified or potentially harmful during installation. This warning can appear for apps distributed outside Google Play. Publishing on Google Play requires paid registration and a review, which are outside the plans for this personal project.
 
-## ✨ Funzionalità Principali
+The source code is public in this repository, so you can review what the app does. If you see the warning, choose **Install anyway** or **More details** followed by **Install anyway**.
 
-### 📸 Avvistamenti Dettagliati (Spotting)
-- **Scatta o importa**: Fotografa al volo dalla fotocamera integrata o seleziona uno scatto dalla tua galleria.
-- **Dettagli completi**: Assegna colore specifico, anno di produzione stimato, note personali e contrassegna veicoli da corsa (🏁 *Racing*) o speciali (*Preferiti*).
-- **Geolocalizzazione GPS**: Tracciamento istantaneo delle coordinate geografiche dell'avvistamento con mappa interattiva integrata ([flutter_map](https://pub.dev/packages/flutter_map) / OpenStreetMap).
+### 🔄 Update the app
 
-### 🏆 Algoritmo Dinamico di Rarità & Iconicità
-Non tutte le auto sono uguali! Un algoritmo ponderato analizza le specifiche tecniche del veicolo:
-- **5 Tier di Rarità**:
-  - ⚪ **Common** (Auto di grande serie)
-  - 🟢 **Uncommon** (Sportive accessibili / versioni speciali)
-  - 🔵 **Rare** (Prestigiose o a tiratura ridotta)
-  - 🟣 **Epic** (Supercar e serie limitate)
-  - 🟡 **Legendary** (Hypercar ed edizioni ultra-esclusive)
-- 🔥 **Status Icona**: Un badge esclusivo riservato ai modelli che hanno segnato la cultura pop, la storia del motorsport e il design automobilistico.
+1. Check **[Releases](../../releases)** for a newer version than the one you have installed.
+2. Download the new `.apk`.
+3. Install it **over your existing version** to keep your sightings and photos.
 
-### 📚 Catalogo Precaricato (45+ Marche, 1000+ Modelli)
-- Esplora un vasto database offline contenente oltre **1.000 modelli** di **46 marchi iconici** (Ferrari, Porsche, Lamborghini, Alfa Romeo, Lancia, BMW, Toyota e tanti altri).
-- Monitora la tua percentuale di completamento per ciascun marchio.
-- Motore di ricerca rapido per marca e modello con indicatore visivo delle vetture già avvistate.
-
-### 🏎️ Il Tuo Garage Personale
-- Galleria fotografica pulita ed elegante dei tuoi avvistamenti.
-- **Filtri avanzati**: Filtra per marchio, vetture iconiche (🔥), vetture racing (🏁) o ordina per rarità crescente/decrescente.
-- Schede dettaglio interattive con visualizzazione su mappa, statistiche e modifica in tempo reale.
-
-### 📊 Dashboard & Statistiche
-- Statistiche in tempo reale: totale avvistamenti, modelli unici registrati, numero di leggendarie e icone collezionate.
-- Carosello automatico dei tuoi spot preferiti con interfaccia responsive e dinamica.
-- Sfondi ed elementi visivi a rotazione in stile vintage e motorsport.
-
-### 💾 Backup & Ripristino 100% Offline
-- Esporta l'intera collezione (database SQLite/Isar + tutte le foto ad alta risoluzione) in un unico archivio `.zip` compresso.
-- Salvataggio diretto nella cartella Download o condivisione rapida verso cloud personali, e-mail o storage esterno.
+> 💡 Before updating, use the app's export feature to create a **backup** of your data.
 
 ---
 
-## 🛠️ Stack Tecnologico
+## 🔃 Keep Your Catalog Up to Date
 
-| Componente | Tecnologia | Descrizione |
+New makes and models are added to the catalog over time. **Check for catalog updates from time to time**, especially after a new release, so you can log sightings of the latest additions.
+
+1. Open CarSpotter and go to **Settings**.
+2. Find the **Update Catalog** section.
+3. Tap the update button and wait for confirmation.
+
+> 💡 The update adds new models to the catalog and preserves your saved sightings.
+
+---
+
+## ✨ Key Features
+
+### 📸 Detailed Sightings
+
+- **Capture or import.** Take a photo with the built-in camera or select one from your gallery.
+- **Record details.** Add a color, estimated production year, and personal notes. Mark race cars as 🏁 *Racing* or save special cars to *Favorites*.
+- **GPS location.** Capture the sighting's coordinates and view it on an interactive map powered by [flutter_map](https://pub.dev/packages/flutter_map) and OpenStreetMap.
+
+### 🏆 Dynamic Rarity and Icon Status
+
+A weighted algorithm evaluates the vehicle's specifications and assigns one of five rarity tiers.
+
+- ⚪ **Common** (mass-produced cars)
+- 🟢 **Uncommon** (affordable sports cars and special variants)
+- 🔵 **Rare** (prestige cars and low-production models)
+- 🟣 **Epic** (supercars and limited editions)
+- 🟡 **Legendary** (hypercars and ultra-exclusive editions)
+
+The 🔥 **Icon** badge is reserved for models that left a mark on pop culture, motorsport history, or automotive design.
+
+### 📚 Preloaded Catalog (45+ Makes, 1,000+ Models)
+
+- Explore an offline database of **over 1,000 models from 46 makes**, including Ferrari, Porsche, Lamborghini, Alfa Romeo, Lancia, BMW, and Toyota.
+- Track your completion percentage for each make.
+- Search by make or model and see at a glance which cars you've already spotted.
+
+### 🏎️ Your Personal Garage
+
+- Browse your sightings in a photo gallery.
+- **Filter and sort.** Filter by make, icon status (🔥), or racing status (🏁), or sort by rarity in either direction.
+- Open a sighting to view its map and statistics or edit its details.
+
+### 📊 Dashboard and Statistics
+
+- See live counts for total sightings, unique models, legendary cars, and icons.
+- Browse your favorite sightings in an automatic carousel with a responsive layout.
+- See rotating backgrounds and visuals inspired by vintage cars and motorsport.
+
+### 💾 100% Offline Backup and Restore
+
+- Export your entire collection, including the SQLite/Isar database and full-resolution photos, as a single compressed `.zip` archive.
+- Save it directly to your Downloads folder or share it through personal cloud storage, email, or external storage.
+
+---
+
+## 🛠️ Technology Stack
+
+| Component | Technology | Description |
 |---|---|---|
-| **Framework** | [Flutter](https://flutter.dev/) (SDK ^3.12) | Sviluppo cross-platform per mobile |
-| **Linguaggio** | [Dart](https://dart.dev/) | Linguaggio fortemente tipizzato e performante |
-| **Database Locale** | [Isar Community](https://isar.dev/) | Database NoSQL locale ultra-rapido con supporto a relazioni |
-| **Mappe & GPS** | [flutter_map](https://pub.dev/packages/flutter_map) + [geolocator](https://pub.dev/packages/geolocator) | Mappe OpenStreetMap offline-ready e geolocalizzazione precisa |
-| **Archiviazione** | [archive](https://pub.dev/packages/archive) + [path_provider](https://pub.dev/packages/path_provider) | Gestione filesystem, zipping e backup dei dati |
-| **UI & Design** | Material Design 3 | Palette vintage/moderna con accenti verde smeraldo e slate |
+| **Framework** | [Flutter](https://flutter.dev/) (SDK ^3.12) | Cross-platform mobile development |
+| **Language** | [Dart](https://dart.dev/) | Strongly typed, high-performance language |
+| **Local Database** | [Isar Community](https://isar.dev/) | Fast local NoSQL database with relationship support |
+| **Maps and GPS** | [flutter_map](https://pub.dev/packages/flutter_map) + [geolocator](https://pub.dev/packages/geolocator) | Offline-ready OpenStreetMap maps and precise geolocation |
+| **Storage** | [archive](https://pub.dev/packages/archive) + [path_provider](https://pub.dev/packages/path_provider) | File system access, ZIP compression, and backups |
+| **UI and Design** | Material Design 3 | Vintage and modern palette with emerald green and slate accents |
 
 ---
 
-## ⚖️ Licenza & Note
+## ⚖️ License and Notes
 
-### Marchi e non affiliazione
-CarSpotter è un progetto **personale, senza scopo di lucro**, sviluppato per studio e passione verso il mondo automobilistico. **Non è affiliato, sponsorizzato né approvato** da nessuna casa automobilistica citata. Marchi, loghi e nomi delle vetture appartengono ai rispettivi proprietari e costruttori e sono usati solo a scopo identificativo.
+### Trademarks and affiliation
 
-### Dati del catalogo
-I loghi del catalogo e del globo sono inclusi nell’app come WebP. [VehicleSpecs](https://github.com/vehiclespecs/brand-logos/tree/3f0929e70e0a9a2a502063edc4b3e5c0146cba74), [Cupra](https://github.com/filippofilip95/car-logos-dataset/blob/e334a4d2e8742108ba164c629dff5636576d3808/logos/optimized/cupra.png), [Dallara](https://www.dallara.it/), [Formula 1](https://www.formula1.com/).
+CarSpotter is a **personal, non-commercial project** built for learning and out of a passion for cars. It has no affiliation, sponsorship, or endorsement from the automakers mentioned. Trademarks, logos, and vehicle names belong to their respective owners and manufacturers and are used solely for identification.
 
-I valori del catalogo (potenza, prezzo, produzione, punteggi di rarità, iconicità e prestigio) sono **stime indicative**, in parte soggettive, e possono contenere imprecisioni. Non vanno intesi come dati ufficiali o come valutazione economica dei veicoli.
+### Catalog data
 
-### Privacy e dati personali
-Foto, posizioni GPS e note restano **solo sul tuo dispositivo**: l'app non li invia a nessun server. Sei responsabile dei backup che esporti e di dove li condividi.
-Quando fotografi un veicolo, rispetta la privacy altrui: evita di pubblicare foto con **targhe leggibili o persone riconoscibili** senza consenso.
+The app bundles the catalog and globe logos as WebP files. [VehicleSpecs](https://github.com/vehiclespecs/brand-logos/tree/3f0929e70e0a9a2a502063edc4b3e5c0146cba74), [Cupra](https://github.com/filippofilip95/car-logos-dataset/blob/e334a4d2e8742108ba164c629dff5636576d3808/logos/optimized/cupra.png), [Dallara](https://www.dallara.it/), [Formula 1](https://www.formula1.com/).
 
-### Mappe
-La Mappa degli spot nella Home usa una base geografica mondiale inclusa nell’app, con coste, confini, laghi, centri abitati e strade principali. I pin usano le coordinate degli spot salvati sul dispositivo. [Dati cartografici Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/)
+Catalog values for power, price, production, rarity, icon status, and prestige are **estimates for reference only**. Some are subjective and may contain inaccuracies. They should not be treated as official figures or vehicle valuations.
 
-I nomi di comuni, paesi e frazioni italiane sono selezionati dall’estratto italiano di GeoNames e compaiono in base al livello di zoom. [© GeoNames](https://www.geonames.org/export/), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+### Privacy and personal data
 
-Dal riquadro **I tuoi spot** puoi aprire il globo offline **Origine degli spot**. I Paesi si colorano secondo l’origine dei marchi che hai avvistato. Toccando un Paese vedi i marchi e puoi aprire il Garage con il filtro già impostato. [Confini nazionali Natural Earth](https://www.naturalearthdata.com/downloads/50m-cultural-vectors/)
+Photos, GPS locations, and notes stay **on your device**. The app does not send them to any server. You are responsible for the backups you export and where you share them.
 
-Le mappe di inserimento e dettaglio usano dati rilasciati con licenza ODbL. [© OpenStreetMap contributors](https://www.openstreetmap.org/copyright)
+Respect other people's privacy when photographing vehicles. Avoid publishing photos with **readable license plates or recognizable people** without consent.
 
-### Librerie di terze parti
-L'app usa pacchetti open source (Flutter, Isar, flutter_map, geolocator, archive e altri), ciascuno soggetto alla propria licenza. L'elenco completo è consultabile nel file `pubspec.yaml`.
+### Maps
 
-### Esclusione di garanzia
-Il software è fornito **"così com'è", senza garanzie** di alcun tipo. L'autore non è responsabile di eventuali danni o perdite di dati derivanti dall'uso dell'app. L'installazione tramite APK avviene sotto la tua responsabilità; fai sempre un backup prima di aggiornare.
+The sightings map on the Home screen uses a bundled world basemap with coastlines, borders, lakes, settlements, and major roads. It places pins using the coordinates of sightings saved on your device. [Natural Earth map data](https://www.naturalearthdata.com/about/terms-of-use/)
+
+Italian municipality, town, and hamlet names come from the Italian GeoNames extract and appear at different zoom levels. [© GeoNames](https://www.geonames.org/export/), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+Open the offline **Sighting Origins** globe from the **Your Spots** card. The globe highlights countries of origin for the makes you've spotted. Tap a country to see its makes and open the Garage with the corresponding filter applied. [Natural Earth country boundaries](https://www.naturalearthdata.com/downloads/50m-cultural-vectors/)
+
+The maps used to add and view sightings use data licensed under the ODbL. [© OpenStreetMap contributors](https://www.openstreetmap.org/copyright)
+
+### Third-party libraries
+
+The app uses open-source packages, including Flutter, Isar, flutter_map, geolocator, and archive. Each package is subject to its own license. See `pubspec.yaml` for the full list.
+
+### Disclaimer of warranty
+
+The software is provided **"as is," without warranty** of any kind. The author is not liable for any damage or data loss arising from use of the app. Install the APK at your own risk and always back up your data before updating.
 
 ---
